@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1606b1d-e965-42fd-9db2-f2aa1ad6367f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/accueil.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/pages/accueil.vue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuaeludoBack/listeGroupe.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuaeludoBack/listeJoueur.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuaeludoBack/listeLudotheque.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +55,22 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2646" y="327" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1621680626250">
