@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/Logo/logo.png">
+    <title>QuaeLudo</title>
+    <link rel="stylesheet" href="css/mise-en-page-generale.css">
+    <link rel="stylesheet" href="css/mise-en-page-css-page-sans-php.css">
+    <link rel="stylesheet" href="css/mise-en-page-css-page-avec-php.css">
+    <link rel="stylesheet" href="css/typographie.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://unpkg.com/vue-router"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+
+<div id="app">
+    <header>
+        <div class="header-bouton header-bouton-compte">
+            <router-link :to="{name:'Compte'}">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="#FAFAFA"
+                          d="M224 256
+                          c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128
+                          s57.3 128 128 128z
+                          m89.6 32h-16.7
+                          c-22.2 10.2-46.9 16-72.9 16
+                          s-50.6-5.8-72.9-16
+                          h-16.7
+                          C60.2 288 0 348.2 0 422.4
+                          V464
+                          c0 26.5 21.5 48 48 48
+                          h352
+                          c26.5 0 48-21.5 48-48
+                          v-41.6
+                          c0-74.2-60.2-134.4-134.4-134.4z">
+                    </path>
+                </svg>
+            </router-link>
+        </div>
+        <div class="header-logo-nom">
+            <div class="header-logo">
+                <a href="Accueil.html"><img src="images/Logo/logo.png" class="logo-header" alt="Logo QuaeLudo"></a>
+            </div>
+            <div class="header-nom">
+                <router-link :to="{name:'Accueil'}">QuaeLudo</router-link>
+            </div>
+        </div>
+        <div class="header-bouton">
+        </div>
+    </header>
+
+    <div class="Menu-bas-page">
+        <div>
+            <router-link to="Accueil" class="menu-Accueil">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#FAFAFA" d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"></path></svg>
+            </router-link>
+            <br>
+            <router-link to="Accueil">Accueil</router-link>
+        </div>
+        <div>
+            <router-link class="menu-Ludotheque" to="Ludotheque">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path fill="#FAFAFA" d="m119.09 92.932v-8.744a1.749 1.749 0 0 0 -1.75-1.75h-4.668a1.722 1.722 0 0 0 .592-1.761l-1.448-5.926-1.869-7.65-7.559-30.941a1.752 1.752 0 0 0 -2.115-1.285l-10.5 2.566v-6.264a1.751 1.751 0 0 0 -1.75-1.75h-13.342v-6.327a1.75 1.75 0 0 0 -1.75-1.75h-17.383a1.75 1.75 0 0 0 -1.748 1.75v4.25h-15.635a1.75 1.75 0 0 0 -1.75 1.75v7.964l-12.18-2.031a1.75 1.75 0 0 0 -2.014 1.439l-5.956 35.735-1.555 9.323a1.735 1.735 0 0 0 .1.908h-4.15a1.749 1.749 0 0 0 -1.75 1.75v8.744a1.75 1.75 0 0 0 1.75 1.75h7.824v10.218a1.75 1.75 0 0 0 1.75 1.75h9.979a1.75 1.75 0 0 0 1.75-1.75v-10.218h64.074v10.218a1.75 1.75 0 0 0 1.75 1.75h9.979a1.75 1.75 0 0 0 1.75-1.75v-10.218h7.824a1.75 1.75 0 0 0 1.75-1.75zm-9.642-13.124-9.269 2.264-.618-2.529 9.269-2.265zm-1.448-5.93-9.27 2.265-.121-.5-.917-3.753 9.269-2.265zm-8.6-35.193 6.73 27.543-9.27 2.265-6.73-27.544zm-5.524 32.337 1.685 6.9 1.1 4.517h-6.9v-28.239zm-36.576 11.416v-12.873h13.881v12.873zm-17.383 0v-7.894h13.883v7.894zm46.349-8.138h-11.585v-3.447h11.585zm-11.585 3.5h11.585v4.643h-11.585zm11.585-44.873v34.426h-11.585v-34.426zm-28.966-8.074h13.881v41.212h-13.881zm-3.5 6v40.191h-13.885v-40.191zm-17.385 51.585h-3.695l3.7-22.166zm-11.029-43.662 10.765 1.795-5.382 32.284-10.769-1.795zm3.83 43.4-10.765-1.797.978-5.867 10.765 1.8zm-.753 20.974h-6.479v-8.468h6.479zm77.553 0h-6.479v-8.468h6.479zm9.574-11.965h-103.18v-5.247h103.18z"/><path fill="#FAFAFA" d="m61.942 32.129h4.6a1.75 1.75 0 1 0 0-3.5h-4.6a1.75 1.75 0 0 0 0 3.5z"/><path fill="#FAFAFA" d="m66.538 73.055h-4.6a1.75 1.75 0 0 0 0 3.5h4.6a1.75 1.75 0 1 0 0-3.5z"/><path fill="#FAFAFA" d="m78.479 39.242h3.989a1.75 1.75 0 0 0 0-3.5h-3.989a1.75 1.75 0 0 0 0 3.5z"/><path fill="#FAFAFA" d="m44.559 38.129h4.6a1.75 1.75 0 0 0 0-3.5h-4.6a1.75 1.75 0 0 0 0 3.5z"/><path fill="#FAFAFA" d="m44.559 44.384h4.6a1.75 1.75 0 0 0 0-3.5h-4.6a1.75 1.75 0 0 0 0 3.5z"/><path fill="#FAFAFA" d="m26.365 66.09a1.782 1.782 0 0 0 .289.025 1.75 1.75 0 0 0 1.724-1.463l3.186-19.108a1.75 1.75 0 1 0 -3.452-.575l-3.186 19.108a1.749 1.749 0 0 0 1.439 2.013z"/></svg>
+                </router-link>
+            <br>
+            <router-link to="Ludotheque">Ludothèques</router-link>
+        </div>
+        <div>
+            <router-link class="menu-choixdujeux" to="ChoixDuJeu">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#FAFAFA" d="M255.9.2h-64v64h64zM0 64.17v64h64v-64zM128 .2H64v64h64zm64 255.9v64h64v-64zM0 192.12v64h64v-64zM383.85.2h-64v64h64zm128 0h-64v64h64zM128 256.1H64v64h64zM511.8 448v-64h-64v64zm0-128v-64h-64v64zM383.85 512h64v-64h-64zm128-319.88v-64h-64v64zM128 512h64v-64h-64zM0 512h64v-64H0zm255.9 0h64v-64h-64zM0 320.07v64h64v-64zm319.88-191.92v-64h-64v64zm-64 128h64v-64h-64zm-64 128v64h64v-64zm128-64h64v-64h-64zm0-127.95h64v-64h-64zm0 191.93v64h64v-64zM64 384.05v64h64v-64zm128-255.9v-64h-64v64zm191.92 255.9h64v-64h-64zm-128-191.93v-64h-64v64zm128-127.95v64h64v-64zm-128 255.9v64h64v-64zm-64-127.95H128v64h64zm191.92 64h64v-64h-64zM128 128.15H64v64h64zm0 191.92v64h64v-64z"></path></svg>
+            </router-link>
+            <br>
+            <router-link to="ChoixDuJeu">Choix du jeu</router-link>
+        </div>
+        <div>
+            <router-link class="menu-Groupes" to="Groupe">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="#FAFAFA" d="M96 224c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm448 0c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm32 32h-64c-17.6 0-33.5 7.1-45.1 18.6 40.3 22.1 68.9 62 75.1 109.4h66c17.7 0 32-14.3 32-32v-32c0-35.3-28.7-64-64-64zm-256 0c61.9 0 112-50.1 112-112S381.9 32 320 32 208 82.1 208 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C179.6 288 128 339.6 128 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zm-223.7-13.4C161.5 263.1 145.6 256 128 256H64c-35.3 0-64 28.7-64 64v32c0 17.7 14.3 32 32 32h65.9c6.3-47.4 34.9-87.3 75.2-109.4z"></path></svg>
+            </router-link>
+            <br>
+            <router-link to="Groupe">Groupes</router-link>
+        </div>
+        <div>
+            <router-link class="menu-contact" to="Contact">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#FAFAFA" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"></path></svg>
+            </router-link>
+            <br>
+            <router-link to="Contact">Contact</router-link>
+        </div>
+    </div>
+
+    <!-- point insertion des composants-->
+    <router-view></router-view>
+
+    <footer>
+        <section class="footer-menu">
+            <section class="footer-menu-decouvrir">
+                <h3>Découvrir</h3>
+                <a href="Compte.html">Compte</a>
+                <br>
+                <a href="Ludotheque.html">Ludothèques</a>
+                <br>
+                <a href="Groupe.html">Groupes</a>
+                <br>
+                <a href="ChoixDuJeu.html">Choix du jeu</a>
+            </section>
+
+            <section class="footer-menu-ensavoirplus">
+                <h3>En savoir +</h3>
+                <a href="landingpage.html">Aide</a>
+            </section>
+
+            <section class="footer-menu-contact">
+                <h3>Contact</h3>
+                <a href="mailto:quaeludo@gmail.com">Mail</a>
+                <br>
+                <a href="Contact.html">À propos</a>
+            </section>
+        </section>
+        <section class="footer-logos-reseaux">
+            <a href="https://www.facebook.com/QuaeLudo-100398272162180"><img src="images/Logo/Facebook.svg" alt="logo-facebook"></a>
+            <a href="https://twitter.com/QuaeLudo"><img src="images/Logo/logo_twitter.svg" alt="logo-twitter"></a>
+            <a href="https://www.instagram.com/quaeludo/"><img src="images/Logo/Instagram.svg" alt="logo-instagram"></a>
+            <a href="https://www.reddit.com/user/QuaeLudo"><img src="images/Logo/Reddit_logo.svg" alt="logo-reddit"></a>
+        </section>
+
+        <img src="images/Logo/logo.png" class="Logo-footer" alt="Logo QuaeLudo">
+
+        <p><a href="MentionsLegales.html">Mentions légales</a> - <a href="MentionsLegales.html">Confidentialité</a></p>
+    </footer>
+
+</div>
+    <!-- les composants utilisés -->
+
+    <script src="pages/accueil.vue.js"></script>
+    <script src="pages/compte.vue.js"></script>
+    <script src="pages/ludotheque.vue.js"></script>
+    <script src="pages/ludotheques.vue.js"></script>
+    <script src="pages/groupe.vue.js"></script>
+    <script src="pages/groupes.vue.js"></script>
+    <script src="pages/contact.vue.js"></script>
+    <script src="pages/choixdujeu.vue.js"></script>
+    <script src="pages/jeux.vue.js"></script>
+
+    <script>
+        // Les routages / navigation de l'application
+        let routes = [
+            {path: '/accueil',		name:"Accueil",		component:Accueil},
+            {path: '/compte',	    name:"Compte",	    component:Compte},
+            {path: '/ludotheque',	name:"Ludotheque",	component:Ludotheque},
+            {path: '/ludotheques',	name:"Ludotheques",	component:Ludotheques},
+            {path: '/groupe',	    name:"Groupe",	    component:Groupe},
+            {path: '/groupes',	    name:"Groupes",	    component:Groupes},
+            {path: '/contact',	    name:"Contact",	    component:Contact},
+            {path: '/choixdujeu',	name:"ChoixDuJeu",	component:ChoixDuJeu},
+            {path: '/choixdujeu',	name:"Jeux",	    component:Jeux},
+        ]
+
+        // Initialisation du router
+        let router = new VueRouter(
+            {routes: routes}
+        )
+        // La vue de l'application (id="app")
+        let app = new Vue({
+            el:"#app",
+            router:router
+        })
+    </script>
+</body>

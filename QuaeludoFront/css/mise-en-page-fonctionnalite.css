@@ -1,0 +1,1038 @@
+/* Font Titre*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+/* Font Texte */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* Titre/Texte */
+h1{
+    font-family: "Source Serif Pro", serif;
+    font-size: 30px;
+}
+
+h2{
+    font-family: "Source Serif Pro", serif;
+    font-size: 28px;
+}
+
+h3{
+    font-family: "Source Serif Pro", serif;
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: #222222;
+    margin: 0;
+}
+
+p{
+    font-family: Raleway, serif;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+/* Mise en page */
+body{
+    margin: 0 0 10px 0;
+    background-color: #FAFAFA;
+    color: #222222;
+    height: 100vh;
+    width: calc(100vw - 10px);
+    overflow-x: hidden;
+    min-width: 1100px;
+    min-height: 700px;
+}
+
+.Inscription{
+    display: none;
+
+}
+
+
+
+.active{
+    display: block;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: calc(100vw - 10px);
+    height: 100vh;
+    background-color: #222222D8;
+    overflow: hidden;
+}
+
+
+
+/* Module Inscription */
+.module-inscription{
+    position: relative;
+    top:50%;
+    left: 50%;
+    width: 40%;
+    height: max-content;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    background-color: #222222;
+}
+.module-inscription>button{
+    background-color: #157E1C;
+    width: 50%;
+    height: 50px;
+    border: 1px solid #157E1C;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    font-family: "Source Serif Pro",serif;
+    font-size: 24px;
+    color: #FAFAFA;
+}
+
+
+.module-inscription>h2{
+    color: #FAFAFA;
+    font-family: "Source Serif Pro", serif;
+    font-size: 50px;
+    margin: 50px 0 30px;
+}
+
+.module-inscription>h6{
+    color: #FAFAFA;
+    font-family: "Source Serif Pro", serif;
+    font-size: 25px;
+    margin: 50px 0 20px;
+}
+
+#formulaire>label>input{
+    width: 50%;
+    height: 25px;
+    margin-bottom: 20px;
+    background-color: #555;
+    border: 1px solid #555555;
+    border-radius: 20px;
+    color: #FAFAFA;
+    text-align: center;
+}
+
+
+
+
+/* Header */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    width: calc(100vw - 10px);
+    background-color: #FAFAFA;
+}
+
+header>nav{
+    display: flex;
+}
+
+header>nav>a>img{
+    width: auto;
+    height: 55px;
+    margin: 10px;
+}
+
+header>nav>a:nth-child(2)>h1{
+    margin: 20px 10px;
+}
+
+header>nav>a>h1{
+    margin: 0;
+}
+
+header>nav>a>h3{
+    margin: 30px 20px 0 20px;
+}
+
+.titre-actif{
+    border-bottom: 4px solid #222222;
+}
+
+button.inscription{
+    background-color: #157E1CD8;
+    border: #157E1C;
+    border-radius: 25px;
+    height: 50px;
+    width: 200px;
+    font-family: "Source Serif Pro",serif;
+    font-size: 20px;
+    color: #FAFAFA;
+    margin: auto 10px auto auto;
+    position: relative;
+}
+
+
+/* Accueil */
+.accueil,
+.fonctionnalite{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(25, 1fr);
+    grid-template-rows: 82px repeat(24, 1fr);
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.PageContact{
+    display: grid;
+    height: 110vh;
+    grid-template-columns: repeat(25, 1fr);
+    grid-template-rows: 82px repeat(24, 1fr);
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.accueil>img{
+    height: calc(84vh - 75px);
+    grid-column: 16/21;
+    grid-row: 5/12;
+}
+
+.accueil-texte{
+    grid-column: 3/11;
+    grid-row: 4/24;
+}
+
+
+/* BOUTON carte de jeu*/
+
+.rejoins-nous{
+    background-color: #FAFAFA;
+    border: #29a7f5 8px solid;
+    grid-column: 2/5;
+    height: 268px;
+    text-align: center;
+    border-radius: 12px;
+    margin-left: calc((100% - 175px * 2 - 4 * 8px - 30px)/2);
+    box-shadow: 0 0 50px #222222AA;
+}
+
+.rejoins-nous>img{
+    width: 175px;
+    height: auto;
+}
+
+.titre-carte{
+    display: flex;
+}
+
+.titre-carte>img{
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+}
+
+.titre-carte>a{
+    font-family: "Source Serif Pro", serif;
+    text-align: center;
+    width: 100%;
+    font-size: 15px;
+}
+
+.decouvrir-plus{
+    background-color: #FAFAFA;
+    border: #DB0000 8px solid;
+    width: 175px;
+    height: 268px;
+    text-align: center;
+    border-radius: 12px;
+    margin-left: 20px;
+    box-shadow: 0 0 50px #222222AA;
+}
+
+
+.decouvrir-plus>img{
+    width: 175px;
+    height: auto;
+}
+
+.boutons{
+    display: flex;
+    text-align: center;
+}
+
+.decouvrir-plus:hover{
+    transform: translatey(-20px);
+    transition: ease-in 0.5s;
+}
+
+.rejoins-nous:hover{
+    transform: translatey(-20px);
+    transition: ease-in 0.5s;
+}
+
+.blue{
+    color: #29a7f5;
+}
+
+.red{
+    color: #DB0000;
+}
+
+
+
+
+
+
+/* fonctionnalites */
+.fonctionnalite>div>div{
+    display: grid;
+    height: 85vh;
+    grid-template-columns: repeat(25, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    padding: 0;
+    grid-gap: 5px;
+    overflow-y: inherit;
+}
+
+.slider{
+    width: calc(100vw - 10px);
+    height: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    margin: 0;
+    display: flex;
+    padding: 0;
+    grid-column: 1/26;
+    grid-row: 2/25;
+}
+
+
+
+.nav-slide{
+    grid-column: 1/26;
+    grid-row: 25/26;
+    display: flex;
+    text-align: center;
+    width: 100%;
+    background-color: #157E1C;
+}
+
+.nav-slide>a{
+    width: 20%;
+    color: #FAFAFA;
+}
+
+.nav-slide>a>h3{
+    font-family: "Source Serif Pro", serif;
+}
+
+.slider>*{
+    box-sizing: border-box;
+    width: calc(100vw - 10px);
+    flex: none;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    padding: 0;
+    text-align: left;
+    overflow-y: scroll;
+}
+
+
+
+/* Slide livret règles*/
+.regle{
+    background-image: url("img/Landing-page/jeu.jpeg");
+    background-size: cover;
+}
+
+.regle-texte{
+    display: flex;
+    grid-column: 1/26;
+    grid-row: 9/12;
+    min-height: max-content;
+    margin: 0;
+    text-align: right;
+    color: #F2F2F2;
+    background-color: #157E1CD8;
+}
+
+.regle-texte>h2,
+.regle-texte>p{
+    width: 100%;
+    margin: auto 20px auto 0;
+}
+
+.regle-texte>h2{
+    font-size: 60px;
+    text-align: center;
+    margin: auto 0;
+}
+
+
+/* Slide Matériel*/
+.materiel{
+    background-image: url("img/Landing-page/ludothequepaysage.jpeg");
+    background-size: cover;
+}
+
+.materiel-titre{
+    grid-column: 1/10;
+    grid-row: 1/2;
+    text-align: center;
+    font-size: 40px;
+    color: #F2F2F2;
+    background-color: #157E1CD8;
+}
+
+.materiel-texte-tel{
+    grid-column: 5/9;
+}
+
+.materiel-img-tel{
+    height: 60vh;
+    grid-column: 3/9;
+    grid-row: 3/13;
+}
+
+.materiel-texte-jeux{
+    grid-column: 14/18;
+}
+
+.materiel-img-jeux{
+    background-image: url("img/Landing-page/pile-de-jeux.png");
+    background-size: cover;
+    background-position: center;
+    grid-column: 10/17;
+    grid-row: 3/12;
+    background-color: #FFFFFFD8;
+}
+
+.materiel-texte-amis{
+    grid-column: 22/26;
+}
+
+.materiel-texte-amis,
+.materiel-texte-jeux,
+.materiel-texte-tel{
+    grid-row: 11/12;
+    text-align: center;
+    font-size: 25px;
+    margin: 5px 0;
+    padding: 5px 0 ;
+    background-color: #F2CB05;
+    color: #222222;
+    font-family: "Source Serif Pro", serif;
+    font-weight: bold;
+}
+
+.materiel-img-amis{
+    height: 60vh;
+    grid-column: 20/26;
+    grid-row: 3/13;
+}
+
+
+/* Slide But du jeu*/
+.but{
+    background-image: url("img/Landing-page/ludothequepaysage.jpeg");
+    background-size: cover;
+}
+.but-titre{
+    grid-column: 1/10;
+    grid-row: 1/2;
+    text-align: center;
+    font-size: 40px;
+    color: #F2F2F2;
+    background-color: #157E1CD8;
+
+}
+
+.but-site{
+    grid-column: 2/11;
+    grid-row: 3/12;
+    background-color: #F2F2F2D8;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    text-align: center;
+}
+
+.but-fct{
+    grid-column: 14/23;
+    grid-row: 3/12;
+    background-color: #F2F2F2;
+    padding: 10px;
+}
+
+.but-site>p{
+    margin: 0;
+    padding: 5px;
+}
+
+.but-fct>p{
+    margin: 0;
+    padding: 0;
+}
+
+.but-site-img{
+    height: 100%;
+    grid-column: 9/14;
+    grid-row: 5/13;
+
+}
+
+.but-fct-img{
+    height: 100%;
+    grid-column: 21/25;
+    grid-row: 5/13;
+}
+
+/* But Site Disposition */
+.but-site>img{
+    height: 20%;
+}
+
+.but-site>p:first-child{
+    grid-column: 1/10;
+    grid-row: 1/3;
+}
+
+.but-site>.groupe-img{
+    grid-column: 2/4;
+    grid-row: 2/4;
+}
+
+.but-site>.jeux-img{
+    grid-column: 2/4;
+    grid-row: 5/7;
+}
+
+.but-site>.temps-img{
+    grid-column: 2/4;
+    grid-row: 8/10;
+}
+
+.but-site>.but-texte-groupe{
+    grid-column: 3/6;
+    grid-row: 3/4;
+    background-color: #F2CB05D8;
+}
+
+.but-site>.but-texte-jeux{
+    grid-column: 3/6;
+    grid-row: 6/7;
+    background-color: #DB0000D8;
+    color: #F2F2F2;
+}
+.but-site>.but-texte-temps{
+    grid-column: 3/6;
+    grid-row: 9/10;
+    background-color: #29a7f5D8;
+}
+
+
+
+
+
+/* Slide Mise en place */
+.mise-en-place{
+    background-image: url("img/Landing-page/installationjeux.jpeg");
+    background-size: cover;
+}
+
+.mise-en-place-titre{
+    grid-column: 1/10;
+    grid-row: 1/2;
+    text-align: center;
+    font-size: 40px;
+    color: #F2F2F2;
+    background-color: #157E1CD8;
+
+}
+
+.mise-en-place-texte{
+    grid-column: 2/25;
+    grid-row: 2/12;
+    background-color: #F2F2F2D8;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: repeat(5, 10px 1fr) 10px;
+    height: max-content;
+}
+
+.de{
+    width: 40px;
+    margin: auto 0;
+}
+
+/* Div des position */
+.deun{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin: 0 auto;
+}
+
+.dedeux{
+    grid-column: 1/2;
+    grid-row: 4/5;
+    margin: 0 auto;
+}
+
+.detrois{
+    grid-column: 1/2;
+    grid-row: 6/7;
+    margin: 0 auto;
+}
+
+.dequatre{
+    grid-column: 1/2;
+    grid-row: 8/9;
+    margin: 0 auto;
+}
+
+.decinq{
+    grid-column: 1/2;
+    grid-row: 10/11;
+    margin: 0 auto;
+}
+
+.texteun{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 100%;
+}
+
+.textedeux{
+    grid-column: 2/3;
+    grid-row: 4/5;
+    width: 100%;
+}
+
+.textetrois{
+    grid-column: 2/3;
+    grid-row: 6/7;
+    width: 100%;
+}
+
+.textequatre{
+    grid-column: 2/3;
+    grid-row: 8/9;
+    width: 100%;
+}
+
+.textecinq{
+    grid-column: 2/3;
+    grid-row: 10/11;
+    width: 100%;
+}
+
+
+
+
+
+/* Slide Déroulement du jeu */
+.deroulement{
+    background-image: url("img/Landing-page/deroulementjeu.jpeg");
+    background-size: cover;
+    position: relative;
+    top: calc(82 + 1fr);
+}
+
+.deroulement-titre{
+    grid-column: 1/10;
+    grid-row: 1/2;
+    text-align: center;
+    font-size: 40px;
+    color: #F2F2F2;
+    background-color: #157E1CD8;
+}
+
+.deroulement-texte{
+    grid-column: 2/13;
+    grid-row: 2/12;
+    background-color: #F2F2F2D8;
+    margin: 0;
+}
+
+.deroulement-texte>p{
+    margin: 10px;
+}
+
+.fin-texte,
+.note-deroulement,
+.PS-deroulement{
+    padding: 10px;
+    margin: 0;
+}
+
+.deroulement-texte>ul{
+    margin: 0;
+}
+
+.info-sup-deroulement{
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    grid-gap: 5px;
+    grid-column: 2/25;
+    grid-row: 6/12;
+    height: 100%;
+}
+
+.note-deroulement{
+    background-color: #f2cb05D8;
+    margin: 0;
+    grid-column: 14/19;
+    grid-row: 6/12;
+    height: calc(100% - 20px);
+}
+
+.PS-deroulement{
+    background-color: #29A7F5D8;
+    grid-column: 20/25;
+    grid-row: 6/12;
+    height: calc(100% - 20px);
+}
+
+.fin-titre{
+    grid-column: 17/26;
+    grid-row: 1/2;
+    text-align: center;
+    font-size: 40px;
+    color: #F2F2F2;
+    background-color: #157E1CD8;
+}
+
+.fin-texte{
+    grid-column: 14/25;
+    grid-row: 2/5;
+    background-color: #F2F2F2D8;
+    margin: 0;
+}
+
+
+
+
+
+/* A propos */
+.pres{
+    display: grid;
+    position: relative;
+    width: calc(100vw - 10px);
+    height: 80vh;
+    grid-template-columns: repeat(3, 1fr 350px) 1fr;
+    grid-template-rows: 504px 40px 10vh;
+    text-align: center;
+    margin: auto 0;
+
+}
+
+.qui-sommes-nous,
+.contact{
+    position: relative;
+    background-image: url("img/Landing-page/ludothequepaysage.jpeg");
+    background-size: cover;
+}
+
+.qui-sommes-nous{
+    overflow-y: scroll;
+}
+
+.titre-contact{
+    position: relative;
+    left: 0;
+    background-color: #157E1CD8;
+    color: #F2F2F2;
+    text-align: center;
+    width: 33%;
+}
+
+.Nathan{
+    border: #F2CB05 solid 20px;
+    border-radius: 15px;
+    background-color: #222222;
+    width: 310px;
+    height: 474px;
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: repeat(25, 1fr);
+    grid-template-rows: repeat(50, 1fr);
+    color: #F2F2F2;
+}
+
+/* Position Nathan */
+.Nathan>div{
+    background-color: #F2CB05;
+    grid-column: 1/27;
+    grid-row: 23/28;
+    text-align: center;
+}
+
+.Nathan>div>h3{
+    padding: 10px;
+    margin: 0;
+    color: #222222;
+    height: calc(100% - 20px);
+    font-size: 25px;
+}
+
+.Nathan-logo{
+    width: 100%;
+    grid-column: 7/20;
+    grid-row: 5/21;
+}
+
+.fond-spe-Nathan{
+    grid-column: 2/4;
+    grid-row: 3/4;
+
+}
+
+.Nathan>p{
+    grid-column: 2/25;
+    grid-row: 28/49;
+    text-align: left;
+}
+
+
+
+.Raph{
+    border: #157E1C solid 20px;
+    border-radius: 15px;
+    background-color: #222222;
+    grid-column: 4/5 ;
+    width: 310px;
+    height: 474px;
+    display: grid;
+    grid-template-columns: repeat(25, 1fr);
+    grid-template-rows: repeat(50, 1fr);
+    color: #F2F2F2;
+}
+
+/* Position Raph */
+.Raph>div{
+    background-color: #157E1C;
+    grid-column: 1/27;
+    grid-row: 23/28;
+    text-align: center;
+}
+
+.Raph>div>h3{
+    padding: 10px;
+    margin: 0;
+    color: #F2F2F2;
+    height: calc(100% - 20px);
+    font-size: 25px;
+}
+
+.Raph-logo{
+    width: 100%;
+    grid-column: 7/20;
+    grid-row: 5/21;
+}
+
+.fond-spe-Raph{
+    width: 100%;
+    grid-column: 1/5;
+    grid-row: 1/5;
+    background-color: #157E1C;
+    border: #157E1C solid 3px;
+    border-radius: 0 0 40px 0;
+}
+
+.Raph>p{
+    grid-column: 2/24;
+    grid-row: 28/49;
+    text-align: left;
+}
+
+
+
+.Benoit {
+    border: #DB0000 solid 20px;
+    border-radius: 15px;
+    background-color: #222222;
+    grid-column: 6/7;
+    width: 310px;
+    height: 474px;
+    display: grid;
+    grid-template-columns: repeat(25, 1fr);
+    grid-template-rows: repeat(50, 1fr);
+    color: #F2F2F2;
+}
+
+/* Position Benoit */
+.Benoit>div{
+    background-color: #DB0000;
+    grid-column: 1/27;
+    grid-row: 23/28;
+    text-align: center;
+}
+
+.Benoit>div>h3{
+    padding: 10px;
+    margin: 0;
+    color: #F2F2F2;
+    height: calc(100% - 20px);
+    font-size: 25px;
+}
+
+.Benoit-logo{
+    width: 100%;
+    grid-column: 7/20;
+    grid-row: 5/21;
+}
+
+.fond-spe-Benoit{
+    width: 100%;
+    grid-column: 1/5;
+    grid-row: 1/5;
+    background-color: #DB0000;
+    border: #DB0000 solid 3px;
+    border-radius: 0 0 40px 0;
+}
+
+.Benoit>p{
+    grid-column: 2/24;
+    grid-row: 28/49;
+    text-align: left;
+}
+
+/* Logos spé */
+.logo-spe{
+    width: 100%;
+}
+
+/* équipe QuaeLudo */
+.equipe{
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    background-color: #222222d8;
+    margin: 0 auto;
+    display: flex;
+    grid-column: 3/6;
+    grid-row: 3/4;
+    text-align: center;
+    border: 10px solid #157E1C;
+    border-right-color: #DB0000;
+    border-bottom-color: #F2CB05;
+    border-left-color: #29a7f5;
+}
+
+.equipe>h2{
+    width: 100%;
+    color: #F2F2F2;
+    font-size: 5vh;
+    margin: 1vh 0;
+}
+
+
+/* Contact */
+.contact{
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    top: 10vh;
+    background-image: url("img/Landing-page/ludothequepaysage.jpeg");
+    background-size: cover;
+    grid-column: 1/26;
+    grid-row: 2/13;
+}
+
+.moyen-de-contact{
+    text-align: center;
+    width: 50%;
+    background-color: #F2F2F2D8;
+    color: #222222;
+    margin: 0 auto 50px;
+    border: 10px solid #157E1C;
+    border-right-color: #DB0000;
+    border-bottom-color: #F2CB05;
+    border-left-color: #29a7f5;
+
+}
+
+.mailto>h2,
+.Postale>h2{
+    color: #222222;
+    font-size: 40px;
+}
+
+.mailto>a,
+.Postale>p{
+    color: #333333;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+
+
+
+/* Footer */
+footer{
+    width: 100vw;
+    height: max-content;
+    background-color: #222222;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.tableau-footer{
+    display: flex;
+    color: #FAFAFA;
+}
+
+.menu-footer>a>h1,
+.menu-footer>a>h3,
+.mailto-footer>a,
+.text-mentions-legales>p,
+.text-mentions-legales>p>a{
+    color: #FAFAFA;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Source Serif Pro", serif;
+}
+
+.menu-footer,
+.mailto-footer,
+.reseaux-footer{
+    width: 100%;
+}
+
+.reseaux-footer-ligne{
+    display: flex;
+    width: 100%;
+    text-align: center;
+}
+.reseaux-footer>div>a{
+    margin: auto;
+}
+
+.reseaux-footer>div>a>img{
+    width: 75px;
+    height: auto;
+    color: #FAFAFA;
+    margin: auto;
+}
+
+.mentions-legales{
+    display: flex;
+    width: 100%;
+}
+
+.mentions-legales>img{
+    width: 200px;
+    height: auto;
+    margin: auto 20px ;
+}
+
+.mentions-legales>.text-mentions-legales{
+    width: 100%;
+    max-width: max-content;
+}

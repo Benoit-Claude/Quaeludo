@@ -1,0 +1,178 @@
+/* Font Titre*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+/* Font Texte */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Typographie Générale */
+h1, h2, h3, h4, h5, h6{
+    font-family: "Source Serif Pro", sans-serif;
+}
+
+h1{
+    font-size: 28px;
+    color: #222222;
+    text-align: center;
+}
+
+h2{
+    font-size: 24px;
+    color: #222222;
+    text-align: center;
+}
+
+h3{
+    font-size: 20px;
+    color: #222222;
+}
+
+h4{
+    font-size: 18px;
+    color: #222222;
+}
+
+h5{
+    font-size: 16px;
+    color: #222222;
+}
+
+h6{
+    font-size: 15px;
+    font-weight: lighter;
+    color: #FAFAFA;
+}
+
+p, a, li{
+    font-family: Raleway, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    text-decoration: none;
+    color: #222222;
+}
+
+.hr-titre{
+    width: 40%;
+    border: #222222 1px solid;
+}
+
+
+/* Form */
+input[type="text"],
+input[type="password"],
+input[type="date"]{
+    font-style: italic;
+}
+
+
+/* Couleur typographie */
+.typo-red{
+    color: #DB0000;
+}
+
+.typo-green{
+    color: #268F2D;
+}
+
+.typo-blackgrey{
+    color: #222222;
+}
+
+.typo-grey{
+    color: #333333;
+}
+
+.typo-whitegrey{
+    color: #777777;
+}
+
+.typo-white{
+    color: #FAFAFA;
+}
+
+.typo-yellow{
+    color: #F2CB05;
+}
+
+.typo-blue{
+    color: #29a7f5;
+}
+
+
+
+/* Typographie Spécifique */
+/* Header */
+header>div>div>a{
+    font-family: "Source Serif Pro", sans-serif;
+    font-size: 24px;
+    color: #FAFAFA;
+}
+
+
+
+/* Footer */
+footer>section>section>h3,
+footer>section>section>a,
+footer>p,
+footer>p>a{
+    color: #FAFAFA;
+}
+
+/* Menu bas de Page */
+.Menu-bas-page>div>a{
+    color: #FAFAFA;
+    font-size: 11px;
+}
+
+
+
+/* Accueil */
+.bouton>a{
+    font-size: 20px;
+}
+
+.section-pub>p{
+    font-style: italic;
+}
+
+
+/* Contact */
+.section-p{
+    text-align: left;
+    padding: 20px 0;
+}
+
+.section-p>p>a{
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Page Mentions légales*/
+.section-CGU>p:first-of-type,
+.MentionsLegales>section>p>a{
+    font-style: italic;
+}
+
+.MentionsLegales>section{
+    text-align: center;
+}
+
+.MentionsLegales>section>p,
+.MentionsLegales>section>ul>li{
+    text-align: left;
+}
+
+/* Inscription */
+.Page-Inscription>div>section>form>label.label-casementionlegale,
+.Page-Inscription>div>section>form>label.label-casementionlegale>a{
+    font-size: 10px;
+    font-style: italic;
+}
+
+/* Ludothèques */
+.Ajout-ludotheque>h5{
+    font-size: 30px;
+    color: #FAFAFA;
+}
+
+.Ajout-ludotheque>p{
+    font-size: 20px;
+}

@@ -1,0 +1,26 @@
+/* Section lien affilié */
+.section-pub{
+    padding-bottom: 0;
+}
+.lienaffiliepub{
+    display: flex;
+    overflow-x: hidden;
+}
+
+
+/* Contact */
+.section-Nathan>div,
+.section-Raphael>div,
+.section-Benoit>div{
+    text-align: center;
+}
+
+/* Mentions Légales*/
+.section-CGU>h1{
+    margin-bottom: 0;
+}
+
+.section-CGU>p{
+    margin-bottom: 0;
+    padding: 0;
+}

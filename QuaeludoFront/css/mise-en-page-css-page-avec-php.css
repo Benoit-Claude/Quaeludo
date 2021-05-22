@@ -1,0 +1,224 @@
+/* Choix du jeu */
+.Page-choixdujeu{
+    overflow-y: hidden;
+}
+
+.Page-choixdujeu>div>section{
+    height: calc(100vh - 80px);
+    padding: 0;
+}
+
+.Page-choixdujeu>div>section{
+    text-align: center;
+}
+
+
+/* Inscription */
+.Page-Inscription>div{
+    text-align: center;
+}
+
+.Page-Inscription>div>section>form>label>input{
+    width: calc(100% - 10px);
+    height: 30px;
+    margin: 10px 0;
+    border-radius: 20px;
+    border: #d0cff8;
+}
+
+input[placeholder]{
+    padding-left: 10px;
+}
+
+.Page-Inscription>div>section>form{
+    padding-inline: 10%;
+    text-align: left;
+}
+
+/* Compte */
+.Compte>.section-image-haut-page{
+    background-image: url("../images/Jeux/Image 4.png");
+
+}
+
+.section-image-haut-page>.section-compte-image-compte{
+    background-color: #FAFAFA;
+    border: #222222 solid 1px;
+    border-radius: 75px;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+}
+
+.section-image-haut-page>.section-compte-image-compte>img{
+    width: 75%;
+    height: auto;
+    margin-top: 12.5%;
+}
+
+.section-compte>div{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-compte>div>*{
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    bottom: 0;
+}
+
+.section-compte>h3{
+    margin: 0 10px 20px;
+
+}
+
+.section-compte{
+    padding: 0;
+    margin: 5px 0 20px;
+}
+
+/* Ludothèques */
+.Ajout-ludotheque{
+    background-color: #222222DD;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 150px;
+    text-align: left;
+    padding-left: 10%;
+}
+
+.Ajout-ludotheque>h5{
+    margin: 60px 0 0;
+    padding: 0;
+}
+
+.Ajout-ludotheque>p{
+    margin: 0;
+}
+
+.section-liste-choix {
+    display: flex;
+    background-color: #FFFFFF;
+    padding: 10px;
+    width: calc(100% - 20px);
+}
+
+
+.section-liste-choix>img{
+    width: 60px;
+}
+
+.section-liste-choix>svg{
+    width: 30px;
+    margin: auto 0 auto 20px;
+}
+
+.section-liste-choix>.info-nom-ludo{
+    width: 100%;
+}
+
+.section-liste-choix:nth-of-type(2n){
+    background-color: #777777;
+}
+
+.fleche{
+    height: 19px;
+    width: auto;
+    margin: auto 10px auto auto;
+}
+
+
+.info-nom-ludo>h3{
+    margin: 0 10px 0 10px;
+}
+
+.info-ludo{
+    display: flex;
+    margin-left: 10px;
+}
+
+.info-ludo>p{
+    width: 100%;
+    text-align: left;
+    margin: 0 10px 0 0;
+}
+
+
+.section-liste-choix>hr{
+    width: 100%;
+}
+
+.liste{
+    padding: 0;
+}
+
+.legende-section-choix{
+    width: 100%;
+    display: flex;
+    text-align: left;
+}
+
+.legende-section-choix>p:first-of-type{
+    width: 60px;
+    margin: 0 0 0 10px;
+}
+
+.legende-section-choix>p:last-of-type{
+    width: calc(100% - 100px);
+    margin: 0 0 0 10px;
+}
+
+/* Groupes */
+.section-liste-choix>div>h3{
+    text-align: left;
+}
+
+/* Ludotheque */
+.infos-ludotheque{
+    width: calc(100% - 40px);
+    margin: 10px 20px 0;
+}
+
+.info-ludotheque{
+    display: flex;
+}
+
+.info-ludotheque>*{
+    width: 50%;
+    margin: 0;
+}
+
+.info-proprio>*{
+    margin: 0;
+}
+
+.info-nom-jeu{
+
+}
+
+.recherche{
+    width: calc(100% - 40px);
+    margin: 0 20px 20px;
+    display: flex;
+}
+
+.recherche>input{
+    width: 85%;
+    height: 40px;
+    border-radius: 20px 0 0 20px;
+}
+
+.recherche>button{
+    width: 15%;
+    height: 40px;
+    border-radius: 0 20px 20px 0;
+}
+
+.recherche>*{
+    border: none;
+}
