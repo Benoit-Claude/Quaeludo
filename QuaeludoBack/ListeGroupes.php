@@ -4,7 +4,7 @@
 
     //Création objet PDO
     $pdo = new PDO(
-        'mysql:host=localhost;port=8888;dbname=QuaeLudo;charset=utf8',
+        'mysql:host=localhost;port=3306;dbname=quaeludo;charset=utf8',
         'root',
         'root'
     );
@@ -34,6 +34,6 @@ if($requete->execute()){
 }else{
     echo 'Requete failed';
 }
-/*echo "<pre>";
+echo "<pre>";
 print_r($listeGroupes);
-echo "</pre>";*/
+echo "</pre>";
