@@ -117,7 +117,7 @@
                 <h3>Contact</h3>
                 <a href="mailto:quaeludo@gmail.com">Mail</a>
                 <br>
-                <a href="Contact.html">À propos</a>
+                <router-link to="Contact" >À propos</router-link>
             </section>
         </section>
         <section class="footer-logos-reseaux">
@@ -129,7 +129,7 @@
 
         <img src="images/Logo/logo.png" class="Logo-footer" alt="Logo QuaeLudo">
 
-        <p><a href="MentionsLegales.html">Mentions légales</a> - <a href="MentionsLegales.html">Confidentialité</a></p>
+        <p><router-link to="Mentionslegales">Mentions légales</router-link> - <router-link to="Mentionslegales">Confidentialité</router-link></p>
     </footer>
 
 </div>
@@ -144,6 +144,7 @@
     <script src="pages/contact.vue.js"></script>
     <script src="pages/choixdujeu.vue.js"></script>
     <script src="pages/jeux.vue.js"></script>
+    <script src="pages/mentionslegales.vue.js"></script>
 
     <script>
         // Les routages / navigation de l'application
@@ -157,6 +158,7 @@
             {path: '/contact',	    name:"Contact",	    component:Contact},
             {path: '/choixdujeu',	name:"ChoixDuJeu",	component:ChoixDuJeu},
             {path: '/choixdujeu',	name:"Jeux",	    component:Jeux},
+            {path: '/mentionslegales',	name:"Mentionslegales",	    component:Mentionslegales},
         ]
 
         // Initialisation du router

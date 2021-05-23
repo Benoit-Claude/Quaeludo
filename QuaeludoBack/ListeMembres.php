@@ -6,7 +6,7 @@ echo "1";
 
     //Création objet PDO
 $pdo = new PDO(
-    'mysql:host=localhost;port=8888;dbname=QuaeLudo;charset=utf8',
+    'mysql:host=localhost;dbname=quaeludo;charset=utf8',
     'root',
     'root'
 );
