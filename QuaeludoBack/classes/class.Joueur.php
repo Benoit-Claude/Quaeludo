@@ -16,6 +16,7 @@ class Joueur{
      * @param int $datenaissance
      * @param null $adressemail
      * @param null $mdp
+
      */
     public function __construct($pseudo, $nom, $prenom, $datenaissance, $adressemail, $mdp){
         $this->pseudo = $pseudo;
@@ -28,7 +29,13 @@ class Joueur{
 
 
     public function inscription(){
-        $pdo = new PDO('mysql:host=localhost;dbname=quaeludo','root','root');
+        $pdo = new PDO(
+            'mysql:host=2y5qe.myd.infomaniak.com;port=3306;dbname=2y5qe_quaeludo;charset=utf8',
+            '2y5qe_wp',
+            'Hunt3rs_FR-56');
+
+
+
         $req = $pdo->prepare("INSERT INTO JOUEUR(pseudo, nom, prenom, datenaissance, adressemail, mdp) VALUES (:pseudo, :nom, :prenom, :datenaissance, :adressemail, :mdp)");
         $req->execute(
             array(
@@ -40,5 +47,7 @@ class Joueur{
                 ":mdp" => $this->mdp
             )
         );
+
+
     }
 }
