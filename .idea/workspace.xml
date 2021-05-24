@@ -19,12 +19,21 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1606b1d-e965-42fd-9db2-f2aa1ad6367f" name="Default Changelist" comment="get groupe">
+    <list default="true" id="b1606b1d-e965-42fd-9db2-f2aa1ad6367f" name="Default Changelist" comment="correction des fichiers classe er d'autres fichiers">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoBack/classes/class.Categorie.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/classes/class.Categorie.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuaeludoBack/ListeGroupes.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/ListeGroupes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuaeludoBack/ListeLudotheques.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/ListeLudotheques.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuaeludoBack/ListeMembres.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/ListeMembres.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QuaeludoBack/classes/class.Groupe.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/classes/class.Groupe.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuaeludoBack/classes/class.Jeux.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/classes/class.Jeux.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QuaeludoBack/classes/class.Joueur.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/classes/class.Joueur.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QuaeludoBack/classes/class.Ludotheque.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/classes/class.Ludotheque.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuaeludoBack/getGroupe.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/getGroupe.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuaeludoBack/listeCategorie.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/listeCategorie.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuaeludoFront/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/accueil.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/pages/accueil.vue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/choixdujeugroupe.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/pages/choixdujeugroupe.vue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/choixdujeutempsjeu.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/pages/choixdujeutempsjeu.vue.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +66,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -75,6 +90,7 @@
       <workItem from="1621715421931" duration="543000" />
       <workItem from="1621764355814" duration="1451000" />
       <workItem from="1621775197191" duration="444000" />
+      <workItem from="1621850053319" duration="1989000" />
     </task>
     <task id="LOCAL-00001" summary="ajout page mentionslegales.vue.js">
       <created>1621765599329</created>
@@ -111,38 +127,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ajout page mentionslegales.vue.js" />
     <MESSAGE value="get groupe" />
-    <option name="LAST_COMMIT_MESSAGE" value="get groupe" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="2646" y="327" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1621680626250">
-      <screen x="1920" y="0" width="1920" height="1050" />
-    </state>
-    <state x="2646" y="327" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1920.1050/0.0.1920.1050@1920.0.1920.1050" timestamp="1621680626250" />
-    <state x="92" y="92" width="1736" height="866" key="DiffContextDialog" timestamp="1621781858226">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="92" y="92" width="1736" height="866" key="DiffContextDialog/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1621781858226" />
-    <state x="2758" y="423" key="Github.ShareDialog" timestamp="1621715467008">
-      <screen x="1920" y="0" width="1920" height="1050" />
-    </state>
-    <state x="2758" y="423" key="Github.ShareDialog/1920.0.1920.1050/0.0.1920.1050@1920.0.1920.1050" timestamp="1621715467008" />
-    <state x="2633" y="230" key="Github.UntrackedFilesDialog" timestamp="1621715476726">
-      <screen x="1920" y="0" width="1920" height="1050" />
-    </state>
-    <state x="2633" y="230" key="Github.UntrackedFilesDialog/1920.0.1920.1050/0.0.1920.1050@1920.0.1920.1050" timestamp="1621715476726" />
-    <state x="2104" y="87" key="MergeDialog" timestamp="1621775530219">
-      <screen x="1920" y="0" width="1920" height="1050" />
-    </state>
-    <state x="2104" y="87" key="MergeDialog/1920.0.1920.1050/0.0.1920.1050@1920.0.1920.1050" timestamp="1621775530219" />
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1621783468207">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="552" y="258" key="Vcs.Push.Dialog.v2/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1621783468207" />
-    <state x="2472" y="258" key="Vcs.Push.Dialog.v2/1920.0.1920.1050/0.0.1920.1050@1920.0.1920.1050" timestamp="1621765604257" />
-    <state x="777" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1621783509622">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="777" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1621783509622" />
-    <state x="2697" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1920.1050/0.0.1920.1050@1920.0.1920.1050" timestamp="1621775507396" />
+    <MESSAGE value="correction des fichiers classe er d'autres fichiers" />
+    <option name="LAST_COMMIT_MESSAGE" value="correction des fichiers classe er d'autres fichiers" />
   </component>
 </project>

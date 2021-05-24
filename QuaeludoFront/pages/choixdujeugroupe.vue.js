@@ -6,7 +6,7 @@ var ChoixDuJeuGroupe = Vue.component('ChoixDuJeuGroupe',{
                 <h1 class="typo-green">Avec qui ?</h1>
             </div>
             <div>
-                <div class="carte">
+                <div class="carte" v-for="groupe in listeGroupes" :key="groupe.id">
                     <div class="carte-logo">
                         <div class="carte-logo-gauche">
                             <img class="logo-carte1" src="images/Logo/logo.png" alt="logo">
@@ -25,10 +25,16 @@ var ChoixDuJeuGroupe = Vue.component('ChoixDuJeuGroupe',{
     `,
     data(){
         return{
+            listeGroupes:[]
         }
     },
     mounted(){
-
+        axios.get('')
+            // Réponse promise et récupération des résultats
+            .then(response => {
+                this.listeGroupes = response.data;
+                console.log("listeGroupes = ", this.listeGroupes);
+            })
     },
     methods:{
 

@@ -1,33 +1,31 @@
 <?php
+header("Access-Control-Allow-Origin: *");
 
-class ludotheque implements JsonSerializable {
-    private $id = 0;
-    private $nom = null;
-    private $description = null;
+class ludotheque implements JsonSerializable{
+    private $idludo = 0;
+    private $nomludo = null;
+    private $imageludo = null;
+    private $descriptionludo = null;
+    private $idjoueur = null;
 
     /**
-     * Groupe constructor.
-     * @param int $id
-     * @param null $nom
-     * @param null $description
+     * ludotheque constructor.
+     * @param int $idludo
+     * @param null $nomludo
+     * @param null $imageludo
+     * @param null $descriptionludo
+     * @param null $idjoueur
      */
-    public function __construct($id, $nom, $description){
-        $this->id = $id;
-        $this->nom = $nom;
-        $this->description = $description;
+    public function __construct($idludo, $nomludo, $imageludo, $descriptionludo, $idjoueur)
+    {
+        $this->idludo = $idludo;
+        $this->nomludo = $nomludo;
+        $this->imageludo = $imageludo;
+        $this->descriptionludo = $descriptionludo;
+        $this->idjoueur = $idjoueur;
     }
-
-    public function getId()		        {return $this->id;}
-    public function getNom()            {return $this->nom;}
-    public function getDescription()    {return $this->description;}
-
-    public function setId($id)		                {$this->id = $id;}
-    public function setNom($nom)	                {$this->nom = $nom;}
-    public function setDescription($description)	{$this->description = $description;}
 
     public function jsonSerialize(){
         return get_object_vars($this);
     }
-
-
 }

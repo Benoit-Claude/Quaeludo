@@ -27,6 +27,7 @@ var ChoixDuJeuTempsJeu = Vue.component('ChoixDuJeuTempsJeu',{
     `,
     data(){
         return{
+
         }
     },
     mounted(){

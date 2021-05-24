@@ -19,7 +19,7 @@
     }
 
     if (isset($_POST['id'])){
-        $sql = "SELECT * FROM groupe WHERE IDGroupe = ? ";
+        $sql = "SELECT * FROM groupe WHERE ID_GROUPE = ? ";
         $requete = $pdo->prepare($sql);
         $requete->bindValue(1, $_POST['id']);
         $groupe = null;

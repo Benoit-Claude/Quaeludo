@@ -8,10 +8,10 @@ let Accueil = Vue.component('Accueil',{
     
                 <div class="carte-logo">
                     <div class="carte-logo-gauche">
-                        <img id="logo-carte1" src="//images/Logo/logo.png" alt="logo">
+                        <img id="logo-carte1" src="images/Logo/logo.png" alt="logo">
                     </div>
                     <div class="carte-logo-droit">
-                        <img id="logo-carte2" src="//images/Logo/logo.png" alt="logo">
+                        <img id="logo-carte2" src="images/Logo/logo.png" alt="logo">
                     </div>
                 </div>
                 <h1 class="typo-green">Nouveauté</h1>

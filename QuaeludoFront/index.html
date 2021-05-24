@@ -44,7 +44,9 @@
         </div>
         <div class="header-logo-nom">
             <div class="header-logo">
-                <a href="Accueil.html"><img src="images/Logo/logo.png" class="logo-header" alt="Logo QuaeLudo"></a>
+                <router-link :to="{name:'Accueil'}">
+                    <img src="images/Logo/logo.png" class="logo-header" alt="Logo QuaeLudo">
+                </router-link>
             </div>
             <div class="header-nom">
                 <router-link :to="{name:'Accueil'}">QuaeLudo</router-link>

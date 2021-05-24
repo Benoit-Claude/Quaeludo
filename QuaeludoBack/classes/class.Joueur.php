@@ -1,48 +1,61 @@
 <?php
+header("Access-Control-Allow-Origin: *");
 
-class Joueur{
-    public $id = 0;
-    public $pseudo = null;
-    public $nom = null;
-    public $prenom = null;
-    public $datenaissance = 0;
-    public $adressemail = null;
-    public $mdp = null;
+class Joueur implements JsonSerializable{
+    private $idjoueur = 0;
+    private $pseudo = null;
+    private $nomjoueur = null;
+    private $prenom = null;
+    private $datenaissance = 0;
+    private $adressemail = null;
+    private $mdp = null;
+    private $imagejoueur = null;
+    private $idcategorie = 0;
 
     /**
      * Joueur constructor.
-     * @param int $id
+     * @param int $idjoueur
      * @param null $pseudo
-     * @param null $nom
+     * @param null $nomjoueur
      * @param null $prenom
      * @param int $datenaissance
      * @param null $adressemail
      * @param null $mdp
-
+     * @param null $imagejoueur
+     * @param int $idcategorie
      */
-    public function __construct($id, $pseudo, $nom, $prenom, $datenaissance, $adressemail, $mdp){
-        $this->id = $id;
+    public function __construct($idjoueur, $pseudo, $nomjoueur, $prenom, $datenaissance, $adressemail, $mdp, $imagejoueur, $idcategorie)
+    {
+        $this->idjoueur = $idjoueur;
         $this->pseudo = $pseudo;
-        $this->nom = $nom;
+        $this->nomjoueur = $nomjoueur;
         $this->prenom = $prenom;
         $this->datenaissance = $datenaissance;
         $this->adressemail = $adressemail;
         $this->mdp = $mdp;
+        $this->imagejoueur = $imagejoueur;
+        $this->idcategorie = $idcategorie;
     }
 
-    public function getId()		        {return $this->id;}
-    public function getPseudo()		    {return $this->pseudo;}
-    public function getNom()            {return $this->nom;}
-    public function getPrenom()         {return $this->prenom;}
-    public function getDatenaissance()  {return $this->datenaissance;}
-    public function getAdressemail()    {return $this->adressemail;}
 
-    public function setId($id)		                {$this->id = $id;}
-    public function setPseudo($pseudo)		        {$this->pseudo = $pseudo;}
-    public function setNom($nom)	                {$this->nom = $nom;}
-    public function setNom($prenom)	                {$this->prenom = $prenom;}
-    public function setDescription($datenaissance)	{$this->datenaissance = $datenaissance;}
-    public function setDescription($adressemail)	{$this->adressemail = $adressemail;}
+    public function getIdjoueur()		  {return $this->idjoueur;}
+    public function getPseudo()		      {return $this->pseudo;}
+    public function getNomjoueur()        {return $this->nomjoueur;}
+    public function getPrenom()           {return $this->prenom;}
+    public function getDatenaissance()    {return $this->datenaissance;}
+    public function getAdressemail()      {return $this->adressemail;}
+    public function getimagejoueur()      {return $this->imagejoueur;}
+    public function getidcategorie()      {return $this->idcategorie;}
+
+    public function setIdjoueur($idjoueur)		            {$this->id = $idjoueur;}
+    public function setPseudo($pseudo)		                {$this->pseudo = $pseudo;}
+    public function setNomjoueur($nomjoueur)	            {$this->nomjoueur = $nomjoueur;}
+    public function setPrenom($prenom)	                    {$this->prenom = $prenom;}
+    public function setDescriptionjoueur($datenaissance)	{$this->datenaissance = $datenaissance;}
+    public function setAdresseMail($adressemail)	        {$this->adressemail = $adressemail;}
+    public function setimagejoueur($imagejoueur)            {$this->imagejoueur = $imagejoueur;}
+    public function setidcategorie($idcategorie)            {$this->idcategorie = $idcategorie;}
+
 
     public function jsonSerialize(){
         return get_object_vars($this);
@@ -51,7 +64,7 @@ class Joueur{
 
 
 
-    public function inscription(){
+    /*public function inscription(){
         $pdo = new PDO(
             'mysql:host=2y5qe.myd.infomaniak.com;port=3306;dbname=2y5qe_quaeludo;charset=utf8',
             '2y5qe_wp',
@@ -59,7 +72,7 @@ class Joueur{
 
 
 
-        $req = $pdo->prepare("INSERT INTO JOUEUR(pseudo, nom, prenom, datenaissance, adressemail, mdp) VALUES (:pseudo, :nom, :prenom, :datenaissance, :adressemail, :mdp)");
+        $req = $pdo->prepare("INSERT INTO joueur(ID, PSEUDO, NOM_JOUEUR, PRENOM, DATENAISSANCE, ADRESSEMAIL, MDP) VALUES (:id, :pseudo, :nom, :prenom, :datenaissance, :adressemail, :mdp)");
         $req->execute(
             array(
                 ":id" => $this->id,
@@ -73,5 +86,5 @@ class Joueur{
         );
 
 
-    }
+    }*/
 }

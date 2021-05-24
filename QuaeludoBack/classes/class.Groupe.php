@@ -2,29 +2,22 @@
 
 
 class Groupe implements JsonSerializable{
-    private $id = 0;
-    private $nom = null;
-    private $description = null;
+    private $idgroupe = 0;
+    private $nomgroupe = null;
+    private $descriptiongroupe = null;
+    private $imagegroupe = null;
 
-    /**
-     * Groupe constructor.
-     * @param int $id
-     * @param null $nom
-     * @param null $description
-     */
-    public function __construct($id, $nom, $description){
-        $this->id = $id;
-        $this->nom = $nom;
-        $this->description = $description;
-    }
 
-    public function getId()		        {return $this->id;}
-    public function getNom()            {return $this->nom;}
-    public function getDescription()    {return $this->description;}
 
-    public function setId($id)		                {$this->id = $id;}
-    public function setNom($nom)	                {$this->nom = $nom;}
-    public function setDescription($description)	{$this->description = $description;}
+    public function getIdgroupe()		      {return $this->idgroupe;}
+    public function getNomgroupe()            {return $this->nomgroupe;}
+    public function getDescriptiongroupe()    {return $this->descriptiongroupe;}
+    public function getImagegroupe()          {return $this->imagegroupe;}
+
+    public function setIdgroupe($idgroupe)		                {$this->idgroupe = $idgroupe;}
+    public function setNomgroupe($nomgroupe)	                {$this->nomgroupe = $nomgroupe;}
+    public function setDescriptiongroupe($descriptiongroupe)	{$this->descriptiongroupe = $descriptiongroupe;}
+    public function setImagegroupe($imagegroupe)                {$this->imagegroupe = $imagegroupe;}
 
     public function jsonSerialize(){
         return get_object_vars($this);
@@ -34,7 +27,7 @@ class Groupe implements JsonSerializable{
         echo '3';
         $pdo = new PDO('mysql:host=localhost;port=3306;dbname=quaeludo','root','root');
         echo '4';
-        $req = $pdo->prepare("INSERT INTO GROUPE(id, nom, description) VALUES (:nom, :description)");
+        $req = $pdo->prepare("INSERT INTO groupe(id, nom, description) VALUES (:id, :nom, :description)");
         echo '5';
         $req->execute(
             array(
@@ -47,4 +40,3 @@ class Groupe implements JsonSerializable{
         //$req = "INSERT INTO GROUPE VALUES *";
     }*/
 }
-

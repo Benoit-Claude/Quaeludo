@@ -1,4 +1,6 @@
 <?php
+header("Access-Control-Allow-Origin: *");
+
 echo "1";
 //Appel la classe Ludotheque
 require_once 'Classes/class.Ludotheque.php';
@@ -13,7 +15,7 @@ $pdo = new PDO(
 echo "3";
 
 //Ordre SQL
-$query = "SELECT * FROM LUDOTHEQUE ORDER BY IDLudotheque";
+$query = "SELECT * FROM ludotheque ORDER BY ID_LUDOTHEQUE";
 echo "4";
 
 //Prepare la requete
