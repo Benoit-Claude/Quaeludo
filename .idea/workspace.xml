@@ -19,24 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1606b1d-e965-42fd-9db2-f2aa1ad6367f" name="Default Changelist" comment="correction des fichiers classe er d'autres fichiers">
-      <change afterPath="$PROJECT_DIR$/QuaeludoBack/classes/class.Jeu.php" afterDir="false" />
+    <list default="true" id="b1606b1d-e965-42fd-9db2-f2aa1ad6367f" name="Default Changelist" comment="Mise à jour majeure">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoBack/ListeGroupes.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/ListeGroupes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoBack/ListeLudotheques.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/ListeLudotheques.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoBack/ListeMembres.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/ListeMembres.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoBack/classes/class.Categorie.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/classes/class.Categorie.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoBack/classes/class.Groupe.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/classes/class.Groupe.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoBack/classes/class.Jeux.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoBack/classes/class.Ludotheque.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/classes/class.Ludotheque.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoBack/cnx.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/cnx.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QuaeludoBack/getGroupe.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/getGroupe.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoBack/listeCategorie.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/ListeCategorie.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoBack/listeJeux.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/ListeJeux.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoBack/param/param.ini" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/param/param.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/images/Contact/avatar_Nathan.png" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/images/Contact/avatar-nathan.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/choixdujeugroupe.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/pages/choixdujeugroupe.vue.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +89,7 @@
       <workItem from="1621850053319" duration="7882000" />
       <workItem from="1621862185647" duration="147000" />
       <workItem from="1621862411820" duration="623000" />
-      <workItem from="1621863214665" duration="3244000" />
+      <workItem from="1621863214665" duration="3610000" />
     </task>
     <task id="LOCAL-00001" summary="ajout page mentionslegales.vue.js">
       <created>1621765599329</created>
@@ -127,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621852096666</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Mise à jour majeure">
+      <created>1621885582322</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1621885582322</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,6 +141,7 @@
     <MESSAGE value="ajout page mentionslegales.vue.js" />
     <MESSAGE value="get groupe" />
     <MESSAGE value="correction des fichiers classe er d'autres fichiers" />
-    <option name="LAST_COMMIT_MESSAGE" value="correction des fichiers classe er d'autres fichiers" />
+    <MESSAGE value="Mise à jour majeure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mise à jour majeure" />
   </component>
 </project>
