@@ -1,7 +1,7 @@
 <?php
-header("Access-Control-Allow-Origin: *");
 
-class Groupe{
+
+class Groupe implements JsonSerializable{
     private $id = 0;
     private $nom = null;
     private $description = null;
@@ -26,9 +26,9 @@ class Groupe{
     public function setNom($nom)	                {$this->nom = $nom;}
     public function setDescription($description)	{$this->description = $description;}
 
-    /*public function jsonSerialize(){
+    public function jsonSerialize(){
         return get_object_vars($this);
-    }*/
+    }
 
     /*public function addIdGroupe(){
         echo '3';

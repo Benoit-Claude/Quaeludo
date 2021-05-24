@@ -1,9 +1,9 @@
 <?php
 
-    class Categorie{
-        public $id = 0;
-        public $nom = null;
-        public $description = null;
+    class Categorie implements JsonSerializable{
+        private $id = 0;
+        private $nom = null;
+        private $description = null;
 
         /**
          * Categorie constructor.
@@ -18,5 +18,16 @@
             $this->description = $description;
         }
 
+        public function getId()		        {return $this->id;}
+        public function getNom()            {return $this->nom;}
+        public function getDescription()    {return $this->description;}
+
+        public function setId($id)		                {$this->id = $id;}
+        public function setNom($nom)	                {$this->nom = $nom;}
+        public function setDescription($description)	{$this->description = $description;}
+
+        public function jsonSerialize(){
+            return get_object_vars($this);
+        }
 
     }

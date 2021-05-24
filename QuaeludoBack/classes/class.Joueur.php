@@ -1,6 +1,7 @@
 <?php
 
 class Joueur{
+    public $id = 0;
     public $pseudo = null;
     public $nom = null;
     public $prenom = null;
@@ -10,6 +11,7 @@ class Joueur{
 
     /**
      * Joueur constructor.
+     * @param int $id
      * @param null $pseudo
      * @param null $nom
      * @param null $prenom
@@ -18,7 +20,8 @@ class Joueur{
      * @param null $mdp
 
      */
-    public function __construct($pseudo, $nom, $prenom, $datenaissance, $adressemail, $mdp){
+    public function __construct($id, $pseudo, $nom, $prenom, $datenaissance, $adressemail, $mdp){
+        $this->id = $id;
         $this->pseudo = $pseudo;
         $this->nom = $nom;
         $this->prenom = $prenom;
@@ -26,6 +29,26 @@ class Joueur{
         $this->adressemail = $adressemail;
         $this->mdp = $mdp;
     }
+
+    public function getId()		        {return $this->id;}
+    public function getPseudo()		    {return $this->pseudo;}
+    public function getNom()            {return $this->nom;}
+    public function getPrenom()         {return $this->prenom;}
+    public function getDatenaissance()  {return $this->datenaissance;}
+    public function getAdressemail()    {return $this->adressemail;}
+
+    public function setId($id)		                {$this->id = $id;}
+    public function setPseudo($pseudo)		        {$this->pseudo = $pseudo;}
+    public function setNom($nom)	                {$this->nom = $nom;}
+    public function setNom($prenom)	                {$this->prenom = $prenom;}
+    public function setDescription($datenaissance)	{$this->datenaissance = $datenaissance;}
+    public function setDescription($adressemail)	{$this->adressemail = $adressemail;}
+
+    public function jsonSerialize(){
+        return get_object_vars($this);
+    }
+
+
 
 
     public function inscription(){
@@ -39,6 +62,7 @@ class Joueur{
         $req = $pdo->prepare("INSERT INTO JOUEUR(pseudo, nom, prenom, datenaissance, adressemail, mdp) VALUES (:pseudo, :nom, :prenom, :datenaissance, :adressemail, :mdp)");
         $req->execute(
             array(
+                ":id" => $this->id,
                 ":pseudo" => $this->pseudo,
                 ":nom" => $this->nom,
                 ":prenom" => $this->prenom,
