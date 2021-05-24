@@ -2,14 +2,9 @@
     header("Access-Control-Allow-Origin: *");
 
     //Appel la classe Groupe
+    require_once 'cnx.php';
     require_once 'Classes/class.Groupe.php';
 
-    //Création objet PDO
-    $pdo = new PDO(
-        'mysql:host=localhost;port=8888;dbname=quaeludo;charset=utf8',
-        'root',
-        'root'
-    );
 
 
 //Ordre SQL
@@ -26,9 +21,11 @@ $listeGroupes = array();
 if($requete->execute()){
     while($donnees = $requete->fetch()){
         $groupe = new Groupe(
-            $donnees["IDGroupe"],
-            $donnees["Nom"],
-            $donnees["Description"]
+            $donnees["ID_GROUPE"],
+            $donnees["NOM_GROUPE"],
+            $donnees["DESC_GROUPE"],
+            $donnees["IMAGE_GROUPE"],
+            $donnees["ID_JOUEUR"]
         );
         $listeGroupes[] = $groupe;
     }

@@ -1,45 +1,39 @@
 <?php
-header("Access-Control-Allow-Origin: *");
+    header("Access-Control-Allow-Origin: *");
 
-echo "1";
-//Appel la classe Ludotheque
-require_once 'Classes/class.Ludotheque.php';
-echo "2";
 
-//Création objet PDO
-$pdo = new PDO(
-    'mysql:host=localhost;port=8888;dbname=QuaeLudo;charset=utf8',
-    'root',
-    'root'
-);
-echo "3";
+    require_once 'cnx.php';
 
-//Ordre SQL
-$query = "SELECT * FROM ludotheque ORDER BY ID_LUDOTHEQUE";
-echo "4";
+    require_once 'Classes/class.Ludotheque.php';
 
-//Prepare la requete
-$requete = $pdo->prepare($query);
-echo "5";
+    //Ordre SQL
+    $query = "SELECT * FROM ludotheque ORDER BY ID_LUDOTHEQUE";
 
-//Tableau liste ludotheque
-$listeLudoteque = array();
 
-//Execution
-if($requete->execute()){
-    while ($donnees = $requete->fetch()){
-        $ludotheque = new Ludotheque(
-            $donnees['IDLudotheque'],
-            $donnees['NOM'],
-            $donnees['IDJoueur']
-        );
-        $listeLudoteque[]= $ludotheque;
+    //Prepare la requete
+    $requete = $pdo->prepare($query);
+
+
+    //Tableau liste ludotheque
+    $listeLudoteque = array();
+
+    //Execution
+    if($requete->execute()){
+        while ($donnees = $requete->fetch()){
+            $ludotheque = new Ludotheque(
+                $donnees['ID_LUDOTHEQUE'],
+                $donnees['NOM_LUDOTHEQUE'],
+                $donnees["DESC_LUDOTHEQUE"],
+                $donnees["IAMGE_LUDOTHEQUE"],
+                $donnees['ID_JOUEUR']
+            );
+            $listeLudoteque[]= $ludotheque;
+        }
+    }else{
+        echo 'Aucune ludothèque';
     }
-}else{
-    echo 'Aucune ludothèque';
-}
-/*
-echo "<pre>";
-print_r($listeLudoteque);
-echo "</pre>";
-/*
+
+    echo "<pre>";
+    print_r($listeLudoteque);
+    echo "</pre>";
+

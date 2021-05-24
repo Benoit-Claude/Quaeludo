@@ -1,30 +1,39 @@
 <?php
 
-    class Categorie implements JsonSerializable{
-        private $id = 0;
-        private $nom = null;
-        private $description = null;
+    class Categorie  implements JsonSerializable{
+        private $idcategorie = 0;
+        private $nomcategorie = null;
+        private $descriptioncategorie = null;
+        private $imagecategorie = null;
 
         /**
          * Categorie constructor.
-         * @param int $id
-         * @param null $nom
-         * @param null $description
+         * @param int $idcategorie
+         * @param null $nomcategorie
+         * @param null $descriptioncategorie
+         * @param null $imagecategorie
          */
-        public function __construct($id, $nom, $description)
+        public function __construct($idcategorie, $nomcategorie, $descriptioncategorie, $imagecategorie)
         {
-            $this->id = $id;
-            $this->nom = $nom;
-            $this->description = $description;
+            $this->idcategorie = $idcategorie;
+            $this->nomcategorie = $nomcategorie;
+            $this->descriptioncategorie = $descriptioncategorie;
+            $this->imagecategorie = $imagecategorie;
         }
 
-        public function getId()		        {return $this->id;}
-        public function getNom()            {return $this->nom;}
-        public function getDescription()    {return $this->description;}
 
-        public function setId($id)		                {$this->id = $id;}
-        public function setNom($nom)	                {$this->nom = $nom;}
-        public function setDescription($description)	{$this->description = $description;}
+        public function getIdcategorie()		     {return $this->idcategorie;}
+        public function getNomcategorie()            {return $this->nomcategorie;}
+        public function getDescriptioncategorie()    {return $this->descriptioncategorie;}
+        public function getimagecategorie()          {return $this->imagecategorie;}
+
+
+        public function setIdcategorie($idcategorie)		            {$this->idcategorie = $idcategorie;}
+        public function setNomcategorie($nomcategorie)	                {$this->nomcategorie = $nomcategorie;}
+        public function setDescriptioncategorie($descriptioncategorie)	{$this->descriptioncategorie = $descriptioncategorie;}
+        public function setimagecategorie($imagecategorie)              {$this->imagecategorie = $imagecategorie;}
+
+
 
         public function jsonSerialize(){
             return get_object_vars($this);
