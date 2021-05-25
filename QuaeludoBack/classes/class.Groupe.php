@@ -1,5 +1,5 @@
 <?php
-echo "// je suis class.Groupe.php //";
+header("Access-Control-Allow-Origin: *");
 
 class Groupe implements JsonSerializable{
     private $idgroupe = 0;

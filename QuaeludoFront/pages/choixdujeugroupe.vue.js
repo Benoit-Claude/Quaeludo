@@ -31,7 +31,7 @@ var ChoixDuJeuGroupe = Vue.component('ChoixDuJeuGroupe',{
         }
     },
     mounted(){
-        axios.get('http://localhost:8888/')
+        axios.get('http://localhost:8888/QuaeludoBack/ListeGroupes.php')
             // Réponse promise et récupération des résultats
         .then(response => {
             this.listegroupes = response.data;
