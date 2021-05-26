@@ -1,0 +1,64 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"BranchesTreeState\">\n    <expand>\n      <path>\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"LOCAL_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n      </path>\n      <path>\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n      </path>\n      <path>\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"GROUP_NODE:origin\" type=\"e8cecc67:BranchNodeDescriptor\" />\n      </path>\n    </expand>\n    <select />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"b1606b1d-e965-42fd-9db2-f2aa1ad6367f\" name=\"Default Changelist\" comment=\"logo accueil.vue.js\" />\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"ComposerSettings\">\n    <execution />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"CSS File\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"ProjectId\" id=\"1st8WmjXcvjgWSyonOvoMPifuOf\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\n    <property name=\"list.type.of.created.stylesheet\" value=\"CSS\" />\n    <property name=\"vue.rearranger.settings.migration\" value=\"true\" />\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"b1606b1d-e965-42fd-9db2-f2aa1ad6367f\" name=\"Default Changelist\" comment=\"\" />\n      <created>1621680562275</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1621680562275</updated>\n      <workItem from=\"1621680563301\" duration=\"777000\" />\n      <workItem from=\"1621681746987\" duration=\"5000\" />\n      <workItem from=\"1621682217874\" duration=\"2615000\" />\n      <workItem from=\"1621703560354\" duration=\"10381000\" />\n      <workItem from=\"1621713958553\" duration=\"3000\" />\n      <workItem from=\"1621715421931\" duration=\"543000\" />\n      <workItem from=\"1621764355814\" duration=\"962000\" />\n    </task>\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\n  </component>\n  <component name=\"WindowStateProjectService\">\n    <state x=\"2646\" y=\"327\" key=\"#com.intellij.fileTypes.FileTypeChooser\" timestamp=\"1621680626250\">\n      <screen x=\"1920\" y=\"0\" width=\"1920\" height=\"1050\" />\n    </state>\n    <state x=\"2646\" y=\"327\" key=\"#com.intellij.fileTypes.FileTypeChooser/1920.0.1920.1050/0.0.1920.1050@1920.0.1920.1050\" timestamp=\"1621680626250\" />\n    <state x=\"2758\" y=\"423\" key=\"Github.ShareDialog\" timestamp=\"1621715467008\">\n      <screen x=\"1920\" y=\"0\" width=\"1920\" height=\"1050\" />\n    </state>\n    <state x=\"2758\" y=\"423\" key=\"Github.ShareDialog/1920.0.1920.1050/0.0.1920.1050@1920.0.1920.1050\" timestamp=\"1621715467008\" />\n    <state x=\"2633\" y=\"230\" key=\"Github.UntrackedFilesDialog\" timestamp=\"1621715476726\">\n      <screen x=\"1920\" y=\"0\" width=\"1920\" height=\"1050\" />\n    </state>\n    <state x=\"2633\" y=\"230\" key=\"Github.UntrackedFilesDialog/1920.0.1920.1050/0.0.1920.1050@1920.0.1920.1050\" timestamp=\"1621715476726\" />\n    <state x=\"2697\" y=\"439\" key=\"com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2\" timestamp=\"1621764492744\">\n      <screen x=\"1920\" y=\"0\" width=\"1920\" height=\"1050\" />\n    </state>\n    <state x=\"2697\" y=\"439\" key=\"com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1920.1050/0.0.1920.1050@1920.0.1920.1050\" timestamp=\"1621764492744\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 514cbaa33141e9f06d5966884e2e697a840fac9a)
++++ b/.idea/workspace.xml	(date 1621775736667)
+@@ -66,6 +66,14 @@
+       <workItem from="1621715421931" duration="543000" />
+       <workItem from="1621764355814" duration="962000" />
+     </task>
++    <task id="LOCAL-00001" summary="ajout image search">
++      <created>1621775485136</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1621775485136</updated>
++    </task>
++    <option name="localTasksCounter" value="2" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -83,22 +91,8 @@
+     </option>
+     <option name="oldMeFiltersMigrated" value="true" />
+   </component>
+-  <component name="WindowStateProjectService">
+-    <state x="2646" y="327" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1621680626250">
+-      <screen x="1920" y="0" width="1920" height="1050" />
+-    </state>
+-    <state x="2646" y="327" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1920.1050/0.0.1920.1050@1920.0.1920.1050" timestamp="1621680626250" />
+-    <state x="2758" y="423" key="Github.ShareDialog" timestamp="1621715467008">
+-      <screen x="1920" y="0" width="1920" height="1050" />
+-    </state>
+-    <state x="2758" y="423" key="Github.ShareDialog/1920.0.1920.1050/0.0.1920.1050@1920.0.1920.1050" timestamp="1621715467008" />
+-    <state x="2633" y="230" key="Github.UntrackedFilesDialog" timestamp="1621715476726">
+-      <screen x="1920" y="0" width="1920" height="1050" />
+-    </state>
+-    <state x="2633" y="230" key="Github.UntrackedFilesDialog/1920.0.1920.1050/0.0.1920.1050@1920.0.1920.1050" timestamp="1621715476726" />
+-    <state x="2697" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1621764492744">
+-      <screen x="1920" y="0" width="1920" height="1050" />
+-    </state>
+-    <state x="2697" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1920.1050/0.0.1920.1050@1920.0.1920.1050" timestamp="1621764492744" />
++  <component name="VcsManagerConfiguration">
++    <MESSAGE value="ajout image search" />
++    <option name="LAST_COMMIT_MESSAGE" value="ajout image search" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: QuaeludoFront/images/svg/chevron-right-solid.svg
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/QuaeludoFront/images/svg/chevron-right-solid.svg b/QuaeludoFront/images/svg/chevron-right-solid.svg
+new file mode 100644
+--- /dev/null	(date 1621072046983)
++++ b/QuaeludoFront/images/svg/chevron-right-solid.svg	(date 1621072046983)
+@@ -0,0 +1,1 @@
++<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
+\ No newline at end of file
