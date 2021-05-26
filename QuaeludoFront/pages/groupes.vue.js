@@ -1,6 +1,6 @@
 let Groupe = Vue.component('Groupe',{
     template:`
-    <div class="page Ludotheques">
+    <div class="page Groupes">
     <h1>Mes Groupes</h1>
     <section class="section-haut-page liste">
         <router-link class="section-liste-choix" to="Groupes">

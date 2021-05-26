@@ -1,6 +1,6 @@
 let Ludotheques = Vue.component('Ludotheques',{
     template:`
-    <div class="page Ludotheques">
+    <div class="page Ludotheque">
     <h1>Ma ludothèque</h1>
     <section class="infos-ludotheque">
         <div class="info-ludotheque">
