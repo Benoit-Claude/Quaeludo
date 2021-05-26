@@ -16,8 +16,8 @@ var ChoixDuJeuGroupe = Vue.component('ChoixDuJeuGroupe',{
                         </div>
                     </div>
                         
-                        <h1 class="typo-green">Nom groupe</h1>
-                        <p class="typo-blackgrey"></p>
+                        <h1 class="typo-green">{{groupe.nom}}</h1>
+                        <p class="typo-blackgrey">{{groupe.lesJoueurs.length}}</p>
                     
                     <div class="bouton">
                         <router-link to="choixdujeutypejeu" class="green typo-white">Suivant</router-link>

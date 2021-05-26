@@ -1,22 +1,21 @@
 <?php
 header("Access-Control-Allow-Origin: *");
-class possede implements JsonSerializable{
-    private $idjoueur = 0;
-    private $idludotheque = 0;
+header("Access-Control-Allow-Headers: *");
 
-    /**
-     * possede constructor.
-     * @param int $idjoueur
-     * @param int $idludotheque
-     */
-    public function __construct($idjoueur, $idludotheque)
+require_once('class.Ludotheque.php');
+require_once('class.Joueur.php');
+
+class Possede extends Ludotheque implements JsonSerializable{
+    private $lesLudotheques = array();
+
+    public function __construct($id, $nom, $desc, $image)
     {
-        $this->idjoueur = $idjoueur;
-        $this->idludotheque = $idludotheque;
+        parent::__construct($id, $nom, $desc, $image);
     }
 
 
     public function jsonSerialize(){
+        $this->parent = parent::jsonSerialize($this);
         return get_object_vars($this);
     }
 }

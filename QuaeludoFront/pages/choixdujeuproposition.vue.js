@@ -9,10 +9,10 @@ var ChoixDuJeuProposition = Vue.component('ChoixDuJeuProposition',{
                 <div class="carte">
                     <div class="carte-logo">
                         <div class="carte-logo-gauche">
-                            <img class="logo-carte1" src="images/Logo/logo.png" alt="logo">
+                            <img class="logo-carte1" src="css/images/Logo/logo.png" alt="logo">
                         </div>
                         <div class="carte-logo-droit">
-                            <img class="logo-carte2" src="images/Logo/logo.png" alt="logo">
+                            <img class="logo-carte2" src="css/images/Logo/logo.png" alt="logo">
                         </div>
                     </div>
                     <div class="bouton">

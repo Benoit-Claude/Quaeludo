@@ -1,62 +1,137 @@
 <?php
 header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Headers: *");
+
+require_once('class.regroupe.php');
 
 class Groupe implements JsonSerializable{
-    private $idgroupe = 0;
-    private $nomgroupe = null;
-    private $descriptiongroupe = null;
-    private $imagegroupe = null;
-    private $idjoueur = 0;
+    private $id = 0;
+    private $nom = null;
+    private $desc = null;
+    private $image = null;
+    private $idjoueur = null;
+
+    private $lesJoueurs = array();
+
 
     /**
      * Groupe constructor.
-     * @param int $idgroupe
-     * @param null $nomgroupe
-     * @param null $descriptiongroupe
-     * @param null $imagegroupe
-     * @param int $idjoueur
+     * @param int $id
+     * @param null $nom
+     * @param null $desc
+     * @param null $image
+     * @param null $idjoueur
+     * @param array $lesJoueurs
      */
-    public function __construct($idgroupe, $nomgroupe, $descriptiongroupe, $imagegroupe, $idjoueur)
-    {
-        $this->idgroupe = $idgroupe;
-        $this->nomgroupe = $nomgroupe;
-        $this->descriptiongroupe = $descriptiongroupe;
-        $this->imagegroupe = $imagegroupe;
+    public function __construct($id, $nom, $desc, $image, $idjoueur){
+        $this->id = $id;
+        $this->nom = $nom;
+        $this->desc = $desc;
+        $this->image = $image;
         $this->idjoueur = $idjoueur;
     }
 
 
-    public function getidgroupe()		      {return $this->idgroupe;}
-    public function getnomgroupe()            {return $this->nomgroupe;}
-    public function getdescriptiongroupe()    {return $this->descriptiongroupe;}
-    public function getimagegroupe()          {return $this->imagegroupe;}
-    public function getidjoueur()             {return $this->idjoueur;}
+    /**
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
 
-    public function setidgroupe($idgroupe)		                {$this->idgroupe = $idgroupe;}
-    public function setnomgroupe($nomgroupe)	                {$this->nomgroupe = $nomgroupe;}
-    public function setdescriptiongroupe($descriptiongroupe)	{$this->descriptiongroupe = $descriptiongroupe;}
-    public function setimagegroupe($imagegroupe)                {$this->imagegroupe = $imagegroupe;}
-    public function setidjoueur($idjoueur)                      {$this->idjoueur = $idjoueur;}
+    /**
+     * @param int $id
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
+
+    /**
+     * @return null
+     */
+    public function getNom()
+    {
+        return $this->nom;
+    }
+
+    /**
+     * @param null $nom
+     */
+    public function setNom($nom)
+    {
+        $this->nom = $nom;
+    }
+
+    /**
+     * @return null
+     */
+    public function getDesc()
+    {
+        return $this->desc;
+    }
+
+    /**
+     * @param null $desc
+     */
+    public function setDesc($desc)
+    {
+        $this->desc = $desc;
+    }
+
+    /**
+     * @return null
+     */
+    public function getImage()
+    {
+        return $this->image;
+    }
+
+    /**
+     * @param null $image
+     */
+    public function setImage($image)
+    {
+        $this->image = $image;
+    }
+
+    /**
+     * @return null
+     */
+    public function getIdjoueur()
+    {
+        return $this->idjoueur;
+    }
+
+    /**
+     * @param null $idjoueur
+     */
+    public function setIdjoueur($idjoueur)
+    {
+        $this->idjoueur = $idjoueur;
+    }
+
+    /**
+     * @return array
+     */
+    public function getLesJoueurs()
+    {
+        return $this->lesJoueurs;
+    }
+
+    /**
+     * @param array $lesJoueurs
+     */
+    public function setLesJoueurs($lesJoueurs)
+    {
+        $this->lesJoueurs = $lesJoueurs;
+    }
+
+
 
 
     public function jsonSerialize(){
         return get_object_vars($this);
     }
-
-    /*public function addIdGroupe(){
-        echo '3';
-        $pdo = new PDO('mysql:host=localhost;port=3306;dbname=quaeludo','root','root');
-        echo '4';
-        $req = $pdo->prepare("INSERT INTO groupe(id, nom, description) VALUES (:id, :nom, :description)");
-        echo '5';
-        $req->execute(
-            array(
-                ":id" => $this->id,
-                ":nom" => $this->nom,
-                ":description" => $this->description
-            )
-        );
-        echo '6';
-        //$req = "INSERT INTO GROUPE VALUES *";
-    }*/
 }

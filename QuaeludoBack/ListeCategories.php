@@ -1,8 +1,10 @@
 <?php
     header("Access-Control-Allow-Origin: *");
+    header("Access-Control-Allow-Headers: *");
 
-    require_once 'cnx.php';
+
     //Appel la classe Categorie
+    require_once 'cnx.php';
     require_once 'Classes/class.Categorie.php';
 
 
@@ -16,7 +18,7 @@
     $requete = $pdo->prepare($query);
 
     //Tableau liste membres
-    $listeCategorie = array();
+    $listeCategories = array();
 
     //Exécution
     if($requete->execute()){
@@ -28,15 +30,13 @@
                 $donnees["IMAGE_CATEGORIE"]
             );
 
-            $listeCategorie[] = $categorie;
+            $listeCategories[] = $categorie;
         }
 
-    }else{
-        echo 'Requete failed';
     }
+    echo json_encode($listeCategories);
+    exit();
 
-
-
-    echo '<pre>';
-    echo print_r($listeCategorie);
-    echo '</pre>';
+    /*echo '<pre>';
+    echo print_r($listeCategories);
+    echo '</pre>';*/

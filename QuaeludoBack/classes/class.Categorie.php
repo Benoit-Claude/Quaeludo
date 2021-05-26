@@ -1,42 +1,95 @@
 <?php
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Headers: *");
 
-    class Categorie  implements JsonSerializable{
-        private $idcategorie = 0;
-        private $nomcategorie = null;
-        private $descriptioncategorie = null;
-        private $imagecategorie = null;
+class Categorie implements JsonSerializable{
+    private $id = 0;
+    private $nom = null;
+    private $desc = null;
+    private $image = null;
 
-        /**
-         * Categorie constructor.
-         * @param int $idcategorie
-         * @param null $nomcategorie
-         * @param null $descriptioncategorie
-         * @param null $imagecategorie
-         */
-        public function __construct($idcategorie, $nomcategorie, $descriptioncategorie, $imagecategorie)
-        {
-            $this->idcategorie = $idcategorie;
-            $this->nomcategorie = $nomcategorie;
-            $this->descriptioncategorie = $descriptioncategorie;
-            $this->imagecategorie = $imagecategorie;
-        }
-
-
-        public function getIdcategorie()		     {return $this->idcategorie;}
-        public function getNomcategorie()            {return $this->nomcategorie;}
-        public function getDescriptioncategorie()    {return $this->descriptioncategorie;}
-        public function getimagecategorie()          {return $this->imagecategorie;}
-
-
-        public function setIdcategorie($idcategorie)		            {$this->idcategorie = $idcategorie;}
-        public function setNomcategorie($nomcategorie)	                {$this->nomcategorie = $nomcategorie;}
-        public function setDescriptioncategorie($descriptioncategorie)	{$this->descriptioncategorie = $descriptioncategorie;}
-        public function setimagecategorie($imagecategorie)              {$this->imagecategorie = $imagecategorie;}
-
-
-
-        public function jsonSerialize(){
-            return get_object_vars($this);
-        }
-
+    /**
+     * Categorie constructor.
+     * @param int $id
+     * @param null $nom
+     * @param null $desc
+     * @param null $image
+     */
+    public function __construct($id, $nom, $desc, $image)
+    {
+        $this->id = $id;
+        $this->nom = $nom;
+        $this->desc = $desc;
+        $this->image = $image;
     }
+
+
+    /**
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param int $id
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
+
+    /**
+     * @return null
+     */
+    public function getNom()
+    {
+        return $this->nom;
+    }
+
+    /**
+     * @param null $nom
+     */
+    public function setNom($nom)
+    {
+        $this->nom = $nom;
+    }
+
+    /**
+     * @return null
+     */
+    public function getDesc()
+    {
+        return $this->desc;
+    }
+
+    /**
+     * @param null $desc
+     */
+    public function setDesc($desc)
+    {
+        $this->desc = $desc;
+    }
+
+    /**
+     * @return null
+     */
+    public function getImage()
+    {
+        return $this->image;
+    }
+
+    /**
+     * @param null $image
+     */
+    public function setImage($image)
+    {
+        $this->image = $image;
+    }
+
+
+    public function jsonSerialize(){
+        return get_object_vars($this);
+    }
+}
