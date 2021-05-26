@@ -14,7 +14,7 @@ body{
 .page {
     position: relative;
     top: 60px;
-    height: 380px;
+    min-height: 380px;
     width: 100vw;
     margin-bottom: 60px;
     background-color: #FAFAFA;

@@ -27,11 +27,11 @@ var ChoixDuJeuGroupe = Vue.component('ChoixDuJeuGroupe',{
     `,
     data(){
         return{
-            /*listeGroupes:[]*/
+            listeGroupes:[]
         }
     },
     mounted(){
-       /* axios.get('http://localhost:8888/QuaeludoBack/ListeGroupes.php')
+       axios.get('http://localhost:8888/Perso/raphbonin/Cours/Semestre-2/QuaeludoQuaeludoBack/ListeGroupes.php')
             // Réponse promise et récupération des résultats
         .then(response => {
             this.listeGroupes = response.data;
@@ -40,7 +40,7 @@ var ChoixDuJeuGroupe = Vue.component('ChoixDuJeuGroupe',{
 
         .catch(error =>{
             console.log("Erreur : ", error);
-        })*/
+        })
     },
     methods:{
 

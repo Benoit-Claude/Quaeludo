@@ -19,12 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1606b1d-e965-42fd-9db2-f2aa1ad6367f" name="Default Changelist" comment="ajout des pages manquante en vue-js">
+    <list default="true" id="b1606b1d-e965-42fd-9db2-f2aa1ad6367f" name="Default Changelist" comment="Correction images">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuaeludoFront/css/mise-en-page-generale.css" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/css/mise-en-page-generale.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QuaeludoFront/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/accueil.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/pages/accueil.vue.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/choixdujeugroupe.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/pages/choixdujeugroupe.vue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/compte.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/pages/compte.vue.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/contact.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/pages/contact.vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/desabonner.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/pages/desabonner.vue.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/groupe.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/pages/groupe.vue.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/groupes.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/pages/groupes.vue.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/ludotheque.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/pages/ludotheque.vue.js" afterDir="false" />
@@ -87,6 +89,7 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/QuaeludoFront/css" />
+      <recent name="$PROJECT_DIR$/QuaeludoFront" />
       <recent name="$PROJECT_DIR$/QuaeludoBack" />
     </key>
   </component>
@@ -112,7 +115,7 @@
       <workItem from="1621863214665" duration="10261000" />
       <workItem from="1621961667334" duration="6396000" />
       <workItem from="1622044922461" duration="1310000" />
-      <workItem from="1622046770005" duration="943000" />
+      <workItem from="1622046770005" duration="2650000" />
     </task>
     <task id="LOCAL-00001" summary="ajout page mentionslegales.vue.js">
       <created>1621765599329</created>
@@ -163,7 +166,21 @@
       <option name="project" value="LOCAL" />
       <updated>1622044981274</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Correction images">
+      <created>1622047775744</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1622047775744</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Correction images">
+      <created>1622047849243</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1622047849243</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,6 +206,7 @@
     <MESSAGE value="correction getGroupe.php" />
     <MESSAGE value="ajout des dernières classes" />
     <MESSAGE value="ajout des pages manquante en vue-js" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajout des pages manquante en vue-js" />
+    <MESSAGE value="Correction images" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correction images" />
   </component>
 </project>

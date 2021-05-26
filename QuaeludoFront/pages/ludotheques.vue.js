@@ -4,7 +4,7 @@ let Ludotheque = Vue.component('Ludotheque',{
     <h1>Mes ludothèques</h1>
     <div class="liste-ludotheques section-haut-page">
             <router-link class="section-liste-choix" to="ludotheques">
-                <img src="../css/images/Jeux/Ludo.png" height="62" width="62" alt="">
+                <img src="css/images/Jeux/Ludo.png" height="62" width="62" alt="">
                 <div class="info-nom-ludo">
                     <h3>Nom ludothèque</h3>
                     <hr>

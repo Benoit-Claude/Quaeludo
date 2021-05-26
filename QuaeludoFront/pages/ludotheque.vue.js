@@ -24,7 +24,7 @@ let Ludotheques = Vue.component('Ludotheques',{
             <input type="search" class="grey2" id="site-search" name="q"
                    aria-label="Search through site content" placeholder="Rechercher">
 
-            <button class="whitegrey"><img src="../css/images/svg/search-solid.svg" style="height: 30px; width: auto;" alt="search"></button>
+            <button class="whitegrey"><img src="css/images/svg/search-solid.svg" style="height: 30px; width: auto;" alt="search"></button>
         </div>
         <div class="legende-section-choix">
             <p>Image</p>
@@ -32,7 +32,7 @@ let Ludotheques = Vue.component('Ludotheques',{
         </div>
         <hr/>
         <router-link class="section-liste-choix" to="Jeux">
-            <img src="../css/images/Jeux/Ludo.png" height="62" width="62" alt="">
+            <img src="css/images/Jeux/Ludo.png" height="62" width="62" alt="">
             <div class="info-nom-ludo">
                 <h3>Nom Jeu</h3>
                 <hr>

@@ -36,7 +36,7 @@ let Groupes = Vue.component('Groupes',{
             </div>
             <hr/>
             <router-link class="section-liste-choix" to="Compte">
-                <img src="../css/images/Jeux/Ludo.png" height="62" width="62" alt="">
+                <img src="css/images/Jeux/Ludo.png" height="62" width="62" alt="">
                 <div class="info-nom-ludo">
                     <h3>Nom Compte</h3>
                     <hr>

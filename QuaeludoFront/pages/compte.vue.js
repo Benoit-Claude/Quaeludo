@@ -3,7 +3,7 @@ let Compte = Vue.component('Compte',{
     <div class="page Compte">
         <section class="section-image-haut-page">
             <div class="section-compte-image-compte">
-                <img src="images/Contact/avatar-benoit.png" alt="">
+                <img src="../css/images/Contact/avatar-benoit.png" alt="">
             </div>
         </section>
     
@@ -26,9 +26,9 @@ let Compte = Vue.component('Compte',{
         <section class="section-compte categorie-preferee">
             <h3>Jeux préférés</h3>
             <div>
-                <img src="images/Jeux/AventureduRail.png" alt="">
-                <img src="images/Jeux/Memoire44.png" alt="">
-                <img src="images/Jeux/Monopoly.png" alt="">
+                <img src="../css/images/Jeux/AventureduRail.png" alt="">
+                <img src="../css/images/Jeux/Memoire44.png" alt="">
+                <img src="../css/images/Jeux/Monopoly.png" alt="">
             </div>
         </section>
         <section>

@@ -4,7 +4,7 @@ let Groupe = Vue.component('Groupe',{
     <h1>Mes Groupes</h1>
     <section class="section-haut-page liste">
         <router-link class="section-liste-choix" to="Groupes">
-            <img src="../css/images/Jeux/Ludo.png" height="62" width="62" alt="">
+            <img src="css/images/Jeux/Ludo.png" height="62" width="62" alt="">
             <div class="info-nom-ludo">
                 <h3>Nom Groupe</h3>
                 <hr>
