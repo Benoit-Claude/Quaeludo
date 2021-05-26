@@ -28,7 +28,7 @@ let Groupes = Vue.component('Groupes',{
                 <input type="search" class="grey2" id="site-search" name="q"
                        aria-label="Search through site content" placeholder="Rechercher">
     
-                <button class="whitegrey"><img src="images/svg/search-solid.svg" style="height: 30px; width: auto;" alt=""></button>
+                <button class="whitegrey"><img src="../css/images/svg/search-solid.svg" style="height: 30px; width: auto;" alt=""></button>
             </div>
             <div class="legende-section-choix">
                 <p>Image</p>
@@ -36,7 +36,7 @@ let Groupes = Vue.component('Groupes',{
             </div>
             <hr/>
             <router-link class="section-liste-choix" to="Compte">
-                <img src="images/Jeux/Ludo.png" height="62" width="62" alt="">
+                <img src="../css/images/Jeux/Ludo.png" height="62" width="62" alt="">
                 <div class="info-nom-ludo">
                     <h3>Nom Compte</h3>
                     <hr>

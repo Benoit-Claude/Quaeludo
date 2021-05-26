@@ -21,7 +21,7 @@ let Contact = Vue.component('Contact',{
 
         <section class="section-haut-page section-Nathan white" id="section-Nathan">
             <div>
-                <img src="images/Contact/avatar_Nathan.png" class="Nathan-logo" alt="avatar Nathan">
+                <img src="../css/images/Contact/avatar-nathan.png" class="Nathan-logo" alt="avatar Nathan">
                 <h3>Nathan BAUMANN</h3>
             </div>
             <p>Je considère le web comme l'avenir de notre société. Utilisateur fréquent des réseaux sociaux et manager de plusieurs comptes, j'ai acquis des connaissances en communication et management. Étant passionné de sports mécaniques, mon rêve serait d'être pilote professionnel. <br>Je suis ainsi le responsable communication et mercatique de QuaeLudo.</p>
@@ -30,7 +30,7 @@ let Contact = Vue.component('Contact',{
 
         <section class="section-haut-page section-Raphael white" id="section-Raph">
             <div>
-                <img src="images/Contact/avatar-raph.png" class="Raph-logo" alt="avatar Raph">
+                <img src="../css/images/Contact/avatar-raph.png" class="Raph-logo" alt="avatar Raph">
                 <h3>Raphaël BONIN</h3>
             </div>
             <p>Je passe une bonne partie du temps devant mon écran pour développer, concevoir des pièces en 3D ou encore monter des vidéos, que je filme lorsque je sors avec mon matériel, dont mon drone. Mon rêve est de devenir télépilote de drone professionnel. <br>Je suis le geek de ce groupe étant le responsable développement de ce projet.</p>
@@ -38,7 +38,7 @@ let Contact = Vue.component('Contact',{
 
         <section class="section-haut-page section-Benoit white" id="section-Benoit">
             <div>
-                <img src="images/Contact/avatar-benoit.png" class="Benoit-logo" alt="avatar Benoit">
+                <img src="../css/images/Contact/avatar-benoit.png" class="Benoit-logo" alt="avatar Benoit">
                 <h3>Benoît CLAUDE</h3>
             </div>
             <p>Passionné par l'art et la culture, j'aime créer toute sorte de contenu artistique, que ce soit du design, de la musique ou autre. J'aime partager mes passions et inviter mes amis à les partager avec moi. Mon rêve est de devenir designer, dans le graphisme ou dans le son. Le temps affinera mon choix. <br>j'ai la responsabilité de la partie design de Quaeludo.</p>
