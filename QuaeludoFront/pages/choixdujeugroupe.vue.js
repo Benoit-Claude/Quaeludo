@@ -6,17 +6,19 @@ var ChoixDuJeuGroupe = Vue.component('ChoixDuJeuGroupe',{
                 <h1 class="typo-green">Avec qui ?</h1>
             </div>
             <div>
-                <div class="carte">
+                <div class="carte" v-for="groupe in listeGroupes" :key="groupe.id">
                     <div class="carte-logo">
                         <div class="carte-logo-gauche">
-                            <img class="logo-carte1" src="../css/images/Logo/logo.png" alt="logo">
+                            <img class="logo-carte1" src="css/images/Logo/logo.png" alt="logo">
                         </div>
                         <div class="carte-logo-droit">
-                            <img class="logo-carte2" src="../css/images/Logo/logo.png" alt="logo">
+                            <img class="logo-carte2" src="css/images/Logo/logo.png" alt="logo">
                         </div>
-                        <h1 class="typo-green">{{groupe.nomgroupe}}</h1>
-                        <p class="typo-blackgrey"></p>
                     </div>
+                        
+                        <h1 class="typo-green">Nom groupe</h1>
+                        <p class="typo-blackgrey"></p>
+                    
                     <div class="bouton">
                         <router-link to="choixdujeutypejeu" class="green typo-white">Suivant</router-link>
                     </div>
@@ -31,7 +33,7 @@ var ChoixDuJeuGroupe = Vue.component('ChoixDuJeuGroupe',{
         }
     },
     mounted(){
-       axios.get('http://localhost:8888/Perso/raphbonin/Cours/Semestre-2/QuaeludoQuaeludoBack/ListeGroupes.php')
+       axios.get('http://localhost:8888/Quaeludo/QuaeludoBack/ListeGroupes.php')
             // Réponse promise et récupération des résultats
         .then(response => {
             this.listeGroupes = response.data;
