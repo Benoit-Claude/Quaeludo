@@ -25,6 +25,8 @@ class Groupe implements JsonSerializable{
     }
 
 
+
+
     public function getId()         {return $this->id;}
     public function getNom()        {return $this->nom;}
     public function getDesc()       {return $this->desc;}

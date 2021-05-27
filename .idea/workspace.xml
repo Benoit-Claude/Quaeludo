@@ -21,8 +21,18 @@
   <component name="ChangeListManager">
     <list default="true" id="b1606b1d-e965-42fd-9db2-f2aa1ad6367f" name="Default Changelist" comment="mise à jour des classes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/groupe.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/pages/groupe.vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/groupes.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/pages/groupes.vue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuaeludoBack/Classes/class.Groupe.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/Classes/class.Groupe.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuaeludoBack/Classes/class.Jeu.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/Classes/class.Jeu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuaeludoBack/Classes/class.Joueur.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/Classes/class.Joueur.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuaeludoBack/Classes/class.Ludotheque.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/Classes/class.Ludotheque.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuaeludoBack/Classes/class.classe.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/Classes/class.classe.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuaeludoBack/Classes/class.contient.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/Classes/class.contient.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuaeludoBack/Classes/class.possede.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/Classes/class.possede.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuaeludoBack/Classes/class.regroupe.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/Classes/class.regroupe.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuaeludoBack/ListeCategorieClasseJeu.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/ListeCategorieClasseJeu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuaeludoBack/ListeJoueurPossedeLudo.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/ListeJoueurPossedeLudo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuaeludoBack/ListeMembres.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/ListeMembres.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuaeludoBack/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/ludotheques.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/pages/ludotheques.vue.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

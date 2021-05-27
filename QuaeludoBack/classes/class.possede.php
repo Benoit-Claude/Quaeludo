@@ -8,6 +8,8 @@ require_once('class.Joueur.php');
 class Possede extends Joueur implements JsonSerializable{
     private $lesProprietaire = array();
 
+
+
     public function __construct($id, $pseudo, $nom, $prenom, $datenaissance, $adressemail, $mdp, $image, $idcategorie){
         parent::__construct($id, $pseudo, $nom, $prenom, $datenaissance, $adressemail, $mdp, $image, $idcategorie);
     }

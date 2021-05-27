@@ -8,6 +8,7 @@ require_once('class.Ludotheque.php');
 class Classe extends Categorie implements JsonSerializable{
     private $lesCategorie = array();
 
+
     public function __construct($id, $nom, $desc, $image)
     {
         parent::__construct($id, $nom, $desc, $image);

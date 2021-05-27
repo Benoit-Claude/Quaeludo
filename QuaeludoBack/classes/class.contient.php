@@ -14,6 +14,8 @@ class Contient extends Jeu implements JsonSerializable{
     }
 
 
+
+
     public function jsonSerialize(){
         $this->parent = parent::jsonSerialize($this);
         return get_object_vars($this);
