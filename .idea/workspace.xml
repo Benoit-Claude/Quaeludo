@@ -19,11 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1606b1d-e965-42fd-9db2-f2aa1ad6367f" name="Default Changelist" comment="mise à jour des templates">
-      <change beforePath="$PROJECT_DIR$/QuaeludoBack/classes/class.Groupe.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/classes/class.Groupe.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoBack/classes/class.Joueur.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/classes/class.Joueur.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoBack/classes/class.Ludotheque.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/classes/class.Ludotheque.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoBack/classes/class.possede.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/classes/class.possede.php" afterDir="false" />
+    <list default="true" id="b1606b1d-e965-42fd-9db2-f2aa1ad6367f" name="Default Changelist" comment="Début catégorie sauf jeux">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_05_2021_22_40__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_05_2021_22_40__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_05_2021_15_07__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_05_2021_15_07__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_05_2021_15_16__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_05_2021_15_16__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_05_2021_17_24__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_05_2021_17_24__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_05_2021_11_35__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_05_2021_11_35__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_05_2021_00_08__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_05_2021_00_08__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +84,7 @@
       <recent name="$PROJECT_DIR$/QuaeludoBack/Classes" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\MAMP\htdocs\Quaeludo\QuaeludoFront" />
       <recent name="$PROJECT_DIR$/QuaeludoFront/css" />
       <recent name="$PROJECT_DIR$/QuaeludoFront" />
       <recent name="$PROJECT_DIR$/QuaeludoBack" />
@@ -111,6 +115,7 @@
       <workItem from="1622046770005" duration="12947000" />
       <workItem from="1622064546303" duration="2817000" />
       <workItem from="1622103682961" duration="15560000" />
+      <workItem from="1622124488816" duration="1500000" />
     </task>
     <task id="LOCAL-00001" summary="ajout page mentionslegales.vue.js">
       <created>1621765599329</created>
