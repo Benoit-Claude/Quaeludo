@@ -6,18 +6,17 @@ header("Access-Control-Allow-Headers: *");
     require_once 'cnx.php';
     require_once 'Classes/class.Groupe.php';
 
-
-
-//Ordre SQL
+    //Ordre SQL
     $query = "SELECT * 
-                FROM groupe
-                ORDER BY ID_GROUPE";
+              FROM groupe
+              ORDER BY ID_GROUPE";
 
     //Preparer la requete
     $requete = $pdo->prepare($query);
 
     //Tableau liste membres
     $listeGroupes = array();
+
     //Exécution
     if($requete->execute()){
         while($donnees = $requete->fetch()){
@@ -32,8 +31,7 @@ header("Access-Control-Allow-Headers: *");
             $sql = "SELECT * FROM regroupe, joueur 
                     WHERE regroupe.ID_GROUPE = ?
                     AND regroupe.ID_JOUEUR = joueur.ID_JOUEUR
-                    ORDER BY NOM_JOUEUR
-                    ";
+                    ORDER BY NOM_JOUEUR";
 
             $requete2 = $pdo->prepare($sql);
             $requete2->bindValue(1, $groupe->getId());

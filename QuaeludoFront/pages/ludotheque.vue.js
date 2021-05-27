@@ -1,4 +1,4 @@
-let Ludotheques = Vue.component('Ludotheques',{
+let Ludotheque = Vue.component('Ludotheque',{
     template:`
     <div class="page Ludotheque">
     <h1>Ma ludothèque</h1>

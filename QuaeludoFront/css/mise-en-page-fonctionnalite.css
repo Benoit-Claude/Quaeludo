@@ -307,15 +307,11 @@ button.inscription{
     margin: 0;
     display: flex;
     padding: 0;
-    grid-column: 1/26;
-    grid-row: 2/25;
 }
 
 
 
 .nav-slide{
-    grid-column: 1/26;
-    grid-row: 25/26;
     display: flex;
     text-align: center;
     width: 100%;
@@ -346,7 +342,7 @@ button.inscription{
 
 /* Slide livret règles*/
 .regle{
-    background-image: url("img/Landing-page/jeu.jpeg");
+    background-image: url("images/Landing-page/jeu.jpeg");
     background-size: cover;
 }
 
@@ -376,7 +372,7 @@ button.inscription{
 
 /* Slide Matériel*/
 .materiel{
-    background-image: url("img/Landing-page/ludothequepaysage.jpeg");
+    background-image: url("images/Landing-page/ludothequepaysage.jpeg");
     background-size: cover;
 }
 
@@ -404,7 +400,7 @@ button.inscription{
 }
 
 .materiel-img-jeux{
-    background-image: url("img/Landing-page/pile-de-jeux.png");
+    background-image: url("images/Landing-page/pile-de-jeux.png");
     background-size: cover;
     background-position: center;
     grid-column: 10/17;
@@ -439,7 +435,7 @@ button.inscription{
 
 /* Slide But du jeu*/
 .but{
-    background-image: url("img/Landing-page/ludothequepaysage.jpeg");
+    background-image: url("images/Landing-page/ludothequepaysage.jpeg");
     background-size: cover;
 }
 .but-titre{
@@ -542,7 +538,7 @@ button.inscription{
 
 /* Slide Mise en place */
 .mise-en-place{
-    background-image: url("img/Landing-page/installationjeux.jpeg");
+    background-image: url("images/Landing-page/installationjeux.jpeg");
     background-size: cover;
 }
 
@@ -638,7 +634,7 @@ button.inscription{
 
 /* Slide Déroulement du jeu */
 .deroulement{
-    background-image: url("img/Landing-page/deroulementjeu.jpeg");
+    background-image: url("images/Landing-page/deroulementjeu.jpeg");
     background-size: cover;
     position: relative;
     top: calc(82 + 1fr);
@@ -735,7 +731,7 @@ button.inscription{
 .qui-sommes-nous,
 .contact{
     position: relative;
-    background-image: url("img/Landing-page/ludothequepaysage.jpeg");
+    background-image: url("images/Landing-page/ludothequepaysage.jpeg");
     background-size: cover;
 }
 
@@ -939,7 +935,7 @@ button.inscription{
     height: 80vh;
     position: relative;
     top: 10vh;
-    background-image: url("img/Landing-page/ludothequepaysage.jpeg");
+    background-image: url("images/Landing-page/ludothequepaysage.jpeg");
     background-size: cover;
     grid-column: 1/26;
     grid-row: 2/13;

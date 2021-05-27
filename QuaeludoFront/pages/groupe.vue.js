@@ -1,4 +1,4 @@
-let Groupes = Vue.component('Groupes',{
+let Groupe = Vue.component('Groupe',{
     template:`
     <div class="page Groupe">
         <h1>Mon Groupe</h1>

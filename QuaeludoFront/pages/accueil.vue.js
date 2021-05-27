@@ -1,11 +1,12 @@
 let Accueil = Vue.component('Accueil',{
     template:`
     <div class="page Accueil">
+        <img src="css/images/Landing-page/pile-de-jeux.png" class="image-haut-page" alt="">
+
         <section class="section-haut-page">
             <h1>Bienvenue,<br>explorez et découvrez le <br>jeu qui vous convient</h1>
     
             <div class="carte">
-    
                 <div class="carte-logo">
                     <div class="carte-logo-gauche">
                         <img id="logo-carte1" src="css/images/Logo/logo.png" alt="logo">

@@ -5,7 +5,7 @@ var ChoixDuJeuTypeJeu = Vue.component('ChoixDuJeuTypeJeu',{
             <div>
                 <h1 class="typo-green">Un jeu de ...</h1>
             </div>
-            <div>
+            <div class="slider">
                 <div class="carte" v-for="categorie in listeCategories" :key="categorie.id">
                     <div class="carte-logo">
                         <div class="carte-logo-gauche">
@@ -16,16 +16,17 @@ var ChoixDuJeuTypeJeu = Vue.component('ChoixDuJeuTypeJeu',{
                         </div>
                     </div>
                         
-                        <h1 class="typo-green">{{categorie.nom}}</h1>
-                    
+                    <h1 class="typo-green">{{categorie.nom}}</h1>
+                    <img :src="categorie.image" :alt="categorie.nom">
+                
                     <div class="bouton">
                         <router-link to="choixdujeutempsjeu" class="green typo-white">Suivant</router-link>
                     </div>
                 </div>
-                <div class="bouton">
+            </div>
+             <div class="bouton">
                     <router-link to="choixdujeugroupe" class="green typo-white">Précédent</router-link>
                 </div>
-            </div>
         </section>
     </div>
 

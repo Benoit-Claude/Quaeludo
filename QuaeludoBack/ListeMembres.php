@@ -1,5 +1,6 @@
 <?php
 header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Headers: *");
 
     //Appel la classe Joueur
 
@@ -34,15 +35,16 @@ $query = "SELECT *
                 $donnees["ID_CATEGORIE"]
             );
 
-            $listeMembres[] = $membre;
+
         }
 
-    }else{
-        echo 'Requete failed';
+
+
+
     }
+    echo json_encode($listeMembres);
+    exit();
 
-
-
-echo '<pre>';
+/*echo '<pre>';
 echo print_r($listeMembres);
-echo '</pre>';
+echo '</pre>';*/

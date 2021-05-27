@@ -19,23 +19,23 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1606b1d-e965-42fd-9db2-f2aa1ad6367f" name="Default Changelist" comment="choixdujeugroupe.vue.js">
+    <list default="true" id="b1606b1d-e965-42fd-9db2-f2aa1ad6367f" name="Default Changelist" comment="Correction des Classes et mise en page et mise en fonction du des pages vue.js :&#10;- choixdujeugroupe.vue.js ;&#10;- choixdujeuproposition.vue.js ;&#10;- choixdujeutypejeu.vue.js.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoBack/ListeCategorie.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/ListeCategories.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QuaeludoBack/ListeGroupes.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/ListeGroupes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoBack/classes/class.Categorie.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/classes/class.Categorie.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoBack/classes/class.Groupe.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/classes/class.Groupe.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoBack/classes/class.Jeu.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/classes/class.Jeu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoBack/classes/class.Joueur.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/classes/class.Joueur.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoBack/classes/class.Ludotheque.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/classes/class.Ludotheque.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoBack/classes/class.classe.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/classes/class.classe.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoBack/classes/class.contient.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/classes/class.contient.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoBack/classes/class.possede.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/classes/class.possede.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoBack/classes/class.regroupe.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/classes/class.regroupe.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuaeludoBack/ListeLudotheques.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/ListeLudotheques.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuaeludoBack/ListeMembres.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/ListeMembres.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuaeludoFront/css/mise-en-page-css-page-avec-php.css" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/css/mise-en-page-css-page-avec-php.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuaeludoFront/css/mise-en-page-css-page-sans-php.css" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/css/mise-en-page-css-page-sans-php.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuaeludoFront/css/mise-en-page-fonctionnalite.css" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/css/mise-en-page-fonctionnalite.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QuaeludoFront/css/mise-en-page-generale.css" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/css/mise-en-page-generale.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/accueil.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/pages/accueil.vue.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/choixdujeugroupe.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/pages/choixdujeugroupe.vue.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/choixdujeuproposition.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/pages/choixdujeuproposition.vue.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/choixdujeutypejeu.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/pages/choixdujeutypejeu.vue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/groupe.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/pages/groupe.vue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/groupes.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/pages/groupes.vue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/ludotheque.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/pages/ludotheque.vue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/ludotheques.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/pages/ludotheques.vue.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,12 +70,12 @@
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
-    <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="103ed60e-ce2d-482d-bb8c-c88a023879c0" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/QuaeludoBack" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -120,7 +120,9 @@
       <workItem from="1621863214665" duration="10261000" />
       <workItem from="1621961667334" duration="6396000" />
       <workItem from="1622044922461" duration="1310000" />
-      <workItem from="1622046770005" duration="12562000" />
+      <workItem from="1622046770005" duration="12947000" />
+      <workItem from="1622064546303" duration="2817000" />
+      <workItem from="1622103682961" duration="15247000" />
     </task>
     <task id="LOCAL-00001" summary="ajout page mentionslegales.vue.js">
       <created>1621765599329</created>
@@ -199,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622050302433</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Correction des Classes et mise en page et mise en fonction du des pages vue.js :&#10;- choixdujeugroupe.vue.js ;&#10;- choixdujeuproposition.vue.js ;&#10;- choixdujeutypejeu.vue.js.">
+      <created>1622059598893</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1622059598893</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,6 +237,7 @@
     <MESSAGE value="Correction images" />
     <MESSAGE value="Correction" />
     <MESSAGE value="choixdujeugroupe.vue.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="choixdujeugroupe.vue.js" />
+    <MESSAGE value="Correction des Classes et mise en page et mise en fonction du des pages vue.js :&#10;- choixdujeugroupe.vue.js ;&#10;- choixdujeuproposition.vue.js ;&#10;- choixdujeutypejeu.vue.js." />
+    <option name="LAST_COMMIT_MESSAGE" value="Correction des Classes et mise en page et mise en fonction du des pages vue.js :&#10;- choixdujeugroupe.vue.js ;&#10;- choixdujeuproposition.vue.js ;&#10;- choixdujeutypejeu.vue.js." />
   </component>
 </project>
