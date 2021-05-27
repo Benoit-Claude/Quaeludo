@@ -33,6 +33,6 @@ if (isset($_POST['id'])){
     echo -1;
 }
 
-echo '<script>';
+/*echo '<script>';
 echo "console.log($categorie)";
-echo '</script>';
+echo '</script>';*/

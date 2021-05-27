@@ -37,7 +37,7 @@ let Ludotheques = Vue.component('Ludotheques',{
                 console.log("Erreur : ", error);
             })
 
-        axios.get('http://localhost:8888/Quaeludo/QuaeludoBack/ListeCategorie.php')
+        axios.get('http://localhost:8888/Quaeludo/QuaeludoBack/ListeCategories.php')
             .then(response => {
                 this.listeCategories = response.data;
                 console.log("listeCategorie = ", this.listeCategories);
