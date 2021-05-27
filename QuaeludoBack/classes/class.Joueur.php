@@ -15,6 +15,8 @@ class Joueur implements JsonSerializable{
     private $image = null;
     private $idcategorie = null;
 
+
+
     public function __construct($id, $pseudo, $nom, $prenom, $datenaissance, $adressemail, $mdp, $image, $idcategorie)
     {
         $this->id = $id;

@@ -49,6 +49,7 @@ let Ludotheque = Vue.component('Ludotheque',{
     `,
     data(){
         return{
+            listeJeux:[]
         }
     },
     mounted(){

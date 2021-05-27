@@ -12,6 +12,8 @@ class Regroupe extends Joueur implements JsonSerializable{
      * Compose constructor.
      * @param array $lesJoueurs
      */
+
+
     public function __construct($id, $pseudo, $nom, $prenom, $datenaissance, $adressemail, $mdp, $image, $idcategorie){
         parent:: __construct($id, $pseudo, $nom, $prenom, $datenaissance, $adressemail, $mdp, $image, $idcategorie);
     }
