@@ -13,6 +13,8 @@ if (isset($_POST['id'])){
     }
 }
 
+
+
 if (isset($_POST['id'])){
     $sql = "SELECT * FROM ludotheque WHERE ID_LUDOTHEQUE = ? ";
     $requete = $pdo->prepare($sql);

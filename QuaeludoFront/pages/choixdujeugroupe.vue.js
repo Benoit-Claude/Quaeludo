@@ -26,6 +26,8 @@ var ChoixDuJeuGroupe = Vue.component('ChoixDuJeuGroupe',{
                 </div>
             </div>
             
+            
+            
         </section>
     </div>
     `,

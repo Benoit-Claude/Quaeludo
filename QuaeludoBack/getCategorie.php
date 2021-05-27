@@ -26,6 +26,8 @@ if (isset($_POST['id'])){
                 $donnees['DESC_CATEGORIE'],
                 $donnees["IMAGE_CATEGORIE"]
             );
+
+
         }
     }
     echo json_encode($categorie);

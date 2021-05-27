@@ -13,6 +13,8 @@ if (isset($_POST['id'])){
     }
 }
 
+
+
 if (isset($_POST['id'])){
     $sql = "SELECT * FROM groupe WHERE ID_GROUPE = ? ";
     $requete = $pdo->prepare($sql);

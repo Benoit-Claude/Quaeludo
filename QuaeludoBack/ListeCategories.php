@@ -37,6 +37,8 @@
     echo json_encode($listeCategories);
     exit();
 
+
+
     /*echo '<pre>';
     echo print_r($listeCategories);
     echo '</pre>';*/

@@ -69,3 +69,5 @@ let Inscription = Vue.component('Inscription',{
 
     }
 })
+
+

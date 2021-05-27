@@ -19,8 +19,15 @@ $listeGroupeRegroupeJoueur = array();
 if($requete->execute()){
     while($donnees = $requete->fetch()){
         $grouperegroupejoueur = new regroupe(
-            $donnees["ID_GROUPE"],
-            $donnees["ID_JOUEUR"]
+            $donnees["ID_JOUEUR"],
+            $donnees["PSEUDO"],
+            $donnees["NOM_JOUEUR"],
+            $donnees["PRENOM"],
+            $donnees["DATENAISSANCE"],
+            $donnees["ADRESSEMAIL"],
+            $donnees["MDP"],
+            $donnees["IMAGE_JOUEUR"],
+            $donnees["ID_CATEGORIE"]
         );
         $listeGroupeRegroupeJoueur[] = $grouperegroupejoueur  ;
         echo json_encode($grouperegroupejoueur);

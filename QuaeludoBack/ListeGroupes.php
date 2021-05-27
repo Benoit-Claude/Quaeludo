@@ -28,6 +28,8 @@ header("Access-Control-Allow-Headers: *");
                 $donnees["ID_JOUEUR"]
             );
 
+
+
             $sql = "SELECT * FROM regroupe, joueur 
                     WHERE regroupe.ID_GROUPE = ?
                     AND regroupe.ID_JOUEUR = joueur.ID_JOUEUR

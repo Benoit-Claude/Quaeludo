@@ -13,13 +13,6 @@ let Desabonner = Vue.component('Desabonner',{
             </label>
         </section>
     </div>
-
-
-    
-    
-    
-    
-    
     `,
     data(){
 

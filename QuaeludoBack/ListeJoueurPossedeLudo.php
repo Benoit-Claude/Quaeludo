@@ -18,9 +18,16 @@ $listeJoueurPossedeLudo = array();
 //Exécution
 if($requete->execute()){
     while($donnees = $requete->fetch()){
-        $joueurpossedeludo = new possede(
-            $donnees["ID_LUDOTHEQUE"],
-            $donnees["ID_JOUEUR"]
+        $joueurpossedeludo = new Possede(
+            $donnees["ID_JOUEUR"],
+            $donnees["PSEUDO"],
+            $donnees["NOM_JOUEUR"],
+            $donnees["PRENOM"],
+            $donnees["DATENAISSANCE"],
+            $donnees["ADRESSEMAIL"],
+            $donnees["MDP"],
+            $donnees["IMAGE_JOUEUR"],
+            $donnees["ID_CATEGORIE"]
         );
         $listeJoueurPossedeLudo[] = $joueurpossedeludo  ;
         echo json_encode($joueurpossedeludo);

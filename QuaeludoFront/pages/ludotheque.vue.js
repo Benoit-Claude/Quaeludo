@@ -58,3 +58,4 @@ let Ludotheque = Vue.component('Ludotheque',{
 
     }
 })
+

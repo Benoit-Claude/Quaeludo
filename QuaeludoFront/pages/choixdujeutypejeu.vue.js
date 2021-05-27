@@ -29,9 +29,7 @@ var ChoixDuJeuTypeJeu = Vue.component('ChoixDuJeuTypeJeu',{
                 </div>
         </section>
     </div>
-
     `,
-
     data(){
         return{
             listeCategories:[]

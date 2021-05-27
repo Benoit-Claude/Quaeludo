@@ -25,6 +25,7 @@ var ChoixDuJeuProposition = Vue.component('ChoixDuJeuProposition',{
             </div> 
         </section>
         
+        
     </div>
     `,
     data(){

@@ -20,7 +20,9 @@ if($requete->execute()){
     while($donnees = $requete->fetch()){
         $categorieclassejeu = new classe(
             $donnees["ID_JEU"],
-            $donnees["ID_CATEGORIE"]
+            $donnees["ID_CATEGORIE"],
+            $donnees["DESC_CATEGORIE"],
+            $donnees["IMAGE_CATEGORIE"]
         );
         $listeCategorieClasseJeu[] = $categorieclassejeu  ;
         echo json_encode($categorieclassejeu);

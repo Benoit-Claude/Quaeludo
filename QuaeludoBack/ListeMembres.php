@@ -34,13 +34,7 @@ $query = "SELECT *
                 $donnees["IMAGE_JOUEUR"],
                 $donnees["ID_CATEGORIE"]
             );
-
-
         }
-
-
-
-
     }
     echo json_encode($listeMembres);
     exit();

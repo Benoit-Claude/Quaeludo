@@ -11,6 +11,3 @@ $pdo = new PDO(
 );
 // Adresse serveur de l'application
 $host = $parametres['host'];
-
-
-

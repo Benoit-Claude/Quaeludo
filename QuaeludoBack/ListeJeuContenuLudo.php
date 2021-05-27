@@ -22,7 +22,17 @@ if($requete->execute()){
     while($donnees = $requete->fetch()){
         $jeucontenuludo = new contient(
             $donnees["ID_JEU"],
-            $donnees["ID_LUDOTHEQUE"]
+            $donnees["NOM_JEU"],
+            $donnees["IMAGE_JEU"],
+            $donnees["DESC_JEU"],
+            $donnees["AGEMIN"],
+            $donnees["AGEMAX"],
+            $donnees["DUREEMIN"],
+            $donnees["DUREEMAX"],
+            $donnees["JOUEURMIN"],
+            $donnees["JOUEURMAX"],
+            $donnees["LIENAFFILIE"],
+            $donnees["ID_CATEGORIE"]
         );
         $listeJeuContenuLudo[] = $jeucontenuludo;
         echo json_encode($jeucontenuludo);

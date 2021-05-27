@@ -13,3 +13,4 @@ let Jeux = Vue.component('Jeux',{
 
     }
 })
+

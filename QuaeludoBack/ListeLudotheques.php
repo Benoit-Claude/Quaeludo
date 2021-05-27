@@ -54,6 +54,7 @@ header("Access-Control-Allow-Headers: *");
                         $donnees2["ID_CATEGORIE"]
                     );
 
+
                     $lesJeux[] = $contient;
                 }
             }

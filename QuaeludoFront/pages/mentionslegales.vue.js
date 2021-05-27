@@ -89,7 +89,6 @@ let Mentionslegales = Vue.component('Mentionslegales',{
             <p>Pour toute question relative à l’application des présentes CGU, vous pouvez joindre l’éditeur aux coordonnées inscrites à l’ARTICLE 1.</p>
         </section>
     </div>
-    
     `,
     data(){
         return{
