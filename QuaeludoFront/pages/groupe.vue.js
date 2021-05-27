@@ -28,7 +28,7 @@ let Groupe = Vue.component('Groupe',{
                 <input type="search" class="grey2" id="site-search" name="q"
                        aria-label="Search through site content" placeholder="Rechercher">
     
-                <button class="whitegrey"><img src="../css/images/svg/search-solid.svg" style="height: 30px; width: auto;" alt=""></button>
+                <button class="whitegrey"><img src="css/images/svg/search-solid.svg" style="height: 30px; width: auto;" alt="search"></button>
             </div>
             <div class="legende-section-choix">
                 <p>Image</p>
