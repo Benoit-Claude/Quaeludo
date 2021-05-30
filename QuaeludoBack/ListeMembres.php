@@ -3,16 +3,14 @@ header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Headers: *");
 
     //Appel la classe Joueur
-
     require_once 'cnx.php';
     require_once 'Classes/class.Joueur.php';
 
 
-
-//Ordre SQL
-$query = "SELECT * 
-            FROM joueur 
-            ORDER BY ID_JOUEUR";
+    //Ordre SQL
+    $query = "SELECT * 
+              FROM joueur 
+              ORDER BY ID_JOUEUR";
 
     //Preparer la requete
     $requete = $pdo->prepare($query);
@@ -34,7 +32,10 @@ $query = "SELECT *
                 $donnees["IMAGE_JOUEUR"],
                 $donnees["ID_CATEGORIE"]
             );
+
+            $listeMembres[] = $membre;
         }
+
     }
     echo json_encode($listeMembres);
     exit();

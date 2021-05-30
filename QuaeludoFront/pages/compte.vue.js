@@ -3,45 +3,51 @@ let Compte = Vue.component('Compte',{
     <div class="page Compte">
         <section class="section-image-haut-page">
             <div class="section-compte-image-compte">
-                <img src="../css/images/Contact/avatar-benoit.png" alt="">
+                <img :src="Joueur.image" :alt="Joueur.pseudo">
             </div>
         </section>
     
         <section class="section-compte info-compte">
             <div>
-                <h5>Pseudo#id</h5>
-                <h5>Âge</h5>
+                <h5>{{Joueur.pseudo}}#{{Joueur.id}}</h5>
+                <h5>{{Joueur.datenaissance}}</h5>
             </div>
         </section>
     
-        <section class="section-compte categorie-preferee">
+        <!--<section class="section-compte categorie-preferee">
             <h3>Catégories Préférées</h3>
-            <div>
-                <p class="bouton"><a href="" class="red typo-white">Aventure</a></p>
-                <p class="bouton"><a href="" class="red typo-white">Stratégie</a></p>
-                <p class="bouton"><a href="" class="red typo-white">Hasard</a></p>
-            </div>
         </section>
     
         <section class="section-compte categorie-preferee">
             <h3>Jeux préférés</h3>
             <div>
-                <img src="../css/images/Jeux/AventureduRail.png" alt="">
-                <img src="../css/images/Jeux/Memoire44.png" alt="">
-                <img src="../css/images/Jeux/Monopoly.png" alt="">
+                <img src="css/images/Jeux/AventureduRail.png" alt="">
+                <img src="css/images/Jeux/Memoire44.png" alt="">
+                <img src="css/images/Jeux/Monopoly.png" alt="">
             </div>
-        </section>
-        <section>
-            <div class="bouton"><router-link to="Ludotheque" class="typo-white green" style="font-size: 30px;">Mes ludothèques</router-link></div>
+        </section>-->
+        <section class="section-bouton-centre">
+            <router-link class="green bouton typo-white" to="Ludotheques">Mes Ludothèques</router-link>
         </section>
     </div>
     `,
     data(){
         return{
+            Joueur:{}
         }
     },
     mounted(){
+        axios.get('http://localhost:8888/Quaeludo/QuaeludoBack/getMembre.php?id='+this.$route.query.id)
+            // Réponse promise et récupération des résultats
 
+            .then(response => {
+                this.Joueur = response.data;
+                console.log("joueur = ", this.Joueur);
+            })
+
+            .catch(error =>{
+                console.log("Erreur : ", error);
+            })
     },
     methods:{
 

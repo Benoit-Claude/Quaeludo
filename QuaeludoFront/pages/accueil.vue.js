@@ -16,9 +16,11 @@ let Accueil = Vue.component('Accueil',{
                     </div>
                 </div>
                 <h1 class="typo-green">Nouveauté</h1>
-                <p class="typo-blackgrey">Retrouvez les dernières nouveautés !</p>
-                <div class="bouton">
-                    <a href="" class=" green typo-white">Venez-voir !</a>
+                <div class="carte-p">
+                    <p class="typo-blackgrey">Retrouvez les dernières nouveautés !</p>
+                </div>
+                <div class="bouton green">
+                    <a href="" class="  typo-white">Venez-voir !</a>
                 </div>
             </div>
         </section>

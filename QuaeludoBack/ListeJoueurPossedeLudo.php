@@ -16,7 +16,9 @@ $requete = $pdo->prepare($query);
 //Tableau liste membres
 $listeJoueurPossedeLudo = array();
 //Exécution
-if($requete->execute()){
+if($requete->execute(
+    array("id"=>$_GET['id']
+))){
     while($donnees = $requete->fetch()){
         $joueurpossedeludo = new Possede(
             $donnees["ID_JOUEUR"],
@@ -29,14 +31,12 @@ if($requete->execute()){
             $donnees["IMAGE_JOUEUR"],
             $donnees["ID_CATEGORIE"]
         );
-        $listeJoueurPossedeLudo[] = $joueurpossedeludo  ;
-        echo json_encode($joueurpossedeludo);
 
+        $listeJoueurPossedeLudo[] = $joueurpossedeludo;
     }
 
-}else{
-    echo 'Requete failed';
 }
-echo "<pre>";
+echo json_encode($listeJoueurPossedeLudo);
+/*echo "<pre>";
 print_r($listeJoueurPossedeLudo);
-echo "</pre>";
+echo "</pre>";*/

@@ -10,7 +10,7 @@ class Ludotheque implements JsonSerializable{
     private $nom = null;
     private $desc = null;
     private $image = null;
-    private $idjoueur = 0;
+    private $idcategorie = 0;
 
     private $lesJeux = array();
     private $lesProprietaire = array();
@@ -18,12 +18,12 @@ class Ludotheque implements JsonSerializable{
 
 
 
-    public function __construct($id, $nom, $desc, $image,$idjoueur){
+    public function __construct($id, $nom, $desc, $image,$idcategorie){
         $this->id = $id;
         $this->nom = $nom;
         $this->desc = $desc;
         $this->image = $image;
-        $this->idjoueur = $idjoueur;
+        $this->idcategorie = $idcategorie;
     }
 
 
@@ -31,7 +31,7 @@ class Ludotheque implements JsonSerializable{
     public function getNom()            {return $this->nom;}
     public function getDesc()           {return $this->desc;}
     public function getImage()          {return $this->image;}
-    public function getIdjoueur()       {return $this->idjoueur;}
+    public function getidcategorie()    {return $this->idcategorie;}
     public function getLesJeux()        {return $this->lesJeux;}
     public function getLesProprietaire(){return $this->lesProprietaire;}
 
@@ -39,7 +39,7 @@ class Ludotheque implements JsonSerializable{
     public function setNom($nom)                        {$this->nom = $nom;}
     public function setDesc($desc)                      {$this->desc = $desc;}
     public function setImage($image)                    {$this->image = $image;}
-    public function setIdjoueur($idjoueur)              {$this->idjoueur = $idjoueur;}
+    public function setidcategorie($idcategorie)              {$this->idcategorie = $idcategorie;}
     public function setLesJeux($lesJeux)                {$this->lesJeux = $lesJeux;}
     public function setLesProprietaire($lesProprietaire){$this->lesProprietaire = $lesProprietaire;}
 

@@ -5,23 +5,25 @@ require_once 'cnx.php';
 require_once 'classes/class.Joueur.php';
 
 
-if (isset($_POST['id'])){
-    $_GET['id'] = $_POST['id'];
+if (isset($_POST['pseudo'])){
+    $_GET['pseudo'] = $_POST['pseudo'];
 }else{
-    if (isset($_GET['id'])){
-        $_POST['id'] = $_GET['id'];
+    if (isset($_GET['pseudo'])){
+        $_POST['pseudo'] = $_GET['pseudo'];
     }
 }
 
-if (isset($_POST['id'])){
-    $sql = "SELECT * FROM joueur WHERE ID_JOUEUR = ? ";
+if (isset($_GET['pseudo'])){
+    $sql = "SELECT * 
+            FROM joueur 
+            WHERE PSEUDO = ? ";
     $requete = $pdo->prepare($sql);
-    $requete->bindValue(1, $_POST['id']);
+    $requete->bindValue(1, $_GET['pseudo']);
     $membre = null;
     if ($requete->execute()){
         if ($donnees = $requete->fetch()){
             $membre = new Joueur(
-                $donnees["ID_JOUEUR"],
+                $donnees["pseudo_JOUEUR"],
                 $donnees["PSEUDO"],
                 $donnees["NOM_JOUEUR"],
                 $donnees["PRENOM"],
@@ -29,7 +31,7 @@ if (isset($_POST['id'])){
                 $donnees["ADRESSEMAIL"],
                 $donnees["MDP"],
                 $donnees["IMAGE_JOUEUR"],
-                $donnees["ID_CATEGORIE"]
+                $donnees["pseudo_CATEGORIE"]
             );
         }
     }

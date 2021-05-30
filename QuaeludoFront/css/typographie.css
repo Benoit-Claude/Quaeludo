@@ -176,3 +176,11 @@ footer>p>a{
 .Ajout-ludotheque>p{
     font-size: 20px;
 }
+
+
+/* Bouton */
+.bouton{
+    color: #FAFAFA;
+    font-family: "Source Serif Pro", sans-serif;
+    font-size: medium;
+}

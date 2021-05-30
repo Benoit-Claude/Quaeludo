@@ -1,7 +1,7 @@
 var ChoixDuJeuGroupe = Vue.component('ChoixDuJeuGroupe',{
     template:`
     <div class="page Page-choixdujeu">
-        <section id="Groupe-Jeu section-haut-page">
+        <section>
             <div>
                 <h1 class="typo-green">Avec qui ?</h1>
             </div>
@@ -17,23 +17,21 @@ var ChoixDuJeuGroupe = Vue.component('ChoixDuJeuGroupe',{
                     </div>
                         
                     <h1 class="typo-green">{{groupe.nom}}</h1>
-                    <p class="typo-blackgrey" v-for="joueur in groupe.lesJoueurs" :key="groupe.id">
-                        {{joueur.parent.prenom}} {{joueur.parent.nom}}
-                    </p>
-                    <div class="bouton">
-                        <router-link to="choixdujeutypejeu" class="green typo-white">Suivant</router-link>
+                    <div class="carte-p">
+                        <p class="typo-blackgrey" v-for="joueur in groupe.lesJoueurs" :key="groupe.id">
+                            {{joueur.parent.prenom}} {{joueur.parent.nom}}
+                        </p>
                     </div>
+                    <input type="button" class="green bouton precedent" @click="choixgroupe(groupe.id)" value="Suivant">
                 </div>
             </div>
-            
-            
-            
         </section>
     </div>
     `,
     data(){
         return{
-            listeGroupes:[]
+            listeGroupes:[],
+            groupe:{}
         }
 
     },
@@ -49,8 +47,15 @@ var ChoixDuJeuGroupe = Vue.component('ChoixDuJeuGroupe',{
                 console.log("Erreur : ", error);
             })
 
+
     },
     methods:{
+        choixgroupe(id){
+            console.log('test1');
+            localStorage.setItem('groupe', id);
+            router.push('choixdujeutypejeu');
 
+            console.log("groupe sélectionné", id);
+        }
     }
 })

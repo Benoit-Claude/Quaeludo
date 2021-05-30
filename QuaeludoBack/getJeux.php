@@ -1,8 +1,14 @@
 <?php
 header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Headers: *");
 
 require_once 'cnx.php';
 require_once 'classes/class.Jeu.php';
+/*require_once 'classes/class.Ludotheque.php';
+require_once 'classes/class.Joueur.php';
+require_once 'classes/class.Categorie.php';
+require_once 'classes/class.Groupe.php';
+require_once 'classes/class.possede.php';*/
 
 
 if (isset($_POST['id'])){
@@ -16,7 +22,24 @@ if (isset($_POST['id'])){
 
 
 if (isset($_POST['id'])){
-    $sql = "SELECT * FROM jeu WHERE ID_JEU = ? ";
+    $sql = "SELECT groupe.ID_GROUPE = ? 
+            FROM jeu, contient, joueur, ludotheque, groupe, possede
+            WHERE groupe.ID_GROUPE = ?
+            AND jeu.ID_CATEGORIE = ?
+            AND jeu.DUREEMAX <= ?
+            AND jeu.ID_JEU = contient.ID_JEU
+            AND jeu.JOUEURMIN <= regroupe.length
+            AND jeu.JOUEURMAX >= regroupe.length";
+
+
+
+
+
+
+
+
+
+
     $requete = $pdo->prepare($sql);
     $requete->bindValue(1, $_POST['id']);
     $jeu = null;
@@ -38,12 +61,13 @@ if (isset($_POST['id'])){
             );
         }
     }
-    echo json_encode($jeu);
-}else{
-    echo -1;
-}
 
-echo '<script>';
+}
+echo json_encode($jeu);
+
+
+
+/*echo '<script>';
 echo "console.log($jeu)";
-echo '</script>';
+echo '</script>';*/
 

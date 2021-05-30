@@ -16,7 +16,9 @@ if (isset($_POST['id'])){
 
 
 if (isset($_POST['id'])){
-    $sql = "SELECT * FROM groupe WHERE ID_GROUPE = ? ";
+    $sql = "SELECT * 
+            FROM groupe 
+            WHERE ID_GROUPE = ? ";
     $requete = $pdo->prepare($sql);
     $requete->bindValue(1, $_POST['id']);
     $groupe = null;
@@ -30,12 +32,40 @@ if (isset($_POST['id'])){
                 $donnees["ID_JOUEUR"]
             );
         }
+
+        $sql = "SELECT * FROM regroupe, joueur 
+                    WHERE regroupe.ID_GROUPE = ?
+                    AND regroupe.ID_JOUEUR = joueur.ID_JOUEUR
+                    ORDER BY NOM_JOUEUR";
+
+        $requete2 = $pdo->prepare($sql);
+        $requete2->bindValue(1, $groupe->getId());
+
+        $lesJoueurs = array();
+        if ($requete2->execute()){
+            while($donnees2 = $requete2->fetch()){
+                $regroupe = new Regroupe(
+                    $donnees2["ID_JOUEUR"],
+                    $donnees2["PSEUDO"],
+                    $donnees2["NOM_JOUEUR"],
+                    $donnees2["PRENOM"],
+                    $donnees2["DATENAISSANCE"],
+                    $donnees2["ADRESSEMAIL"],
+                    $donnees2["MDP"],
+                    $donnees2["IMAGE_JOUEUR"],
+                    $donnees2["ID_CATEGORIE"]
+                );
+
+                $lesJoueurs[] = $regroupe;
+            }
+        }
+
+        $groupe->setLesJoueurs($lesJoueurs);
     }
-    echo json_encode($groupe);
-}else{
-    echo -1;
 }
 
-echo '<script>';
+echo json_encode($groupe);
+
+/*echo '<script>';
 echo "console.log($groupe)";
-echo '</script>';
+echo '</script>';*/

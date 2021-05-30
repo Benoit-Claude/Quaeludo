@@ -304,22 +304,36 @@ footer>p{
 
 
 /* Bouton */
+
+
 .bouton{
-    text-align: center;
-    margin: 50px auto 20px;
-}
-
-
-.carte>div.bouton{
-    margin: 20px auto;
-}
-
-.bouton>a{
-    width: 100%;
+    width: 50%;
     height: auto;
-    margin: 20px auto;
     border-radius: 20px;
+    border: none;
     padding: 5px 20px;
+    text-align: center;
+    margin: 10px auto 20px;
+}
+
+.carte-img{
+    height: 40%;
+    width: auto;
+    margin: 0 auto;
+}
+
+.carte-p{
+    height: 40%;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.image-carte{
+    max-height: 90%;
+}
+
+.bouton.precedent{
+    margin: 20px 30px;
 }
 
 
@@ -363,6 +377,10 @@ section>p{
 .section-haut-page>.carte{
     position: relative;
     margin: auto;
+}
+
+.section-bouton-centre{
+    text-align: center;
 }
 
 

@@ -92,7 +92,7 @@ CREATE TABLE `ludotheque` (
                               `NOM_LUDOTHEQUE` varchar(50) NOT NULL,
                               `IMAGE_LUDOTHEQUE` varchar(500) DEFAULT NULL,
                               `DESC_LUDOTHEQUE` varchar(500) DEFAULT NULL,
-                              `ID_JOUEUR` int(11) NOT NULL
+                              `ID_CATEGORIE` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
@@ -211,7 +211,7 @@ ALTER TABLE `jeu`
 --
 ALTER TABLE `ludotheque`
     ADD PRIMARY KEY (`ID_LUDOTHEQUE`),
-    ADD KEY `ID_JOUEUR` (`ID_JOUEUR`) USING BTREE;
+    ADD KEY `ID_CATEGORIE` (`ID_CATEGORIE`) USING BTREE;
 
 
 
@@ -230,8 +230,8 @@ ALTER TABLE `contient`
 --
 ALTER TABLE `classe`
     ADD PRIMARY KEY (`ID_JEU`,`ID_CATEGORIE`),
-    ADD KEY `IDJEU` (`ID_JEU`) USING BTREE,
-    ADD KEY `IDCategorie` (`ID_CATEGORIE`) USING BTREE;
+    ADD KEY `ID_JEU` (`ID_JEU`) USING BTREE,
+    ADD KEY `ID_CATEGORIE` (`ID_CATEGORIE`) USING BTREE;
 
 -- --------------------------------------------------------
 --
@@ -368,7 +368,7 @@ ALTER TABLE `jeu`
 -- Constraints for table `ludotheque`
 --
 ALTER TABLE `ludotheque`
-    ADD CONSTRAINT `ludotheque_ibfk_1` FOREIGN KEY (`ID_JOUEUR`) REFERENCES `JOUEUR` (`ID_JOUEUR`);
+    ADD CONSTRAINT `ludotheque_ibfk_1` FOREIGN KEY (`ID_CATEGORIE`) REFERENCES `categorie` (`ID_CATEGORIE`);
 
 -- --------------------------------------------------------
 --
@@ -459,9 +459,9 @@ INSERT INTO `categorie` (`ID_CATEGORIE`, `NOM_CATEGORIE`, `DESC_CATEGORIE`, `IMA
 -- Donnée rentrée `joueur`
 --
 INSERT INTO `joueur` (`ID_JOUEUR`, `PSEUDO`, `NOM_JOUEUR`, `PRENOM`, `DATENAISSANCE`, `ADRESSEMAIL`, `MDP`, `IMAGE_JOUEUR`, `ID_CATEGORIE`) VALUES
-(1, 'Azlenor', 'CLAUDE', 'Benoît', '2002-02-15', 'benoit.claude14@gmail.com', 'benoitclaude14', NULL, 16),
-(2, 'Diverair', 'BONIN', 'Raphaël', '2002-02-04', 'raph.bonin@gmail.com', 'raphaelb2002', NULL, 12),
-(3, 'Nasobol90', 'BAUMANN', 'Nathan', '2002-10-02', 'nathan.baumann90@gmail.com', 'nathanbaumann90', NULL, 4);
+(1, 'Azlenor', 'CLAUDE', 'Benoît', '2002-02-15', 'benoit.claude14@gmail.com', 'benoitclaude14', '/css/images/Contact/avatar-benoit.png', 16),
+(2, 'Diverair', 'BONIN', 'Raphaël', '2002-02-04', 'raph.bonin@gmail.com', 'raphaelb2002', '/css/images/Contact/avatar-raph.png', 12),
+(3, 'Nasobol90', 'BAUMANN', 'Nathan', '2002-10-02', 'nathan.baumann90@gmail.com', 'nathanbaumann90', '/css/images/Contact/avatar-nathan.png', 4);
 
 
 -- --------------------------------------------------------
@@ -469,8 +469,8 @@ INSERT INTO `joueur` (`ID_JOUEUR`, `PSEUDO`, `NOM_JOUEUR`, `PRENOM`, `DATENAISSA
 -- Donnée rentrée `groupe`
 --
 INSERT INTO `groupe` (`ID_GROUPE`, `NOM_GROUPE`, `DESC_GROUPE`, `IMAGE_GROUPE`, `ID_JOUEUR`) VALUES
-(1, 'Staff', 'Groupe du Staff', '//images/Logos/logo.png', 2),
-(2, 'Développeur', 'Groupe des développeurs du projet', '//images/Logos/logo.png', 2);
+(1, 'Staff', 'Groupe du Staff', 'css/images/Logos/logo.png', 2),
+(2, 'Développeur', 'Groupe des développeurs du projet', 'css/images/Logos/logo.png', 2);
 
 
 -- --------------------------------------------------------
@@ -488,10 +488,10 @@ INSERT INTO `jeu` (`ID_JEU`, `NOM_JEU`, `IMAGE_JEU`, `DESC_JEU`, `AGEMIN`, `AGEM
 --
 -- Donnée rentrée `ludotheque`
 --
-INSERT INTO `ludotheque` (`ID_LUDOTHEQUE`, `NOM_LUDOTHEQUE`, `IMAGE_LUDOTHEQUE`, `DESC_LUDOTHEQUE`, `ID_JOUEUR`) VALUES
-(1, 'Ma ludothèque', NULL, NULL, 1),
-(2, 'Ma ludothèque', NULL, NULL, 2),
-(3, 'Ma ludothèque', NULL, NULL, 3);
+INSERT INTO `ludotheque` (`ID_LUDOTHEQUE`, `NOM_LUDOTHEQUE`, `IMAGE_LUDOTHEQUE`, `DESC_LUDOTHEQUE`, `ID_CATEGORIE`) VALUES
+(1, 'Ma ludothèque', NULL, NULL, 16),
+(2, 'Ma ludothèque', NULL, NULL, 12),
+(3, 'Ma ludothèque', NULL, NULL, 4);
 
 -- --------------------------------------------------------
 --

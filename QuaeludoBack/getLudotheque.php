@@ -1,5 +1,6 @@
 <?php
 header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Headers: *");
 
 require_once 'cnx.php';
 require_once 'classes/class.Ludotheque.php';
@@ -16,7 +17,9 @@ if (isset($_POST['id'])){
 
 
 if (isset($_POST['id'])){
-    $sql = "SELECT * FROM ludotheque WHERE ID_LUDOTHEQUE = ? ";
+    $sql = "SELECT * 
+            FROM ludotheque 
+            WHERE ID_LUDOTHEQUE = ? ";
     $requete = $pdo->prepare($sql);
     $requete->bindValue(1, $_POST['id']);
     $ludotheque = null;
@@ -27,15 +30,13 @@ if (isset($_POST['id'])){
                 $donnees['NOM_LUDOTHEQUE'],
                 $donnees['IMAGE_LUDOTHEQUE'],
                 $donnees["DESC_LUDOTHEQUE"],
-                $donnees["ID_JOUEUR"]
+                $donnees["ID_CATEGORIE"]
             );
         }
     }
-    echo json_encode($ludotheque);
-}else{
-    echo -1;
-}
 
-echo '<script>';
+}
+echo json_encode($ludotheque);
+/*echo '<script>';
 echo "console.log($ludotheque)";
-echo '</script>';
+echo '</script>';*/

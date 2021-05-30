@@ -1,5 +1,10 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Headers: *");
 
     //Appel la classe Groupe
     require_once 'cnx.php';
@@ -7,18 +12,22 @@ header("Access-Control-Allow-Origin: *");
 
 
 //Ordre SQL
-$query = "SELECT * 
-            FROM regroupe
-            ORDER BY ID_GROUPE";
+$query = "SELECT * FROM joueur, regroupe 
+          WHERE regroupe.ID_JOUEUR = joueur.ID_JOUEUR 
+          AND regroupe.ID_GROUPE = :id 
+          ORDER BY joueur.NOM_JOUEUR";
+
 //Preparer la requete
 $requete = $pdo->prepare($query);
 
 //Tableau liste membres
 $listeGroupeRegroupeJoueur = array();
 //Exécution
-if($requete->execute()){
+if($requete->execute(array(
+    "id"=>$_GET['id']
+))){
     while($donnees = $requete->fetch()){
-        $grouperegroupejoueur = new regroupe(
+        $grouperegroupejoueur = new Joueur(
             $donnees["ID_JOUEUR"],
             $donnees["PSEUDO"],
             $donnees["NOM_JOUEUR"],
@@ -29,14 +38,13 @@ if($requete->execute()){
             $donnees["IMAGE_JOUEUR"],
             $donnees["ID_CATEGORIE"]
         );
-        $listeGroupeRegroupeJoueur[] = $grouperegroupejoueur  ;
-        echo json_encode($grouperegroupejoueur);
+        $listeGroupeRegroupeJoueur[] = $grouperegroupejoueur;
 
     }
 
-}else{
-    echo 'Requete failed';
 }
-echo "<pre>";
+echo json_encode($listeGroupeRegroupeJoueur);
+
+/*echo "<pre>";
 print_r($listeGroupeRegroupeJoueur);
-echo "</pre>";
+echo "</pre>";*/

@@ -5,7 +5,7 @@ let Groupes = Vue.component('Groupes',{
             <h1>Mes Groupes</h1>
         </div>
         <section class="section-haut-page liste">
-            <router-link to="groupe" class="section-liste-choix" v-for="groupe in listeGroupes" :key="groupe.id">
+            <router-link :to="{path: '/groupe', query:{id:groupe.id}}" class="section-liste-choix" v-for="groupe in listeGroupes" :key="groupe.id">
                 <img :src="groupe.image" height="62" width="62" alt="">
                 <div class="info-nom-ludo">
                     <h3>{{groupe.nom}}</h3>
@@ -28,7 +28,7 @@ let Groupes = Vue.component('Groupes',{
 
     },
     mounted(){
-        axios.get('http://localhost/Quaeludo/QuaeludoBack/ListeGroupes.php')
+        axios.get('http://localhost:8888/Quaeludo/QuaeludoBack/ListeGroupes.php')
             // Réponse promise et récupération des résultats
             .then(response => {
                 this.listeGroupes = response.data;

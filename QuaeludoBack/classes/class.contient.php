@@ -6,10 +6,9 @@ require_once('class.Ludotheque.php');
 require_once('class.Jeu.php');
 
 class Contient extends Jeu implements JsonSerializable{
-    private $lesJeu = array();
+    private $lesJeux = array();
 
-    public function __construct($id, $nom, $image, $desc, $agemin, $agemax, $dureemin, $dureemax, $joueurmin, $joueurmax, $lienaffilie, $idcategorie)
-    {
+    public function __construct($id, $nom, $image, $desc, $agemin, $agemax, $dureemin, $dureemax, $joueurmin, $joueurmax, $lienaffilie, $idcategorie){
         parent::__construct($id, $nom, $image, $desc, $agemin, $agemax, $dureemin, $dureemax, $joueurmin, $joueurmax, $lienaffilie, $idcategorie);
     }
 

@@ -16,9 +16,13 @@ header("Access-Control-Allow-Headers: *");
 
     //Tableau liste membres
     $listeGroupes = array();
-
+    echo $_GET['id'];
     //Exécution
-    if($requete->execute()){
+    if($requete->execute(
+        array(
+            "id"=>$_GET['id']
+        )
+    )){
         while($donnees = $requete->fetch()){
             $groupe = new Groupe(
                 $donnees["ID_GROUPE"],
@@ -28,9 +32,8 @@ header("Access-Control-Allow-Headers: *");
                 $donnees["ID_JOUEUR"]
             );
 
-
-
-            $sql = "SELECT * FROM regroupe, joueur 
+            $sql = "SELECT * 
+                    FROM regroupe, joueur 
                     WHERE regroupe.ID_GROUPE = ?
                     AND regroupe.ID_JOUEUR = joueur.ID_JOUEUR
                     ORDER BY NOM_JOUEUR";

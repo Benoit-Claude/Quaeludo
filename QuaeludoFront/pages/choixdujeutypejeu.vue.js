@@ -1,7 +1,7 @@
 var ChoixDuJeuTypeJeu = Vue.component('ChoixDuJeuTypeJeu',{
     template:`
-    <div class="page">
-        <section id="Groupe-Jeu section-haut-page">
+    <div class="page Page-choixdujeu">
+        <section>
             <div>
                 <h1 class="typo-green">Un jeu de ...</h1>
             </div>
@@ -17,17 +17,14 @@ var ChoixDuJeuTypeJeu = Vue.component('ChoixDuJeuTypeJeu',{
                     </div>
                         
                     <h1 class="typo-green">{{categorie.nom}}</h1>
-                    <img :src="categorie.image" :alt="categorie.nom">
-                
-                    <div class="bouton">
-                        <router-link to="choixdujeutempsjeu" class="green typo-white">Suivant</router-link>
-                    </div>
+                    <div class="carte-img">
+                        <img src="css/images/Des/dice-five-solid.svg" :alt="categorie.nom" class="image-carte">
+                     </div>
+                     <input type="button" class="green bouton precedent" @click="choixcategorie(categorie.id)" value="Suivant">
                 </div>
-            </div>
-             <div class="bouton">
-                    <router-link to="choixdujeugroupe" class="green typo-white">Précédent</router-link>
-                </div>
+            </div> 
         </section>
+        <router-link class="green bouton precedent" to="choixdujeugroupe">Précédent</router-link>
     </div>
     `,
     data(){
@@ -36,6 +33,7 @@ var ChoixDuJeuTypeJeu = Vue.component('ChoixDuJeuTypeJeu',{
         }
     },
     mounted(){
+        console.log('localstorage', localStorage.getItem('groupe'));
         axios.get('http://localhost:8888/Quaeludo/QuaeludoBack/ListeCategories.php')
 
             .then(response => {
@@ -48,7 +46,13 @@ var ChoixDuJeuTypeJeu = Vue.component('ChoixDuJeuTypeJeu',{
             })
     },
     methods:{
+        choixcategorie(id){
+            console.log('test1');
+            localStorage.setItem('categorie', id);
+            router.push('choixdujeutempsjeu');
 
+            console.log("categorie sélectionné", id);
+        }
     }
 
 })
