@@ -18,24 +18,27 @@ let backEnd = {
     'ListeGroupeRegroupeJoueur': host+'ListeGroupeRegroupeJoueur.php',
     'ListeGroupe': host+'ListeGroupes.php',
     'getGroupe': host+'getGroupe.php',
+    'creategroupe': host+'createGroupe.php',
 
 
     //Jeu
-    'ListeJeuContenuLudo': host+'ListeJeuContenuLudo',
+    'ListeJeuContenuLudo': host+'ListeJeuContenuLudo.php',
     'ListeJeux': host+'ListeJeux.php',
     'getJeux': host+'getJeux.php',
 
 
     //Ludotheque
-    'ListeLudotheque': host+'ListeLudotheques',
-    'getLudotheques': host+'getLudotheque.php',
+    'ListeLudotheque': host+'ListeLudotheques.php',
+    'getLudotheque': host+'getLudotheque.php',
     'getLudothequeByPseudo': host+'getLudothequeByPseudo.php',
+    'createLudotheque': host+'createLudotheque.php',
 
 
     //Joueur
     'ListeJoueurPossedeLudo': host+'ListeJoueurPossedeLudo.php',
     'ListeMembre' : host+'listeMembres.php',
     'getMembre': host+'getMembre.php',
+    'getMembreByPseudo': host+'getMembreByPseudo.php',
     'getMembrelogin': host+'getMembreLogin.php',
     'createMembre': host+'createMembre.php',
     'login': host+'login.php',

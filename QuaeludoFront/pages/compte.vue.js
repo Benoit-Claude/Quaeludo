@@ -37,7 +37,7 @@ let Compte = Vue.component('Compte',{
         }
     },
     mounted(){
-        axios.get(backEnd.getMembre+'?id='+this.$route.query.id)
+        axios.get(backEnd.getMembreByPseudo+'?pseudo='+this.$route.query.id)
             // Réponse promise et récupération des résultats
 
             .then(response => {

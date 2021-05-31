@@ -54,7 +54,8 @@ let Ludotheque = Vue.component('Ludotheque',{
         }
     },
     mounted(){
-        axios.get('http://localhost:8888/Quaeludo/QuaeludoBack/getLudotheque.php?id='+this.$route.query.id)
+        console.log("ludotheque : ", this.ludotheque)
+        axios.get(backEnd.getLudotheque+'?id='+this.$route.query.id)
             // Réponse promise et récupération des résultats
             .then(response => {
                 this.ludotheque = response.data;
@@ -65,7 +66,7 @@ let Ludotheque = Vue.component('Ludotheque',{
                 console.log("Erreur : ", error);
             })
 
-        axios.get('http://localhost:8888/Quaeludo/QuaeludoBack/ListeJeuContenuLudo.php?id='+this.$route.query.id)
+        axios.get(backEnd.ListeJeuContenuLudo+'?id='+this.$route.query.id)
             // Réponse promise et récupération des résultats
             .then(response => {
                 this.listeJeu = response.data;

@@ -1,11 +1,5 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-
 header("Access-Control-Allow-Origin: *");
-header("Access-Control-Allow-Headers: *");
-
     //Appel la classe Groupe
     require_once 'cnx.php';
     require_once 'Classes/class.regroupe.php';

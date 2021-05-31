@@ -1,8 +1,8 @@
 <?php
 header("Access-Control-Allow-Origin: *");
-header("Access-Control-Allow-Headers: *");
 
-    //Appel la classe Joueur
+
+//Appel la classe Joueur
     require_once 'cnx.php';
     require_once 'Classes/class.Joueur.php';
 

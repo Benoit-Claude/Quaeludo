@@ -1,6 +1,5 @@
 <?php
 header("Access-Control-Allow-Origin: *");
-header("Access-Control-Allow-Headers: *");
 
 require_once 'cnx.php';
 require_once 'classes/class.Ludotheque.php';
@@ -21,7 +20,8 @@ if (isset($_POST['pseudo'])){
             FROM ludotheque, possede, joueur 
             WHERE ludotheque.ID_LUDOTHEQUE = possede.ID_LUDOTHEQUE 
             AND joueur.ID_JOUEUR = possede.ID_JOUEUR 
-            AND joueur.PSEUDO = ?";
+            AND joueur.PSEUDO = ?
+            ORDER BY ludotheque.NOM_LUDOTHEQUE";
     $requete = $pdo->prepare($sql);
     $requete->bindValue(1, $_POST['pseudo']);
     $listeLudotheque = array();
@@ -31,9 +31,10 @@ if (isset($_POST['pseudo'])){
                 $donnees['ID_LUDOTHEQUE'],
                 $donnees['NOM_LUDOTHEQUE'],
                 $donnees["DESC_LUDOTHEQUE"],
-                $donnees["IMaGE_LUDOTHEQUE"],
+                $donnees["IMAGE_LUDOTHEQUE"],
                 $donnees['ID_JOUEUR']
             );
+
             $listeLudotheque[]= $ludotheque;
         }
     }

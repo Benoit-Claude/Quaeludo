@@ -1,24 +1,26 @@
 <?php
 header("Access-Control-Allow-Origin: *");
-
-
 require_once 'cnx.php';
-require_once 'classes/class.Joueur.php';
+require_once 'classes/class.Ludotheque.php';
 
 
-if (isset($_POST['id'])){
-    $_GET['id'] = $_POST['id'];
+if (isset($_POST['pseudo'])){
+    $_GET['pseudo'] = $_POST['pseudo'];
 }else{
-    if (isset($_GET['id'])){
-        $_POST['id'] = $_GET['id'];
+    if (isset($_GET['pseudo'])){
+        $_POST['pseudo'] = $_GET['pseudo'];
     }
 }
 
-if (isset($_POST['id'])){
-    $sql = "SELECT * FROM joueur WHERE ID_JOUEUR = ? ";
+
+
+if (isset($_GET['pseudo'])){
+    $sql = "SELECT * 
+            FROM joueur  
+            WHERE joueur.PSEUDO = ?";
     $requete = $pdo->prepare($sql);
-    $requete->bindValue(1, $_POST['id']);
-    $membre = null;
+    $requete->bindValue(1, $_GET['pseudo']);
+    $membre = array();
     if ($requete->execute()){
         if ($donnees = $requete->fetch()){
             $membre = new Joueur(
@@ -35,8 +37,8 @@ if (isset($_POST['id'])){
         }
     }
     echo json_encode($membre);
-}else{
-    echo -1;
 }
 
-
+/*echo '<script>';
+echo "console.log($ludotheque)";
+echo '</script>';*/

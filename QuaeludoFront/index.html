@@ -25,7 +25,7 @@
 <div id="app">
     <header>
         <div class="header-bouton header-bouton-compte">
-            <router-link :to="{name:'Connexion'}">
+            <div @click="redirection()">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                     <path fill="#FAFAFA"
                           d="M224 256
@@ -44,7 +44,7 @@
                           c0-74.2-60.2-134.4-134.4-134.4z">
                     </path>
                 </svg>
-            </router-link>
+            </div>
         </div>
         <div class="header-logo-nom">
             <div class="header-logo">
@@ -169,6 +169,8 @@
     <script src="pages/desabonner.vue.js"></script>
 
     <script>
+
+
         // Les routages / navigation de l'application
         let routes = [
             {path: '/',		                    name:"Accueil",		            component:Accueil},
@@ -206,5 +208,16 @@
             el:"#app",
             router:router
         })
+
+        function redirection(){
+            console.log(localStorage.pseudo);
+            if(localStorage.pseudo == null){
+                console.log('non connecté', localStorage.pseudo);
+                router.push('/connexion');
+            }else{
+                console.log('connecté', localStorage.pseudo)
+                router.push('/compte'+'?pseudo='+localStorage.pseudo);
+            }
+        }
     </script>
 </body>

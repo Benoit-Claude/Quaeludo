@@ -26,7 +26,6 @@ let Ludotheques = Vue.component('Ludotheques',{
 
     },
     mounted(){
-        console.log('Test');
         axios.get(backEnd.getLudothequeByPseudo+'?pseudo='+localStorage.pseudo)
 
             // Réponse promise et récupération des résultats

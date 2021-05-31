@@ -122,7 +122,7 @@ header{
     width: 60px;
 }
 
-.header-bouton>a>svg{
+.header-bouton>div>svg{
     width: 30px;
     margin: calc((60px - 34px)/2) 0;
 }
@@ -387,4 +387,6 @@ section>p{
     text-align: center;
 }
 
-
+.visible{
+    display: none;
+}
