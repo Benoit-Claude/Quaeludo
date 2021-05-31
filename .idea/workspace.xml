@@ -19,27 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1606b1d-e965-42fd-9db2-f2aa1ad6367f" name="Default Changelist" comment="avancée :&#10;- correction&#10;- ajout de lien vers compte.vue.js&#10;- connexion.vue.js fonctionnel&#10;- récupération des id pour choixdujeutypejeu.vue.js et choixdujeugroupe.vue.js">
-      <change afterPath="$PROJECT_DIR$/QuaeludoFront/pages/Groupe/createGroupe.vue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QuaeludoFront/pages/Joueur/createMembre.vue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QuaeludoFront/pages/Ludotheque/createLudotheque.vue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QuaeludoFront/param/param.js" afterDir="false" />
+    <list default="true" id="b1606b1d-e965-42fd-9db2-f2aa1ad6367f" name="Default Changelist" comment="commit des classes">
+      <change afterPath="$PROJECT_DIR$/QuaeludoBack/classes/class.Newsletter.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoBack/getMembre-login.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/getMembreLogin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/css/mise-en-page-generale.css" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/css/mise-en-page-generale.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/Joueur/create.vue.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/accueil.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/pages/accueil.vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/choixdujeugroupe.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/pages/choixdujeugroupe.vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/choixdujeuproposition.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/pages/choixdujeuproposition.vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/choixdujeutypejeu.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/pages/choixdujeutypejeu.vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/compte.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/pages/compte.vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/connexion.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/pages/connexion.vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/groupe.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/pages/groupe.vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/groupes.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/pages/groupes.vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/ludotheques.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/pages/ludotheques.vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/param/param.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/secure.vue.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +64,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="codeWithMe.voiceChat.enabledByDefault" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/QuaeludoFront/pages/Ludothèque" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/QuaeludoBack" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -95,14 +77,12 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/QuaeludoFront/pages/Ludothèque" />
-      <recent name="$PROJECT_DIR$/QuaeludoFront/pages/Groupe" />
       <recent name="$PROJECT_DIR$/QuaeludoBack" />
       <recent name="$PROJECT_DIR$/QuaeludoBack/Classes" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/QuaeludoFront" />
       <recent name="$PROJECT_DIR$/QuaeludoFront/css" />
+      <recent name="$PROJECT_DIR$/QuaeludoFront" />
       <recent name="$PROJECT_DIR$/QuaeludoBack" />
     </key>
   </component>
@@ -132,8 +112,7 @@
       <workItem from="1622064546303" duration="2817000" />
       <workItem from="1622103682961" duration="17400000" />
       <workItem from="1622226619224" duration="39025000" />
-      <workItem from="1622402082813" duration="9235000" />
-      <workItem from="1622446601883" duration="4706000" />
+      <workItem from="1622402082813" duration="9045000" />
     </task>
     <task id="LOCAL-00001" summary="ajout page mentionslegales.vue.js">
       <created>1621765599329</created>
@@ -240,14 +219,7 @@
       <option name="project" value="LOCAL" />
       <updated>1622126446179</updated>
     </task>
-    <task id="LOCAL-00016" summary="avancée :&#10;- correction&#10;- ajout de lien vers compte.vue.js&#10;- connexion.vue.js fonctionnel&#10;- récupération des id pour choixdujeutypejeu.vue.js et choixdujeugroupe.vue.js">
-      <created>1622412290257</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1622412290257</updated>
-    </task>
-    <option name="localTasksCounter" value="17" />
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,7 +252,6 @@
     <MESSAGE value="mise à jour des templates" />
     <MESSAGE value="mise à jour des classes" />
     <MESSAGE value="Nouvelle maj" />
-    <MESSAGE value="avancée :&#10;- correction&#10;- ajout de lien vers compte.vue.js&#10;- connexion.vue.js fonctionnel&#10;- récupération des id pour choixdujeutypejeu.vue.js et choixdujeugroupe.vue.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="avancée :&#10;- correction&#10;- ajout de lien vers compte.vue.js&#10;- connexion.vue.js fonctionnel&#10;- récupération des id pour choixdujeutypejeu.vue.js et choixdujeugroupe.vue.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="Nouvelle maj" />
   </component>
 </project>
