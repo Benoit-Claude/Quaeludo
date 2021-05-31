@@ -27,7 +27,7 @@ let Ludotheques = Vue.component('Ludotheques',{
     },
     mounted(){
         console.log('Test');
-        axios.get('http://localhost:8888/Quaeludo/QuaeludoBack/getLudothequeByPseudo.php?pseudo='+localStorage.pseudo)
+        axios.get(backEnd.getLudothequeByPseudo+'?pseudo='+localStorage.pseudo)
 
             // Réponse promise et récupération des résultats
             .then(response => {

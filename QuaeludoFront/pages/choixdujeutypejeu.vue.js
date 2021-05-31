@@ -34,7 +34,7 @@ var ChoixDuJeuTypeJeu = Vue.component('ChoixDuJeuTypeJeu',{
     },
     mounted(){
         console.log('localstorage', localStorage.getItem('groupe'));
-        axios.get('http://localhost:8888/Quaeludo/QuaeludoBack/ListeCategories.php')
+        axios.get(backEnd.ListeCategorie)
 
             .then(response => {
                 this.listeCategories = response.data;

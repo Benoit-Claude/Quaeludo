@@ -28,8 +28,8 @@ let Accueil = Vue.component('Accueil',{
         <section class="section-groupe blackgrey">
             <h2 class="typo-yellow">Créez votre groupe de joueurs</h2>
             <p class="typo-white">Vous n'avez plus à débattre sur le jeu auquel vous allez jouer ! Avec Quaeludo, le choix vous convaincra et la soirée sera meilleure !</p>
-            <div class="bouton ">
-                <router-link to="groupes.vue.js" class="typo-blackgrey yellow">Mes Groupes</router-link> 
+            <div class="centre">
+                <router-link to="groupes" class="bouton typo-blackgrey yellow">Mes Groupes</router-link> 
             </div>
         </section>
     
@@ -46,8 +46,8 @@ let Accueil = Vue.component('Accueil',{
             <h2 class="typo-blue">Acquérez des jeux grâce à nos partenariats</h2>
             <p class="typo-white">Accédez à notre boutique spécialisée et faites l'acquisition du jeu de vos rêves !</p>
             <p class="typo-white">N'attendez plus pour jouer au plus vite à votre jeu préféré !</p>
-            <div class="bouton">
-                <router-link to="jeux.vue.js" class="typo-blackgrey blue">J'achète</router-link>
+            <div class="centre">
+                <router-link to="jeux" class=" bouton typo-blackgrey blue">J'achète</router-link>
             </div>
         </section>
     
@@ -55,8 +55,8 @@ let Accueil = Vue.component('Accueil',{
             <h2 class="typo-red">Ajoutez des jeux à votre ludothèque</h2>
             <p class="typo-blackgrey">Constituez votre ludothèque à partir des jeux qui vous plaisent, choisissez différentes catégories et partagez-la avec vos amis !</p>
     
-            <div class="bouton">
-                <router-link to="ludotheques.vue.js" class="typo-white red">Ludothèque</router-link>
+            <div class="centre">
+                <router-link to="ludotheques" class="bouton typo-white red">Ludothèque</router-link>
             </div>
         </section>
     

@@ -28,7 +28,7 @@ let Groupes = Vue.component('Groupes',{
 
     },
     mounted(){
-        axios.get('http://localhost:8888/Quaeludo/QuaeludoBack/ListeGroupes.php')
+        axios.get(backEnd.ListeGroupe)
             // Réponse promise et récupération des résultats
             .then(response => {
                 this.listeGroupes = response.data;

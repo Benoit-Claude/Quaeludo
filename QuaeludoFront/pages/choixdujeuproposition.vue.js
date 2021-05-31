@@ -48,7 +48,7 @@ var ChoixDuJeuProposition = Vue.component('ChoixDuJeuProposition',{
         }
     },
     mounted(){
-        axios.get('http://localhost:8888/Quaeludo/QuaeludoBack/getJeux.php')
+        axios.get(backEnd.getJeux)
             .then(response =>{
                 this.listeJeux = response.data;
                 console.log("Liste des Jeux sélectionnés", this.listeJeux);

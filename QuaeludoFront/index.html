@@ -138,43 +138,62 @@
         </footer>
 
 </div>
+    <script src="param/param.js"></script>
+
+
     <!-- les composants utilisés -->
 
     <script src="pages/accueil.vue.js"></script>
-    <script src="pages/compte.vue.js"></script>
+
     <script src="pages/ludotheques.vue.js"></script>
     <script src="pages/ludotheque.vue.js"></script>
+    <script src="pages/Ludotheque/createLudotheque.vue.js"></script>
+
     <script src="pages/groupes.vue.js"></script>
     <script src="pages/groupe.vue.js"></script>
+    <script src="pages/Groupe/createGroupe.vue.js"></script>
+
     <script src="pages/contact.vue.js"></script>
+    <script src="pages/mentionslegales.vue.js"></script>
+
     <script src="pages/choixdujeugroupe.vue.js"></script>
     <script src="pages/choixdujeutempsjeu.vue.js"></script>
     <script src="pages/choixdujeutypejeu.vue.js"></script>
     <script src="pages/choixdujeuproposition.vue.js"></script>
+
     <script src="pages/jeux.vue.js"></script>
-    <script src="pages/mentionslegales.vue.js"></script>
+
     <script src="pages/connexion.vue.js"></script>
-    <script src="pages/inscription.vue.js"></script>
+    <script src="pages/compte.vue.js"></script>
+    <script src="pages/Joueur/createMembre.vue.js"></script>
     <script src="pages/desabonner.vue.js"></script>
 
     <script>
         // Les routages / navigation de l'application
         let routes = [
             {path: '/',		                    name:"Accueil",		            component:Accueil},
-            {path: '/compte',	                name:"Compte",	                component:Compte},
+
             {path: '/ludotheque',	            name:"Ludotheque",	            component:Ludotheque,               props(route){return{id:route.query.id}}},
             {path: '/ludotheques',	            name:"Ludotheques",	            component:Ludotheques},
+            {path: '/createludotheque',         name:"createLudotheque",        component:createLudotheque},
+
             {path: '/groupe',	                name:"Groupe",	                component:Groupe,                   props(route){return{id:route.query.id}}},
             {path: '/groupes',	                name:"Groupes",	                component:Groupes},
+            {path: '/creategroupe',             name:"createGroupe",            component:createGroupe},
+
             {path: '/contact',	                name:"Contact",	                component:Contact},
+            {path: '/mentionslegales',	        name:"Mentionslegales",	        component:Mentionslegales},
+
             {path: '/choixdujeugroupe',	        name:"ChoixDuJeuGroupe",	    component:ChoixDuJeuGroupe},
             {path: '/choixdujeutypejeu',	    name:"ChoixDuJeuTypeJeu",       component:ChoixDuJeuTypeJeu},
             {path: '/choixdujeutempsjeu',	    name:"ChoixDuJeuTempsJeu",	    component:ChoixDuJeuTempsJeu},
             {path: '/choixdujeuproposition',	name:"ChoixDuJeuProposition",	component:ChoixDuJeuProposition},
+
             {path: '/jeux',	                    name:"Jeux",	                component:Jeux},
-            {path: '/mentionslegales',	        name:"Mentionslegales",	        component:Mentionslegales},
+
+            {path: '/compte',	                name:"Compte",	                component:Compte},
             {path: '/connexion',                name:"Connexion",               component:Connexion},
-            {path: '/inscription',              name:"Inscription",             component:Inscription},
+            {path: '/createmembre',             name:"createMembre",            component:createMembre},
             {path: '/desabonner',               name:"Desabonner",              component:Desabonner},
 
         ]

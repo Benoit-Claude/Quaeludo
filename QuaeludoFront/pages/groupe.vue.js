@@ -59,7 +59,7 @@ let Groupe = Vue.component('Groupe',{
     },
     mounted(){
         console.log("this", this.$route.query.id)
-        axios.get('http://localhost:8888/Quaeludo/QuaeludoBack/getGroupe.php?id='+this.$route.query.id)
+        axios.get(backEnd.getGroupe+'?id='+this.$route.query.id)
             // Réponse promise et récupération des résultats
 
             .then(response => {
@@ -71,7 +71,7 @@ let Groupe = Vue.component('Groupe',{
                 console.log("Erreur : ", error);
             })
 
-        axios.get('http://localhost:8888/Quaeludo/QuaeludoBack/ListeGroupeRegroupeJoueur.php?id='+this.$route.query.id)
+        axios.get(backEnd.ListeGroupeRegroupeJoueur+'?id='+this.$route.query.id)
             // Réponse promise et récupération des résultats
             .then(response => {
                 this.listeJoueurs = response.data;

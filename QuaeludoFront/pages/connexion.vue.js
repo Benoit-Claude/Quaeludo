@@ -36,7 +36,7 @@ let Connexion = Vue.component('Connexion',{
     },
     methods:{
         getJoueur(cb){
-            axios.get('http://localhost:8888/Quaeludo/QuaeludoBack/getMembre-login.php?pseudo='+this.input.username)
+            axios.get(backEnd.getMembrelogin+'?pseudo='+this.input.username)
                 .then(response => {
                     this.joueur = response.data;
                     console.log("joueur = ", this.joueur);
