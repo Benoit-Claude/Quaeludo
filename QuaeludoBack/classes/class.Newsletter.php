@@ -4,7 +4,7 @@ header("Access-Control-Allow-Headers: *");
 
 require_once('class.Joueur.php');
 
-class Ludotheque implements JsonSerializable{
+class Newsletter implements JsonSerializable{
     private $id = 0;
     private $adresseMail = null;
 
