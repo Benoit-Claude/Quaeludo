@@ -42,14 +42,7 @@ let Accueil = Vue.component('Accueil',{
             </div>
         </section>
         
-         <section class="section-jeux blackgrey">
-            <h2 class="typo-blue">Acquérez des jeux grâce à nos partenariats</h2>
-            <p class="typo-white">Accédez à notre boutique spécialisée et faites l'acquisition du jeu de vos rêves !</p>
-            <p class="typo-white">N'attendez plus pour jouer au plus vite à votre jeu préféré !</p>
-            <div class="centre">
-                <router-link to="jeux" class=" bouton typo-blackgrey blue">J'achète</router-link>
-            </div>
-        </section>
+         
     
         <section class="section-ludotheque white">
             <h2 class="typo-red">Ajoutez des jeux à votre ludothèque</h2>
@@ -62,7 +55,17 @@ let Accueil = Vue.component('Accueil',{
     
        
     
-        <!--<section class="section-ajout-jeu white">
+        <!--
+        <section class="section-jeux blackgrey">
+            <h2 class="typo-blue">Acquérez des jeux grâce à nos partenariats</h2>
+            <p class="typo-white">Accédez à notre boutique spécialisée et faites l'acquisition du jeu de vos rêves !</p>
+            <p class="typo-white">N'attendez plus pour jouer au plus vite à votre jeu préféré !</p>
+            <div class="centre">
+                <router-link to="jeux" class=" bouton typo-blackgrey blue">J'achète</router-link>
+            </div>
+        </section>
+        
+        <section class="section-ajout-jeu white">
             <h2 class="typo-red">Vous ne trouvez pas votre jeu ?</h2>
             <p class="typo-blackgrey">Ce n'est pas un problème, avec Quaeludo, vous pouvez rajouter votre jeu en créant la fiche appropriée dans l'éditeur de jeu ! </p>
             <div class="bouton">

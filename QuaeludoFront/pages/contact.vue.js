@@ -14,7 +14,7 @@ let Contact = Vue.component('Contact',{
                     Nous avions pour sujet de créer un site innovant, nous avions à choisir parmi différents sujets. Nous avons choisi celui là car c'était celui qui nous inspirait le plus et que certains d'entres nous sont fans de jeux de société. C'était donc pour nous une manière de nous amuser tout en travaillant notre projet, mais aussi d'avoir des connaissances qui peuvent nous être utiles.
                 </p>
                 <p>
-                    Pour ce projet collectif, nous sommes une équipe de 3 étudiants, Nathan, Raphaël et Benoît.
+                    Pour ce projet collectif, nous sommes une équipe de 3 étudiants, <a href="#section-Nathan" class="typo-blue">Nathan</a>, <a href="#section-Raph" class="typo-blue">Raphaël</a> et <a href="#section-Benoit" class="typo-blue">Benoît</a>.
                 </p>
             </div>
         </section>

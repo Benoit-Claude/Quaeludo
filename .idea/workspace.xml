@@ -19,12 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1606b1d-e965-42fd-9db2-f2aa1ad6367f" name="Default Changelist" comment="Mise à jour majeure&#10;Possibilité d'ajouter des jeux dans des ludotheque et des joueurs dans des groupes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="b1606b1d-e965-42fd-9db2-f2aa1ad6367f" name="Default Changelist" comment="Mise à jour&#10;Ajout des messages d'erreur lorsque non connecté ou pas de groupe/ludo">
       <change beforePath="$PROJECT_DIR$/QuaeludoFront/css/mise-en-page-generale.css" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/css/mise-en-page-generale.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/choixdujeugroupe.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/pages/choixdujeugroupe.vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/groupes.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/pages/groupes.vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/ludotheques.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/pages/ludotheques.vue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/accueil.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/pages/accueil.vue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/contact.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/pages/contact.vue.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +124,7 @@
       <workItem from="1622483490551" duration="1036000" />
       <workItem from="1622486848644" duration="4654000" />
       <workItem from="1622583361618" duration="1801000" />
-      <workItem from="1622660817736" duration="10191000" />
+      <workItem from="1622660817736" duration="10525000" />
     </task>
     <task id="LOCAL-00001" summary="ajout page mentionslegales.vue.js">
       <created>1621765599329</created>
@@ -261,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622670323752</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Mise à jour&#10;Ajout des messages d'erreur lorsque non connecté ou pas de groupe/ludo">
+      <created>1622671861446</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1622671861446</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,6 +303,7 @@
     <MESSAGE value="Mise en Constance les chemins pour les axios sur vus.js" />
     <MESSAGE value="Correction et création des creates" />
     <MESSAGE value="Mise à jour majeure&#10;Possibilité d'ajouter des jeux dans des ludotheque et des joueurs dans des groupes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mise à jour majeure&#10;Possibilité d'ajouter des jeux dans des ludotheque et des joueurs dans des groupes" />
+    <MESSAGE value="Mise à jour&#10;Ajout des messages d'erreur lorsque non connecté ou pas de groupe/ludo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mise à jour&#10;Ajout des messages d'erreur lorsque non connecté ou pas de groupe/ludo" />
   </component>
 </project>
