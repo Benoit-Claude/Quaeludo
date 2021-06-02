@@ -26,6 +26,42 @@ var ChoixDuJeuGroupe = Vue.component('ChoixDuJeuGroupe',{
                 </div>
             </div>
         </section>
+        <section v-if="listeGroupes.length == 0 && localStorage.pseudo != null" class="centre">
+            <div class="carte">
+                <div class="carte-logo">
+                    <div class="carte-logo-gauche">
+                        <img class="logo-carte1" src="css/images/Logo/logo.png" alt="logo">
+                    </div>
+                    <div class="carte-logo-droit">
+                        <img class="logo-carte2" src="css/images/Logo/logo.png" alt="logo">
+                    </div>
+                </div>
+                    
+                <h1 class="typo-green">Hoo non</h1>
+                <div class="carte-img">
+                    <p>Tu n'as pas encore de groupe, vite va t'en créé un et invite tes amis.</p>
+                </div>
+                <router-link class="green typo-white bouton" to="createGroupe">J'en crée un</router-link>
+            </div>
+        </section>
+        <section v-if="localStorage.pseudo == null">
+            <div class="carte">
+                <div class="carte-logo">
+                    <div class="carte-logo-gauche">
+                        <img class="logo-carte1" src="css/images/Logo/logo.png" alt="logo">
+                    </div>
+                    <div class="carte-logo-droit">
+                        <img class="logo-carte2" src="css/images/Logo/logo.png" alt="logo">
+                    </div>
+                </div>
+                    
+                <h1 class="typo-green">Ooops</h1>
+                <div class="carte-img">
+                    <p>Tu dois d'abord <router-link class="typo-blue" to="/connexion">te connecter</router-link> avant de pouvoir avoir accès à cette fonction</p>
+                    <p>Tu n'as pas de compte ? Pas de soucis, il suffit de  <router-link class="typo-blue" to="/createmembre">t'inscrire</router-link>.</p>
+                </div>
+            </div>
+        </section>
     </div>
     `,
     data(){
@@ -36,7 +72,7 @@ var ChoixDuJeuGroupe = Vue.component('ChoixDuJeuGroupe',{
 
     },
     mounted(){
-        axios.get(backEnd.ListeGroupe)
+        axios.get(backEnd.getGroupeByPseudo+'?pseudo='+localStorage.pseudo)
             // Réponse promise et récupération des résultats
             .then(response => {
                 this.listeGroupes = response.data;

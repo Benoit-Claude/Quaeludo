@@ -19,58 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1606b1d-e965-42fd-9db2-f2aa1ad6367f" name="Default Changelist" comment="Correction et création des creates">
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sshConfigs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QuaeludoBack/createAjoutJeux.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QuaeludoBack/createAjoutMembre.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QuaeludoBack/getGroupeByPseudo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QuaeludoFront/pages/Groupe/createAjoutJoueur.vue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QuaeludoFront/pages/Ludotheque/createAjoutJeux.vue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QuaeludoFront/pages/joueur.vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_05_2021_00_08_[Default_Changelist]/AventureduRail.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_05_2021_00_08_[Default_Changelist]/Image 4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_05_2021_00_08_[Default_Changelist]/Infomaniak-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_05_2021_00_08_[Default_Changelist]/Ludo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_05_2021_00_08_[Default_Changelist]/MMi_logoblanc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_05_2021_00_08_[Default_Changelist]/Memoire44.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_05_2021_00_08_[Default_Changelist]/Monopoly.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_05_2021_00_08_[Default_Changelist]/Mysterium.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_05_2021_00_08_[Default_Changelist]/avatar-benoit.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_05_2021_00_08_[Default_Changelist]/avatar-nathan.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_05_2021_00_08_[Default_Changelist]/avatar-raph.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_05_2021_00_08_[Default_Changelist]/deroulementjeu.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_05_2021_00_08_[Default_Changelist]/groupe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_05_2021_00_08_[Default_Changelist]/installationjeux.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_05_2021_00_08_[Default_Changelist]/jeu.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_05_2021_00_08_[Default_Changelist]/jeu.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_05_2021_00_08_[Default_Changelist]/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_05_2021_00_08_[Default_Changelist]/ludothequepaysage.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_05_2021_00_08_[Default_Changelist]/ludothequeportrait.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_05_2021_00_08_[Default_Changelist]/pile-de-jeux.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_05_2021_00_08_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_05_2021_00_08_[Default_Changelist]/tel-accueil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_05_2021_00_08_[Default_Changelist]/tel-fct-site.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_05_2021_00_08_[Default_Changelist]/tel-groupe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_05_2021_00_08_[Default_Changelist]/temps.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_05_2021_00_08__Default_Changelist_.xml" beforeDir="false" />
+    <list default="true" id="b1606b1d-e965-42fd-9db2-f2aa1ad6367f" name="Default Changelist" comment="Mise à jour majeure&#10;Possibilité d'ajouter des jeux dans des ludotheque et des joueurs dans des groupes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BDD/erreurphpsyntax.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BDD/quaeludo.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoBack/ListeJeux.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/ListeJeux.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoBack/getLudothequeByPseudo.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/getLudothequeByPseudo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/css/mise-en-page-css-page-avec-php.css" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/css/mise-en-page-css-page-avec-php.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/Joueur/createMembre.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/pages/Joueur/createMembre.vue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuaeludoFront/css/mise-en-page-generale.css" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/css/mise-en-page-generale.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/choixdujeugroupe.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/pages/choixdujeugroupe.vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/choixdujeuproposition.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/pages/choixdujeuproposition.vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/choixdujeutempsjeu.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/pages/choixdujeutempsjeu.vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/compte.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/pages/compte.vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/groupe.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/pages/groupe.vue.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/groupes.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/pages/groupes.vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/ludotheque.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/pages/ludotheque.vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/param/param.js" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/param/param.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/ludotheques.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoFront/pages/ludotheques.vue.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +126,7 @@
       <workItem from="1622483490551" duration="1036000" />
       <workItem from="1622486848644" duration="4654000" />
       <workItem from="1622583361618" duration="1801000" />
-      <workItem from="1622660817736" duration="8564000" />
+      <workItem from="1622660817736" duration="10191000" />
     </task>
     <task id="LOCAL-00001" summary="ajout page mentionslegales.vue.js">
       <created>1621765599329</created>
@@ -300,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622486914678</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Mise à jour majeure&#10;Possibilité d'ajouter des jeux dans des ludotheque et des joueurs dans des groupes">
+      <created>1622670323752</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1622670323752</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -336,6 +297,7 @@
     <MESSAGE value="avancée :&#10;- correction&#10;- ajout de lien vers compte.vue.js&#10;- connexion.vue.js fonctionnel&#10;- récupération des id pour choixdujeutypejeu.vue.js et choixdujeugroupe.vue.js" />
     <MESSAGE value="Mise en Constance les chemins pour les axios sur vus.js" />
     <MESSAGE value="Correction et création des creates" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correction et création des creates" />
+    <MESSAGE value="Mise à jour majeure&#10;Possibilité d'ajouter des jeux dans des ludotheque et des joueurs dans des groupes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mise à jour majeure&#10;Possibilité d'ajouter des jeux dans des ludotheque et des joueurs dans des groupes" />
   </component>
 </project>

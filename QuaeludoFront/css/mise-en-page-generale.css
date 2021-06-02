@@ -390,3 +390,7 @@ section>p{
 .visible{
     display: none;
 }
+
+.carte-img>p{
+    margin: 40px 20px;
+}
