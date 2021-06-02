@@ -19,6 +19,8 @@ let backEnd = {
     'ListeGroupe': host+'ListeGroupes.php',
     'getGroupe': host+'getGroupe.php',
     'creategroupe': host+'createGroupe.php',
+    'getGroupeByPseudo': host+'getGroupeByPseudo.php',
+    'createAjoutMembre': host+'createAjoutMembre.php',
 
 
     //Jeu
@@ -32,6 +34,7 @@ let backEnd = {
     'getLudotheque': host+'getLudotheque.php',
     'getLudothequeByPseudo': host+'getLudothequeByPseudo.php',
     'createLudotheque': host+'createLudotheque.php',
+    'createAjoutJeux': host+'createAjoutJeux.php',
 
 
     //Joueur

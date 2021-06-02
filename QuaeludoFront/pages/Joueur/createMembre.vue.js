@@ -56,7 +56,7 @@ let createMembre = Vue.component('createMembre',{
                 <label class="Label-mdp">
                     <input  type="password" 
                             name="Mdp" 
-                            id="mdp"
+                            id="password"
                             v-model="membre.Mdp"
                             maxlength="50"
                             placeholder="Mot-de-passe" 
@@ -66,7 +66,7 @@ let createMembre = Vue.component('createMembre',{
                 <br>
                 <label class="Label-confirmationmpd">
                     <input  type="password" 
-                            id="mpd-confirmation"
+                            id="confirm_password"
                             name="ConfirmationMdp" 
                             maxlength="50"
                             placeholder="Confirmation Mot-de-passe"
@@ -75,7 +75,7 @@ let createMembre = Vue.component('createMembre',{
                 </label>  
                 </br>
                 <label
-                    <select class="Label-categorie" class="bouton bluegrey typo-grey" v-model="membre.IDCategorie" required>
+                    <select class="Label-categorie bouton bluegrey typo-grey" v-model="membre.IDCategorie" required>
                         <option v-for="categorie in listeCategories" id="IDCategorie"  :value="categorie.id">
                         {{categorie.nom}}
                         </option>
@@ -104,12 +104,13 @@ let createMembre = Vue.component('createMembre',{
                 </label>
             </form>
         </section>
+        
     </div>
     `,
     data(){
         return{
             listeCategories:[],
-            membre:{Pseudo:null, NOM:null, Prenom:null, datenaissance:null, AdresseMail:null, Mdp:null, IDCategorie: null},
+            membre:{Pseudo:null, NOM:null, Prenom:null, datenaissance:null, AdresseMail:null, Mdp:null,  IDCategorie: null},
 
         }
     },
@@ -127,28 +128,31 @@ let createMembre = Vue.component('createMembre',{
     },
     methods: {
         submit:function (){
-            //Objet FormData pourn le passage de paramètre
-            let params = new FormData();
-            //ajout des parametres
-            params.append("Pseudo",         this.membre.Pseudo);
-            params.append("NOM",            this.membre.NOM);
-            params.append("Prenom",         this.membre.Prenom);
-            params.append("datenaissance",  this.membre.datenaissance);
-            params.append('AdresseMail',    this.membre.AdresseMail);
-            params.append("Mdp",            this.membre.Mdp);
-            params.append("IDCategorie",    this.membre.IDCategorie);
+            if (document.getElementById('password').value === document.getElementById('confirm_password').value) {
 
-            axios.post(backEnd.createMembre, params)
-                .then(response =>{
-                    console.log("retour de la promesse : ", response);
-                    ///redirection sur la liste des potions
-                    this.$router.push('/connexion');
+                //Objet FormData pour le passage de paramètre
+                let params = new FormData();
+                //ajout des parametres
+                params.append("Pseudo",         this.membre.Pseudo);
+                params.append("NOM",            this.membre.NOM);
+                params.append("Prenom",         this.membre.Prenom);
+                params.append("datenaissance",  this.membre.datenaissance);
+                params.append('AdresseMail',    this.membre.AdresseMail);
+                params.append("Mdp",            this.membre.Mdp);
+                params.append("IDCategorie",    this.membre.IDCategorie);
 
-                })
+                axios.post(backEnd.createMembre, params)
+                    .then(response =>{
+                        console.log("retour de la promesse : ", response);
+                        ///redirection sur la liste des potions
+                        this.$router.push('/connexion');
 
-                .catch(error => {
-                    console.log('Erreur : ', error);
-                })
+                    })
+
+                    .catch(error => {
+                        console.log('Erreur : ', error);
+                    })
+            }
         }
     }
 

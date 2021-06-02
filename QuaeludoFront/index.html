@@ -148,10 +148,13 @@
     <script src="pages/ludotheques.vue.js"></script>
     <script src="pages/ludotheque.vue.js"></script>
     <script src="pages/Ludotheque/createLudotheque.vue.js"></script>
+    <script src="pages/Ludotheque/createAjoutJeux.vue.js"></script>
+
 
     <script src="pages/groupes.vue.js"></script>
     <script src="pages/groupe.vue.js"></script>
     <script src="pages/Groupe/createGroupe.vue.js"></script>
+    <script src="pages/Groupe/createAjoutJoueur.vue.js"></script>
 
     <script src="pages/contact.vue.js"></script>
     <script src="pages/mentionslegales.vue.js"></script>
@@ -167,6 +170,7 @@
     <script src="pages/compte.vue.js"></script>
     <script src="pages/Joueur/createMembre.vue.js"></script>
     <script src="pages/desabonner.vue.js"></script>
+    <script src="pages/joueur.vue.js"></script>
 
     <script>
 
@@ -178,10 +182,13 @@
             {path: '/ludotheque',	            name:"Ludotheque",	            component:Ludotheque,               props(route){return{id:route.query.id}}},
             {path: '/ludotheques',	            name:"Ludotheques",	            component:Ludotheques},
             {path: '/createludotheque',         name:"createLudotheque",        component:createLudotheque},
+            {path: '/createAjoutJeux',          name:"createAjoutJeux",         component:createAjoutJeux},
+
 
             {path: '/groupe',	                name:"Groupe",	                component:Groupe,                   props(route){return{id:route.query.id}}},
             {path: '/groupes',	                name:"Groupes",	                component:Groupes},
             {path: '/creategroupe',             name:"createGroupe",            component:createGroupe},
+            {path: '/createAjoutJoueur',        name:"createAjoutJoueur",       component:createAjoutJoueur},
 
             {path: '/contact',	                name:"Contact",	                component:Contact},
             {path: '/mentionslegales',	        name:"Mentionslegales",	        component:Mentionslegales},
@@ -197,6 +204,7 @@
             {path: '/connexion',                name:"Connexion",               component:Connexion},
             {path: '/createmembre',             name:"createMembre",            component:createMembre},
             {path: '/desabonner',               name:"Desabonner",              component:Desabonner},
+            {path: '/joueur',                   name:"Joeuur",                  component:Joueur},
 
         ]
         // Initialisation du router

@@ -54,7 +54,6 @@ var ChoixDuJeuGroupe = Vue.component('ChoixDuJeuGroupe',{
             console.log('test1');
             localStorage.setItem('groupe', id);
             router.push('choixdujeutypejeu');
-
             console.log("groupe sélectionné", id);
         }
     }

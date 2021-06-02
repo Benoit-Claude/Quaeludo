@@ -1,4 +1,4 @@
-let Compte = Vue.component('Compte',{
+let Joueur = Vue.component('Joueur',{
     template:`
     <div class="page Compte">
         <section class="section-image-haut-page">
@@ -26,14 +26,7 @@ let Compte = Vue.component('Compte',{
                 <img src="css/images/Jeux/Monopoly.png" alt="">
             </div>
         </section>-->
-        <section class="section-bouton-centre">
-            <router-link class="green bouton typo-white" to="Ludotheques">Mes Ludothèques</router-link>
-        </section>
-        <section v-if="localStorage.pseudo != null">
-            <div class="red bouton typo-blackgrey" @click="deconnection">Deconnexion</div>
-        </section>
-        
-</section>
+
     </div>
     `,
     data(){
@@ -42,7 +35,7 @@ let Compte = Vue.component('Compte',{
         }
     },
     mounted(){
-         axios.get(backEnd.getMembreByPseudo+'?pseudo='+localStorage.pseudo)
+         axios.get(backEnd.getMembre+'?id='+this.$route.query.id)
             // Réponse promise et récupération des résultats
 
             .then(response => {

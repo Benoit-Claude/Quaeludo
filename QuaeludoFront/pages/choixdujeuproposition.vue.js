@@ -52,6 +52,7 @@ var ChoixDuJeuProposition = Vue.component('ChoixDuJeuProposition',{
             .then(response =>{
                 this.listeJeux = response.data;
                 console.log("Liste des Jeux sélectionnés", this.listeJeux);
+                console.log('localStarage', localStorage);
             })
 
             .catch(error => {
@@ -59,6 +60,7 @@ var ChoixDuJeuProposition = Vue.component('ChoixDuJeuProposition',{
             })
     },
     methods:{
+
 
     }
 })

@@ -80,7 +80,7 @@
 
 .section-liste-choix {
     display: flex;
-    background-color: #FFFFFF;
+    background-color: #DDDDDD;
     padding: 10px;
     width: calc(100% - 20px);
 }
@@ -100,7 +100,7 @@
 }
 
 .section-liste-choix:nth-of-type(2n){
-    background-color: #777777;
+    background-color: #FFFFFF;
 }
 
 .fleche{
