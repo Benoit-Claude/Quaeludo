@@ -9,7 +9,8 @@ let createMembre = Vue.component('createMembre',{
                             name="Pseudo" 
                             v-model="membre.Pseudo"
                             maxlength="50"
-                            placeholder="Pseudo"   
+                            placeholder="Pseudo"
+                            onClick="this.select();"   
                             class="bouton bluegrey"
                             required>
                 </label>
@@ -19,7 +20,8 @@ let createMembre = Vue.component('createMembre',{
                             name="NOM" 
                             v-model="membre.NOM"
                             maxlength="50"
-                            placeholder="NOM" 
+                            placeholder="NOM"
+                            onClick="this.select();"
                             class="bouton bluegrey"
                             required>
                 </label>
@@ -30,6 +32,7 @@ let createMembre = Vue.component('createMembre',{
                             v-model="membre.Prenom"
                             maxlength="50"
                             placeholder="Prénom" 
+                            onClick="this.select();"
                             class="bouton bluegrey"
                             required>
                 </label>
@@ -49,6 +52,7 @@ let createMembre = Vue.component('createMembre',{
                             v-model="membre.AdresseMail"
                             maxlength="50"
                             placeholder="Adresse mail"
+                            onClick="this.select();"
                             class="bouton bluegrey"
                             required>
                 </label>
@@ -60,6 +64,7 @@ let createMembre = Vue.component('createMembre',{
                             v-model="membre.Mdp"
                             maxlength="50"
                             placeholder="Mot-de-passe" 
+                            onClick="this.select();"
                             class="bouton bluegrey"
                             required>
                 </label>
@@ -70,6 +75,7 @@ let createMembre = Vue.component('createMembre',{
                             name="ConfirmationMdp" 
                             maxlength="50"
                             placeholder="Confirmation Mot-de-passe"
+                            onClick="this.select();"
                             class="bouton bluegrey"
                             required>
                 </label>  
@@ -82,7 +88,7 @@ let createMembre = Vue.component('createMembre',{
                     </select>  
                 </label>  
                 </br>
-                <label for="">   
+                <label>   
                     <input  type="checkbox" 
                             class="green"
                             id="casementionslegale" 
@@ -93,7 +99,7 @@ let createMembre = Vue.component('createMembre',{
                     </br>
                     <input  type="checkbox" 
                             class="green"
-                            id="casenewletter" 
+                            id="casenewletter"
                             name="scales">
                         Je veux recevoir gratuitement par mail la newsletter.
                     </input>    
@@ -145,13 +151,24 @@ let createMembre = Vue.component('createMembre',{
                     .then(response =>{
                         console.log("retour de la promesse : ", response);
                         ///redirection sur la liste des potions
-                        this.$router.push('/connexion');
+
 
                     })
 
                     .catch(error => {
                         console.log('Erreur : ', error);
                     })
+                let boxnew = document.getElementById('casenewletter');
+                console.log("box new ", boxnew.value);
+                if (boxnew.value === 'on'){
+                    axios.post(backEnd.inscriptionnews, params.AdresseMail)
+                        .then(response =>{
+                            console.log("retour de la promesse : ", response);
+                            this.$router.push('/connexion');
+                        })
+                }else{
+                    this.$router.push('/connexion');
+                }
             }
         }
     }

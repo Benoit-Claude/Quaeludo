@@ -171,6 +171,8 @@
     <script src="pages/Joueur/createMembre.vue.js"></script>
     <script src="pages/desabonner.vue.js"></script>
     <script src="pages/joueur.vue.js"></script>
+    <script src="pages/Joueur/updateMembre.vue.js"></script>
+
 
     <script>
 
@@ -204,7 +206,8 @@
             {path: '/connexion',                name:"Connexion",               component:Connexion},
             {path: '/createmembre',             name:"createMembre",            component:createMembre},
             {path: '/desabonner',               name:"Desabonner",              component:Desabonner},
-            {path: '/joueur',                   name:"Joeuur",                  component:Joueur},
+            {path: '/joueur',                   name:"Joueur",                  component:Joueur},
+        {path: '/updatemembre',             name:"updateMembre",            component:updateMembre,                  props(route){return{id:route.query.id}}},
 
         ]
         // Initialisation du router

@@ -6,11 +6,11 @@ let Connexion = Vue.component('Connexion',{
             <form method="post">
             
                 <label class="Label-pseudo">
-                    <input type="username" class="bluegrey bouton" name="username" v-model="input.username" placeholder="Username" />
+                    <input type="username" class="bluegrey bouton" name="username" v-model="input.username" onClick="this.select();" placeholder="Username" />
                 </label>
                 <br>
                 <label class="Label-nom">
-                    <input type="password" class="bluegrey bouton" name="password" v-model="input.password" placeholder="Password" />
+                    <input type="password" class="bluegrey bouton" name="password" v-model="input.password" onClick="this.select();" placeholder="Password" />
                 </label>
                 <br>
                 <label class="Label-valider">

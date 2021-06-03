@@ -44,7 +44,9 @@ let backEnd = {
     'getMembreByPseudo': host+'getMembreByPseudo.php',
     'getMembrelogin': host+'getMembreLogin.php',
     'createMembre': host+'createMembre.php',
+    'updateMembre': host+'updateMembre.php',
     'login': host+'login.php',
     'inscription': host+'inscription.php',
+    'inscriptionnews': host+'inscriptionnews.php',
 
 }
