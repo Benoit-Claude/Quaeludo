@@ -15,7 +15,7 @@
         <a href="#PartieContact"><h3>L'équipe</h3></a>
         <a href="#contact"><h3>Contact</h3></a>
 
-        <button class="inscription">S'inscrire</button>
+        <button class="inscription"><a href="index.html" style="color: #FAFAFA">Aller sur le site</a></button>
     </nav>
 </header>
     <div class="Page">
@@ -238,40 +238,6 @@
             <img src="css/images/Logo/Infomaniak-logo.png" alt="">
         </div>
     </footer>
-
-
-
-    <script>
-
-        (function () {
-            /* Mode strict, pour éviter des erreurs basiques */
-            "use strict";
-
-            /* Inscription */
-            let buttoninscriptionnav = document.querySelector('header>nav>button');
-            let carteinscription = document.querySelector('.rejoins-nous');
-            let formulaireinscription = document.querySelector('.Inscription');
-            let validationinscription = document.querySelector('.module-inscription>button');
-
-            function affichageformulaire(){
-                formulaireinscription.classList.remove('Inscription');
-                formulaireinscription.classList.add('active');
-            }
-
-            function fermetureformulaire(){
-                formulaireinscription.classList.add('Inscription');
-                formulaireinscription.classList.remove('active');
-            }
-
-            buttoninscriptionnav.addEventListener("click", affichageformulaire);
-            carteinscription.addEventListener("click", affichageformulaire);
-            validationinscription.addEventListener("click", fermetureformulaire);
-
-        }());
-
-
-
-    </script>
 
 </body>
 </html>
