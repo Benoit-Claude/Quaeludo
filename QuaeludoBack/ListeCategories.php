@@ -4,7 +4,7 @@ header("Access-Control-Allow-Origin: *");
 
     //Appel la classe Categorie
     require_once 'cnx.php';
-    require_once 'Classes/class.Categorie.php';
+    require_once 'classes/class.Categorie.php';
 
 
     //Ordre SQL

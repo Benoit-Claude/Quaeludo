@@ -16,8 +16,9 @@ var ChoixDuJeuProposition = Vue.component('ChoixDuJeuProposition',{
                         </div>
                     </div>
                     <h1 class="typo-green">{{jeu.nom}}</h1>
-                    <img :src="jeu.image" alt="" class="carte-p" style="width: auto">
-
+                    <div class="carte-img">
+                        <img :src="jeu.image" alt="" class="carte-p" style="width: auto">
+                    </div>
                     <router-link class="green bouton precedent" :to="{names: 'Accueil'}">Je prend celui là !</router-link>
                 </div>
                 <div class="carte" v-if="listeJeux == null">
@@ -44,22 +45,32 @@ var ChoixDuJeuProposition = Vue.component('ChoixDuJeuProposition',{
     `,
     data(){
         return{
-            listeJeux:[]
+            listeJeux:[],
         }
     },
     mounted(){
-        axios.get(backEnd.getJeux)
-            .then(response =>{
+        console.log("IDgroupe = ", localStorage.groupe);
+        console.log("IDCategorie = ", localStorage.categorie);
+        console.log("Temps max = ", localStorage.tempsmax);
+
+        let params = new FormData();
+        //ajout des parametres
+        params.append('Groupe',           localStorage.groupe);
+        params.append('Categorie',        localStorage.categorie);
+        params.append('TempsMax',         localStorage.tempsmax);
+        console.log("pramas :", params);
+        axios.post(backEnd.ListeJeuxchoix, params)
+            .then(response => {
                 this.listeJeux = response.data;
-                console.log("Liste des Jeux sélectionnés", this.listeJeux);
-                console.log('localStarage', localStorage);
+                console.log("listeJeux", this.listeJeux);
             })
 
-            .catch(error => {
-                console.log('Erreur = ', error);
+            .catch(error =>{
+                console.log("Erreur : ", error);
             })
     },
     methods:{
+
 
 
     }

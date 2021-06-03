@@ -5,7 +5,7 @@ let createAjoutJeux = Vue.component('createAjoutJeux', {
         <section>
             <form id="form" @submit.prevent="submit()">
                 
-                <label
+                <label>
                     <select class="Label-categorie bouton bluegrey typo-grey" v-model="ajoutjeux.IDLudotheque" required>
                         <option v-for="ludotheque in listeLudotheques" id="IDludotheque"  :value="ludotheque.id">
                         {{ludotheque.nom}}
@@ -13,7 +13,7 @@ let createAjoutJeux = Vue.component('createAjoutJeux', {
                     </select>  
                 </label>  
                 </br> 
-                <label
+                <label>
                     <select class="Label-categorie bouton bluegrey typo-grey" v-model="ajoutjeux.IDJeux" required>
                         <option v-for="jeux in listeJeux" id="IDJeux"  :value="jeux.id">
                         {{jeux.nom}}

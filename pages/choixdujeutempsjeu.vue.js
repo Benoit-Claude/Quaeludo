@@ -43,17 +43,15 @@ var ChoixDuJeuTempsJeu = Vue.component('ChoixDuJeuTempsJeu',{
     },
     mounted(){
 
+
     },
     methods:{
 
         choixdutemps(){
             let select = document.getElementById("temps-jeu");
             let choice = select.value;
-            console.log("choix", choice);
-            router.push('choixdujeuproposition');
             localStorage.setItem('tempsmax', choice);
-
-
+            router.push('choixdujeuproposition');
 
         }
 
