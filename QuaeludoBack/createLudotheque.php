@@ -5,7 +5,8 @@ require_once 'cnx.php';
 
 if (isset($_POST['NOM'])
     AND isset($_POST['Desc'])
-    AND isset($_POST['IDCategorie'])){
+    AND isset($_POST['IDCategorie'])
+    ){
 
     $sql = "INSERT INTO ludotheque(NOM_LUDOTHEQUE, DESC_LUDOTHEQUE, ID_CATEGORIE) 
             VALUE(?, ?, ?)";

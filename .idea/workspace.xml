@@ -19,84 +19,31 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1606b1d-e965-42fd-9db2-f2aa1ad6367f" name="Default Changelist" comment="ajout élément lien contact correction page accueil et ajout scroll behaviour">
-      <change afterPath="$PROJECT_DIR$/QuaeludoBack/inscriptionnews.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QuaeludoBack/updateMembre.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/Joueur/updateMembre.vue.js" afterDir="false" />
+    <list default="true" id="b1606b1d-e965-42fd-9db2-f2aa1ad6367f" name="Default Changelist" comment="restructuration pour préparation à l'upload">
+      <change afterPath="$PROJECT_DIR$/QuaeludoBack/ListeJeuxchoix.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/css/images/Contact/avatar-benoit.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/images/Contact/avatar-benoit.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/css/images/Contact/avatar-nathan.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/images/Contact/avatar-nathan.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/css/images/Contact/avatar-raph.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/images/Contact/avatar-raph.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/css/images/Criteres/groupe.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/images/Criteres/groupe.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/css/images/Criteres/jeu.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/images/Criteres/jeu.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/css/images/Criteres/temps.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/images/Criteres/temps.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/css/images/Des/dice-five-solid.svg" beforeDir="false" afterPath="$PROJECT_DIR$/css/images/Des/dice-five-solid.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/css/images/Des/dice-four-solid.svg" beforeDir="false" afterPath="$PROJECT_DIR$/css/images/Des/dice-four-solid.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/css/images/Des/dice-one-solid.svg" beforeDir="false" afterPath="$PROJECT_DIR$/css/images/Des/dice-one-solid.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/css/images/Des/dice-six-solid.svg" beforeDir="false" afterPath="$PROJECT_DIR$/css/images/Des/dice-six-solid.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/css/images/Des/dice-three-solid.svg" beforeDir="false" afterPath="$PROJECT_DIR$/css/images/Des/dice-three-solid.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/css/images/Des/dice-two-solid.svg" beforeDir="false" afterPath="$PROJECT_DIR$/css/images/Des/dice-two-solid.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/css/images/Jeux/AventureduRail.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/images/Jeux/AventureduRail.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/css/images/Jeux/Image 4.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/images/Jeux/Image 4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/css/images/Jeux/Ludo.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/images/Jeux/Ludo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/css/images/Jeux/Memoire44.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/images/Jeux/Memoire44.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/css/images/Jeux/Monopoly.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/images/Jeux/Monopoly.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/css/images/Jeux/Mysterium.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/images/Jeux/Mysterium.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/css/images/Landing-page/deroulementjeu.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/css/images/Landing-page/deroulementjeu.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/css/images/Landing-page/installationjeux.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/css/images/Landing-page/installationjeux.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/css/images/Landing-page/jeu.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/css/images/Landing-page/jeu.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/css/images/Landing-page/ludothequepaysage.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/css/images/Landing-page/ludothequepaysage.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/css/images/Landing-page/ludothequeportrait.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/css/images/Landing-page/ludothequeportrait.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/css/images/Landing-page/pile-de-jeux.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/images/Landing-page/pile-de-jeux.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/css/images/Landing-page/tel-accueil.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/images/Landing-page/tel-accueil.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/css/images/Landing-page/tel-fct-site.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/images/Landing-page/tel-fct-site.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/css/images/Landing-page/tel-groupe.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/images/Landing-page/tel-groupe.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/css/images/Logo/Facebook.svg" beforeDir="false" afterPath="$PROJECT_DIR$/css/images/Logo/Facebook.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/css/images/Logo/Infomaniak-logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/images/Logo/Infomaniak-logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/css/images/Logo/Instagram.svg" beforeDir="false" afterPath="$PROJECT_DIR$/css/images/Logo/Instagram.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/css/images/Logo/MMi_logoblanc.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/images/Logo/MMi_logoblanc.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/css/images/Logo/Reddit_logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/css/images/Logo/Reddit_logo.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/css/images/Logo/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/css/images/Logo/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/css/images/Logo/logo_twitter.svg" beforeDir="false" afterPath="$PROJECT_DIR$/css/images/Logo/logo_twitter.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/css/images/svg/chess-board-solid.svg" beforeDir="false" afterPath="$PROJECT_DIR$/css/images/svg/chess-board-solid.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/css/images/svg/chevron-right-solid.svg" beforeDir="false" afterPath="$PROJECT_DIR$/css/images/svg/chevron-right-solid.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/css/images/svg/home-solid.svg" beforeDir="false" afterPath="$PROJECT_DIR$/css/images/svg/home-solid.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/css/images/svg/info-circle-solid.svg" beforeDir="false" afterPath="$PROJECT_DIR$/css/images/svg/info-circle-solid.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/css/images/svg/ludotheque.svg" beforeDir="false" afterPath="$PROJECT_DIR$/css/images/svg/ludotheque.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/css/images/svg/pion.svg" beforeDir="false" afterPath="$PROJECT_DIR$/css/images/svg/pion.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/css/images/svg/search-solid.svg" beforeDir="false" afterPath="$PROJECT_DIR$/css/images/svg/search-solid.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/css/images/svg/times-solid.svg" beforeDir="false" afterPath="$PROJECT_DIR$/css/images/svg/times-solid.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/css/images/svg/user-solid.svg" beforeDir="false" afterPath="$PROJECT_DIR$/css/images/svg/user-solid.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/css/images/svg/users-solid.svg" beforeDir="false" afterPath="$PROJECT_DIR$/css/images/svg/users-solid.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/css/mise-en-page-css-page-avec-php.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/mise-en-page-css-page-avec-php.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/css/mise-en-page-css-page-sans-php.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/mise-en-page-css-page-sans-php.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/css/mise-en-page-fonctionnalite.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/mise-en-page-fonctionnalite.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/css/mise-en-page-generale.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/mise-en-page-generale.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/css/typographie.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/typographie.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/Groupe/createAjoutJoueur.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Groupe/createAjoutJoueur.vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/Groupe/createGroupe.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Groupe/createGroupe.vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/Joueur/createMembre.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Joueur/createMembre.vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/Ludotheque/createAjoutJeux.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Ludotheque/createAjoutJeux.vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/Ludotheque/createLudotheque.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Ludotheque/createLudotheque.vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/accueil.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/accueil.vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/choixdujeugroupe.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/choixdujeugroupe.vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/choixdujeuproposition.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/choixdujeuproposition.vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/choixdujeutempsjeu.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/choixdujeutempsjeu.vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/choixdujeutypejeu.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/choixdujeutypejeu.vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/compte.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/compte.vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/connexion.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/connexion.vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/contact.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contact.vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/desabonner.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/desabonner.vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/groupe.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/groupe.vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/groupes.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/groupes.vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/inscription.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/inscription.vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/jeux.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/jeux.vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/joueur.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/joueur.vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/ludotheque.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/ludotheque.vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/ludotheques.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/ludotheques.vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/pages/mentionslegales.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/mentionslegales.vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuaeludoFront/param/param.js" beforeDir="false" afterPath="$PROJECT_DIR$/param/param.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuaeludoBack/ListeCategorieClasseJeu.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/ListeCategorieClasseJeu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuaeludoBack/ListeCategories.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/ListeCategories.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuaeludoBack/ListeGroupeRegroupeJoueur.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/ListeGroupeRegroupeJoueur.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuaeludoBack/ListeGroupes.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/ListeGroupes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuaeludoBack/ListeJeuContenuLudo.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/ListeJeuContenuLudo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuaeludoBack/ListeJeux.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/ListeJeux.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuaeludoBack/ListeJoueurPossedeLudo.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/ListeJoueurPossedeLudo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuaeludoBack/ListeLudotheques.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/ListeLudotheques.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuaeludoBack/ListeMembres.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/ListeMembres.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuaeludoBack/createLudotheque.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/createLudotheque.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuaeludoBack/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuaeludoBack/param/param.ini" beforeDir="false" afterPath="$PROJECT_DIR$/QuaeludoBack/param/param.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Groupe/createGroupe.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Groupe/createGroupe.vue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Joueur/createMembre.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Joueur/createMembre.vue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Joueur/updateMembre.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Joueur/updateMembre.vue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Ludotheque/createAjoutJeux.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Ludotheque/createAjoutJeux.vue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Ludotheque/createLudotheque.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Ludotheque/createLudotheque.vue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/choixdujeugroupe.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/choixdujeugroupe.vue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/choixdujeuproposition.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/choixdujeuproposition.vue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/choixdujeutempsjeu.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/choixdujeutempsjeu.vue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/choixdujeutypejeu.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/choixdujeutypejeu.vue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/param/param.js" beforeDir="false" afterPath="$PROJECT_DIR$/param/param.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,6 +114,16 @@
       <recent name="$PROJECT_DIR$/QuaeludoBack" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="ListeJeuxchoix.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/QuaeludoBack/ListeJeuxchoix.php">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHP Script.ListeJeuxchoix.php" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -200,7 +157,7 @@
       <workItem from="1622486848644" duration="4654000" />
       <workItem from="1622583361618" duration="1801000" />
       <workItem from="1622660817736" duration="10794000" />
-      <workItem from="1622675644255" duration="7606000" />
+      <workItem from="1622675644255" duration="27449000" />
     </task>
     <task id="LOCAL-00001" summary="ajout page mentionslegales.vue.js">
       <created>1621765599329</created>
@@ -349,7 +306,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622672215178</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="restructuration pour préparation à l'upload">
+      <created>1622712451526</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1622712451527</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -388,6 +352,18 @@
     <MESSAGE value="Mise à jour majeure&#10;Possibilité d'ajouter des jeux dans des ludotheque et des joueurs dans des groupes" />
     <MESSAGE value="Mise à jour&#10;Ajout des messages d'erreur lorsque non connecté ou pas de groupe/ludo" />
     <MESSAGE value="ajout élément lien contact correction page accueil et ajout scroll behaviour" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajout élément lien contact correction page accueil et ajout scroll behaviour" />
+    <MESSAGE value="restructuration pour préparation à l'upload" />
+    <option name="LAST_COMMIT_MESSAGE" value="restructuration pour préparation à l'upload" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/QuaeludoBack/ListeJeuxchoix.php</url>
+          <line>54</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

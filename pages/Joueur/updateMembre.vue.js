@@ -1,7 +1,7 @@
 let updateMembre = Vue.component('updateMembre', {
     template:`
      <div class="page Inscription">
-        <h1>Modifié mon compte</h1>
+        <h1>Modifier mon compte</h1>
         <section>
             <form id="form" @submit.prevent="submit()">
                 <label class="Label-pseudo">

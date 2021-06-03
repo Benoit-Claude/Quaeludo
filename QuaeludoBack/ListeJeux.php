@@ -3,7 +3,7 @@ header("Access-Control-Allow-Origin: *");
 
 //Appel la classe Joueur
 require_once 'cnx.php';
-require_once 'Classes/class.Jeu.php';
+require_once 'classes/class.Jeu.php';
 
 //Ordre SQL
 $query = "SELECT * 

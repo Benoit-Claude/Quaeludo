@@ -38,7 +38,6 @@ let createGroupe = Vue.component('createGroupe',{
         }
     },
     mounted(){
-        console.log("localstorage = ", localStorage.pseudo)
         axios.post(backEnd.getMembreByPseudo+'?pseudo='+localStorage.pseudo)
             .then(response => {
                 this.joueur = response.data;
@@ -55,7 +54,6 @@ let createGroupe = Vue.component('createGroupe',{
             params.append("NOM", this.groupe.NOM);
             params.append("Desc", this.groupe.Desc);
             params.append("IDJoueur", this.joueur.id);
-            console.log("IDJoueur", this.joueur.id)
 
             axios.post(backEnd.creategroupe, params)
                 .then(response =>{

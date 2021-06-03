@@ -1,4 +1,4 @@
-const host = 'http://localhost:8888/Quaeludo/QuaeludoBack/'
+const host = 'https://quaeludo.raphbonin.fr/QuaeludoBack/'
 
 
 
@@ -26,6 +26,7 @@ let backEnd = {
     //Jeu
     'ListeJeuContenuLudo': host+'ListeJeuContenuLudo.php',
     'ListeJeux': host+'ListeJeux.php',
+    'ListeJeuxchoix': host+'ListeJeuxchoix.php',
     'getJeux': host+'getJeux.php',
 
 

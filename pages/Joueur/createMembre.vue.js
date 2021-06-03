@@ -80,7 +80,8 @@ let createMembre = Vue.component('createMembre',{
                             required>
                 </label>  
                 </br>
-                <label
+                <label>
+                    <p>Votre type de jeu préféré</p>
                     <select class="Label-categorie bouton bluegrey typo-grey" v-model="membre.IDCategorie" required>
                         <option v-for="categorie in listeCategories" id="IDCategorie"  :value="categorie.id">
                         {{categorie.nom}}

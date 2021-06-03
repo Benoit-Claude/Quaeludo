@@ -2,7 +2,7 @@
 header("Access-Control-Allow-Origin: *");
     //Appel la classe Groupe
     require_once 'cnx.php';
-    require_once 'Classes/class.possede.php';
+    require_once 'classes/class.possede.php';
 
 
 //Ordre SQL

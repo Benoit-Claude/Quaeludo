@@ -3,7 +3,7 @@ header("Access-Control-Allow-Origin: *");
 
 require_once 'cnx.php';
 require_once 'path.php';
-require_once('Classes/class.Joueur.php');
+require_once('classes/class.Joueur.php');
 
 if(isset($_GET['pseudo']) & isset($_GET['password'])){
     $sql = "SELECT * FROM joueur WHERE PSEUDO = ? AND MDP = ?";

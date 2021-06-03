@@ -76,7 +76,6 @@ var ChoixDuJeuGroupe = Vue.component('ChoixDuJeuGroupe',{
             // Réponse promise et récupération des résultats
             .then(response => {
                 this.listeGroupes = response.data;
-                console.log("listeGroupes = ", this.listeGroupes);
             })
 
             .catch(error =>{
@@ -87,10 +86,8 @@ var ChoixDuJeuGroupe = Vue.component('ChoixDuJeuGroupe',{
     },
     methods:{
         choixgroupe(id){
-            console.log('test1');
             localStorage.setItem('groupe', id);
             router.push('choixdujeutypejeu');
-            console.log("groupe sélectionné", id);
         }
     }
 })

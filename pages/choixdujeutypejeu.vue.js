@@ -47,11 +47,10 @@ var ChoixDuJeuTypeJeu = Vue.component('ChoixDuJeuTypeJeu',{
     },
     methods:{
         choixcategorie(id){
-            console.log('test1');
+
             localStorage.setItem('categorie', id);
             router.push('choixdujeutempsjeu');
 
-            console.log("categorie sélectionné", id);
         }
     }
 
